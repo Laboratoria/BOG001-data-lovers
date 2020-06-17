@@ -393,7 +393,7 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 
 #### Diseño de experiencia de usuario (User Experience Design)
 
-* [Investigación con usuarios / entrevistas](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/user-understanding/00-qualitative-research/00-interviews)
+* Investigación con usuarios / entrevistas
 * [Principios de diseño visual](https://lms.laboratoria.la/cohorts/bog-2020-05-bc-core-bog001/courses/product-design/01-visual-design/00-web-design-history)
 
 #### Desarrollo Front-end
