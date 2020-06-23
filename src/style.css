@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html, body{
+    font-family: 'Cabin', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.viewi{
+    background-image: url("fondo.jpg");
+    height: 100%;
+    width: 100% ;
+    margin-bottom: -35px;
+}
+
+nav{
+    font-size: 16px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #f1f1e6;     
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 13px;
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+    margin-top: 10%;
+    text-align: left;
+    margin-left: 25%;
+}
+
+h3{
+    font-size: 100px; 
+    color: white;
+    padding: 0.5%;
+    margin-top: -50px;
+    text-align: center;
+}
+
+.explore{
+    width: 25%;
+    color: black;
+    background-color: #00c6c7;
+    border-color: #00c6c7;
+    padding: 1%;
+    margin-left: 37.5%;
+    margin-top: 3%;
+    margin-right: 37.5%; 
+}
+
+footer{
+    font-size: 16px;
+    background-color: #f1f1e6; 
+    height: 35px;
+    margin: 0;
+    display: inline-block;
+}
+
+.footerElement{
+    width: 33.33%;
+
+}
