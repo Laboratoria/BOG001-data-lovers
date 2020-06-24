@@ -46,12 +46,3 @@ console.log(attribute)
     table.appendChild(data.data.Alistar.tags);
   })
 }); */
-
-
-
-
-
-
-
-  
-  
