@@ -25,12 +25,3 @@ const attribute = lolData.map(champions=> `
 
 
 
-
-
-
-
-
-
-
-  
-  
