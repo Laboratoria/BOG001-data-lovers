@@ -9,8 +9,8 @@ let championsCards = document.querySelector('.card-champions');
 window.onload = () =>{
 const attribute = lolData.map(champions=> `
   
-    <article class="card"> 
-      <img src = '${champions[1].splash}'>
+    <article style= "background-image:url('${champions[1].splash}')"  class="card"> 
+     
       <h2>${champions[1].name}</h2>
       <p>${champions[1].title}</p>
     </article>`
