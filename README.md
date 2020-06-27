@@ -1,5 +1,5 @@
 # Data Lovers
-Esto es una prueba 
+
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
