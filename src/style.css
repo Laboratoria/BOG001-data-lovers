@@ -1,36 +1,45 @@
-*{
- margin: 0;
- padding: 0;
- color: #F2E5D6;
- font-family: 'Merriweather';
- text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
+body {
+    color: #F2E5D6;
+    font-family: 'Merriweather';
+    text-align: center;
+}
+
+/*--------- Estilos Header ---------*/
+header {
     display:flex;
     justify-content: flex-end;
-    background: url(images/lolBgHeader.jpg);
+    background: url(images/lolBgHeaderV2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     min-height: 350px;
 }
 
-.logo-Lol{
-    width: 30%;
+.logo-Lol {
+    width: 50%;
+    height: 50%;
     padding: 8%;
-    height: 45%;
 }
 
-.card-champions{
+/*--------- Estilos Section Champions + Cards ---------*/
+.card-champions {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     background: url(images/lolBg.jpg);
+    background-position: top;
 }
-.card{
+
+.card {
     display: flex;
     align-items: flex-end; 
+    justify-content: center;
     max-width:250px;
     min-height: 300px;
     width: 30%;
@@ -41,53 +50,40 @@ header{
     border-color: rgba(203, 149, 74, 0.87);
     background-position: center;
     background-size: cover;
-    justify-content: center;
 }
 
-.name-title-container{
+.name-title-container {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.068);
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)70%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)90%);
 }
  
- .name-title-container h2{
+ .name-title-container h2 {
   font-family: 'PT Serif';
   font-size: 35px;
  }
  
- .name-title-container p{
+ .name-title-container p {
   font-size: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 6%;
  }
 
-footer img{
-
+/*--------- Estilos Footer ---------*/
+footer img {
     width: 100%;
     height: 100%;
 }
 
-
-#nav-mobile{
+#nav-mobile {
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(180deg, #0F151D 13.54%, #0F151D 73.96%);
-    position: fixed;
-    bottom: 0px;
     width: 100%;
     max-height:120px;
     list-style-type:none;
+    background: linear-gradient(180deg, #0F151D 13.54%, #0F151D 73.96%);
+    position: fixed;
+    bottom: 0;
 }
-.home{
-    padding: 20px;
-    
+
+#nav-mobile li {
+    padding: 1.7%;
     }
-.champions-menu{
-    padding: 20px;
-    
-}
-.map-menu{
-    padding: 20px;
-}
-.play-menu{
-    padding: 20px;
-}
