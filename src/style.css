@@ -10,6 +10,11 @@ body {
     text-align: center;
 }
 
+main{
+    background: url(images/lolBg.jpg);
+    background-position: top;
+}
+
 /*--------- Estilos Header ---------*/
 header {
     /*display:flex;
@@ -19,6 +24,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    text-align: right;
     /*min-height: 350px;*/
 }
 
@@ -29,13 +35,14 @@ header {
 }
 
 .polygon-title-mobile {
-    /*background: url(images/polygon-title-01.svg) no-repeat;
-    background-size: cover;*/
+    text-align: center;
     clip-path: polygon(0 0, 10% 0, 20% 40%, 80% 40%, 90% 0, 100% 0, 100% 100%, 0 100%);
-    background-color: #0F151D;
-    border: 4px solid rgba(203, 149, 74, 0.87);
-    /*min-height: 250px;
-    margin-bottom: 0;*/
+    /*border: 4px solid rgba(203, 149, 74, 0.87); [--> BORDE A TODO EL DIV, NO AL POLÍGONO] */
+    /*background-color: #0F151D;[--> COLOR DEL DISEÑO]*/
+    background-color:rgba(203, 149, 74, 0.87); /*[--> COLOR DE PRUEBA]*/
+    color: #0F151D; /*[--> COLOR DE PRUEBA ]*/
+    /*background: url(images/polygon-title-01.svg) no-repeat; [--> PRUEBA FONDO SVG]
+    background-size: cover;*/
 }
 
 .polygon-title-mobile h1{
@@ -44,43 +51,46 @@ header {
     font-size: 35px;
 }
 
-/*.polygon-image-web { ---------------> AQUI LA PRUEBA DE ENMASCARAMIENTO DE IMAGEN
+/*.polygon-image-web  [--> PRUEBA ENMASCARAMIENTO DE IMAGEN]
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 60%, 80% 60%, 65% 80%, 34% 80%, 20% 60%, 0 60%);
 }/*
 
 /*--------- Estilos Section Champions + Cards ---------*/
 .search-filter {
-    min-height: 80px;
-    background-color: blue;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 3%;
+    background-color: rgba(242, 229, 214, 0.16);
+    border: 2px solid #523D24;
 }
 
 .search-filter select{
-    background-color: blue;
-
+    background-color: transparent;
+    border-style: none;
+    width: 33%;
+    font-family: 'Merriweather';
+    color: #E9CA7B;
+    font-size: 20px; /*[--> FALTA FONT-SIZE OPTION]*/
+    margin: 2%;
 }
+
 .card-champions {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background: url(images/lolBg.jpg);
-    background-position: top;
 }
 
 .card {
     display: flex;
     align-items: flex-end; 
     justify-content: center;
-    max-width:250px;
+    max-width:250px; 
     min-height: 300px;
     width: 30%;
     height: 30%;
-    margin: 20px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: rgba(203, 149, 74, 0.87);
+    margin: 3%;
+    border: 3px solid rgba(203, 149, 74, 0.87);
     background-position: center;
     background-size: cover;
 }
