@@ -9,56 +9,61 @@
 
   <body>
     <header>
-     <img src="images/lolLogo.png" class="logo-Lol">
+      <img src="images/lolLogo.png" class="logo-Lol">
 
-     <div class="polygon-title-mobile">
-       <h1>CAMPEONES</h1>
-     </div>
+      <div class="polygon-title-mobile">
+        <h1>CHAMPIONS</h1>
+      </div>
     </header>
-    
-    <!--<iframe src="https://www.youtube.com/embed/aR-KAldshAE" class="polygon-image-web"></iframe>
-    <img src="images/lolBgHeaderV2.jpg" class="polygon-image-web">-->
    
     <main>
-      <nav class="search-filter">
-        <select class="filter-input">
-          <option>Buscar</option>
-        </select>
-        <select class="filter-input">
-          <option>Ordenar A-Z</option>
-          <option>Ordenar Z-A</option>
-        </select>
-        <select class="filter-input">
-          <option disabled selected>Roles</option>
-          <option>Asesino</option>
-          <option>Tirador</option>
-          <option>Soporte</option>
-          <option>Luchador</option>
-          <option>Mago</option>
-          <option>Tanque</option>
-        </select>
-      </nav>
+      <section id="homePage"></section>
+      
+      <section id="championsPage">
+        <nav class="search-filter">
+          <select class="filter-input">
+            <option>Buscar</option>
+          </select>
+          <select class="filter-input">
+            <option>Ordenar A-Z</option>
+            <option>Ordenar Z-A</option>
+          </select>
+          <select class="filter-input">
+            <option disabled selected>Roles</option>
+            <option>Asesino</option>
+            <option>Tirador</option>
+            <option>Soporte</option>
+            <option>Luchador</option>
+            <option>Mago</option>
+            <option>Tanque</option>
+          </select>
+        </nav>
+  
+        <section class = 'card-champions'></section>
+      </section>
 
-      <section class = 'card-champions'></section>
+      <section id="mapPage"></section>
     
       <div id="root"></div>
     </main>
     
     <footer>
-      <ul id="nav-mobile">
-        <li class="home" >
-          <img  src="images/lolIcon.svg">
-        </li>
-        <li class="champions-menu" >
-         <img src="images/championsIcon.svg">
-        </li>
-        <li class="map-menu">
-         <img src="images/mapIcon.svg">
-        </li>
-        <li class="play-menu">
-         <img src="images/gameIcon.svg">
-        </li>
-      </ul>
+      <nav id="nav-mobile-tablet">
+        <ul id="nav-mobile">
+          <li class="home" >
+            <img  src="images/lolIcon.svg">
+          </li>
+          <li class="champions-menu" >
+           <img src="images/championsIcon.svg">
+          </li>
+          <li class="map-menu">
+           <img src="images/mapIcon.svg">
+          </li>
+          <li class="play-menu">
+           <img src="images/gameIcon.svg">
+          </li>
+        </ul>
+      </nav>
     </footer>
 
     <script src="main.js" type="module"></script>
