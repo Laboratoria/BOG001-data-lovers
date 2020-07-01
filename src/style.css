@@ -37,9 +37,8 @@ header {
 .polygon-title-mobile {
     width: 100%;
     position: inherit;
-    clip-path: polygon(0 4%, 10% 4%, 20% 44%, 80% 44%, 90% 4%, 100% 4%, 100% 100%, 0 100%);
+    clip-path: polygon(0 4%, 10% 4%, 20% 44%, 80% 44%, 90% 4%, 100% 4%, 100% 96%, 0 96%);
     background-color: #0F151D;
-    border-bottom: 3px solid #cb954a;
 }
 
 .polygon-title-mobile h1 {
