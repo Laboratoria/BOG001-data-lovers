@@ -10,36 +10,38 @@
   <body>
     <header>
       <img src="images/lolLogo.png" class="logo-Lol">
-
-      <div class="polygon-title-mobile">
-        <h1>CHAMPIONS</h1>
-      </div>
+      
+      <div class="polygon-title-mobile-shadow">
+        <div class="polygon-title-mobile">
+          <h1>CHAMPIONS</h1>
+        </div>
+      </div>   
     </header>
    
     <main>
       <section id="homePage"></section>
       
       <section id="championsPage">
-        <nav class="search-filter">
+        <div class="search-filter">
           <select class="filter-input">
-            <option>Buscar</option>
+            <option>Search</option>
           </select>
           <select class="filter-input">
-            <option>Ordenar A-Z</option>
-            <option>Ordenar Z-A</option>
+            <option>Order A-Z</option>
+            <option>Order Z-A</option>
           </select>
           <select class="filter-input">
             <option disabled selected>Roles</option>
-            <option>Asesino</option>
-            <option>Tirador</option>
-            <option>Soporte</option>
-            <option>Luchador</option>
-            <option>Mago</option>
-            <option>Tanque</option>
+            <option>Assassins</option>
+            <option>Marksmen</option>
+            <option>Supports</option>
+            <option>Fighters</option>
+            <option>Mages</option>
+            <option>Tanks</option>
           </select>
-        </nav>
-  
-        <section class = 'card-champions'></section>
+        </div>
+      
+        <section class="card-champions"></section>
       </section>
 
       <section id="mapPage"></section>
@@ -49,18 +51,22 @@
     
     <footer>
       <nav id="nav-mobile-tablet">
-        <ul id="nav-mobile">
+        <ul>
           <li class="home" >
             <img  src="images/lolIcon.svg">
+            <p>Home</p>
           </li>
           <li class="champions-menu" >
            <img src="images/championsIcon.svg">
+           <p>Champions</p>
           </li>
           <li class="map-menu">
            <img src="images/mapIcon.svg">
+           <p>Rails</p>
           </li>
           <li class="play-menu">
            <img src="images/gameIcon.svg">
+           <p>Play</p>
           </li>
         </ul>
       </nav>

@@ -35,26 +35,25 @@ header {
 }
 
 .polygon-title-mobile {
-    text-align: center;
-    clip-path: polygon(0 0, 10% 0, 20% 40%, 80% 40%, 90% 0, 100% 0, 100% 100%, 0 100%);
-    /*border: 4px solid rgba(203, 149, 74, 0.87); [--> BORDE A TODO EL DIV, NO AL POLÍGONO] */
-    /*background-color: #0F151D;[--> COLOR DEL DISEÑO]*/
-    background-color:rgba(203, 149, 74, 0.87); /*[--> COLOR DE PRUEBA]*/
-    color: #0F151D; /*[--> COLOR DE PRUEBA ]*/
-    /*background: url(images/polygon-title-01.svg) no-repeat; [--> PRUEBA FONDO SVG]
-    background-size: cover;*/
+    width: 100%;
+    position: inherit;
+    clip-path: polygon(0 4%, 10% 4%, 20% 44%, 80% 44%, 90% 4%, 100% 4%, 100% 100%, 0 100%);
+    background-color: #0F151D;
+    border-bottom: 3px solid #cb954a;
 }
 
-.polygon-title-mobile h1{
-    padding: 5% 0 1% 0;
+.polygon-title-mobile h1 {
+    text-align: center;
+    padding: 6% 0 1% 0;
     font-family: 'PT Serif';
     font-size: 35px;
 }
 
-/*.polygon-image-web  [--> PRUEBA ENMASCARAMIENTO DE IMAGEN]
+.polygon-title-mobile-shadow {
     width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 80% 60%, 65% 80%, 34% 80%, 20% 60%, 0 60%);
-}/*
+    clip-path: polygon(0 0, 10% 0, 20% 40%, 80% 40%, 90% 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #cb954a;
+}
 
 /*--------- Estilos Section Champions + Cards ---------*/
 .search-filter {
@@ -62,7 +61,7 @@ header {
     justify-content: space-around;
     margin-bottom: 3%;
     background-color: rgba(242, 229, 214, 0.16);
-    border: 2px solid #523D24;
+    border-bottom: 2px solid #523D24;
 }
 
 .search-filter select{
@@ -111,12 +110,7 @@ header {
  }
 
 /*--------- Estilos Footer ---------*/
-footer img {
-    width: 100%;
-    height: 100%;
-}
-
-#nav-mobile {
+#nav-mobile-tablet ul{
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -125,8 +119,15 @@ footer img {
     background: linear-gradient(180deg, #0F151D 13.54%, #0F151D 73.96%);
     position: fixed;
     bottom: 0;
+    border-top: 3px solid #cb954a;
 }
 
-#nav-mobile li {
+#nav-mobile-tablet li {
     padding: 1.7%;
-    }
+    margin-bottom: 2%;
+}
+
+footer img {
+    width: 100%;
+    height: 100%;
+}
