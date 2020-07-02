@@ -2,9 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Data Lovers LoL</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="media-query.css"/>
   </head>
 
   <body>
@@ -19,13 +21,11 @@
     </header>
    
     <main>
-      <section id="homePage"></section>
-      
+      <section class="home-page"></section>
+        
       <section id="championsPage">
         <div class="search-filter">
-          <select class="filter-input">
-            <option>Search</option>
-          </select>
+          <input type="text"placeholder="search" class="filter-input">
           <select class="filter-input">
             <option>Order A-Z</option>
             <option>Order Z-A</option>
@@ -40,9 +40,30 @@
             <option>Tanks</option>
           </select>
         </div>
-      
+        <div class="search-filter-desktop">
+            <div class="search-desktop">
+              <input type="text"placeholder="search" >
+            </div>
+            <select class="filter-desktop">
+              <option>Order A-Z</option>
+              <option>Order Z-A</option>
+            </select>
+            <div class="filter-tags-desktop">
+              <h2>Roles</h2>
+              <input type="checkbox" name="Assassins" id="Assassins"><label for="Assassins">Assassins</label>
+              <input type="checkbox" name="Marksmen" id="Marksmen"><label for="Marksmen">Marksmen</label>
+              <input type="checkbox" name="Supports" id="Supports"><label for="Supports">Supports</label>
+              <input type="checkbox" name="Fighters" id="Fighters"><label for="Fighters">Fighters</label>
+              <input type="checkbox" name="Mages" id="Mages"><label for="Mages">Mages</label>
+              <input type="checkbox" name="Tanks" id="Tanks"><label for="Tanks">Tanks</label>
+            </div>
+        </div>
+        
         <section class="card-champions"></section>
+
       </section>
+
+      
 
       <section id="mapPage"></section>
 
@@ -59,7 +80,7 @@
           <li class="map-menu">
            <img src="images/mapIcon.svg">
            <p>Rails</p>
-          </li>
+          </li> 
           <li class="play-menu">
            <img src="images/gameIcon.svg">
            <p>Play</p>
