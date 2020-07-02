@@ -1,0 +1,35 @@
+@media only screen and (min-device-width:768px) {
+
+    body {
+        color: #72c92b;
+    }
+
+
+    .polygon-title-mobile {
+       clip-path: polygon(0 4%, 20% 4%, 25% 29%, 75% 29%, 80% 4%, 100% 4%, 100% 71%, 80% 71%, 75% 96%, 25% 96%, 20% 71%, 0 71%);
+       
+   } 
+
+   .polygon-title-mobile-shadow {
+       clip-path: polygon(0 0, 20% 0, 25% 25%, 75% 25%, 80% 0, 100% 0, 100% 75%, 80% 75%, 75% 100%, 25% 100%, 20% 75%, 0 75%);
+   }
+
+   .search-filter {
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-top: 3%;
+        border:3px solid #523D24;
+    }
+  
+}
+
+@media only screen and (min-device-width:1025px){
+
+    body {color: #e62315;}
+
+   #nav-mobile-tablet ul{ display: none;}
+
+   .search-filter {display: none;}  
+
+} 
