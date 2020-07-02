@@ -26,6 +26,8 @@ header {
     background-position: bottom;
     text-align: right;
     /*min-height: 350px;*/
+    position: fixed;
+    top: 0;
 }
 
 .logo-Lol {
@@ -34,21 +36,21 @@ header {
     padding: 8%;
 }
 
-.polygon-title-mobile {
+.polygon-title {
     width: 100%;
     position: inherit;
     clip-path: polygon(0 4%, 10% 4%, 20% 44%, 80% 44%, 90% 4%, 100% 4%, 100% 96%, 0 96%);
     background-color: #0F151D;
 }
 
-.polygon-title-mobile h1 {
+.polygon-title h1 {
     text-align: center;
     padding: 6% 0 1% 0;
     font-family: 'PT Serif';
     font-size: 35px;
 }
 
-.polygon-title-mobile-shadow {
+.polygon-title-border {
     width: 100%;
     clip-path: polygon(0 0, 10% 0, 20% 40%, 80% 40%, 90% 0, 100% 0, 100% 100%, 0 100%);
     background-color: #cb954a;
@@ -63,7 +65,6 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    margin-bottom: 3%;
     background-color: rgba(242, 229, 214, 0.16);
     border-bottom: 2px solid #523D24;
 }
@@ -82,17 +83,16 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-top: 300px;
+    padding-bottom: 120px;
 }
 
 .card {
     display: flex;
     align-items: flex-end; 
-    justify-content: center;
-    max-width:250px; 
+    width:43%; 
     min-height: 300px;
-    width: 30%;
-    height: 30%;
-    margin: 3%;
+    margin-bottom: 4%;
     border: 3px solid rgba(203, 149, 74, 0.87);
     background-position: center;
     background-size: cover;
@@ -103,15 +103,15 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)90%);
 }
  
- .name-title-container h2 {
-  font-family: 'PT Serif';
-  font-size: 35px;
- }
+.name-title-container h2 {
+    font-family: 'PT Serif';
+    font-size: 35px;
+}
  
- .name-title-container p {
-  font-size: 15px;
-  margin-bottom: 6%;
- }
+.name-title-container p {
+    font-size: 15px;
+    margin-bottom: 6%;
+}
 
 /*--------- Estilos Footer ---------*/
 #nav-mobile-tablet ul{
@@ -132,6 +132,6 @@ header {
 }
 
 ul img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
 }

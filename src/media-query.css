@@ -1,43 +1,40 @@
+/*--------- Estilos Tablet ---------*/
 @media only screen and (min-width:768px) {
 
-    body {
-        color: #72c92b;
-    }
+    body {color: #72c92b;}
 
-
-    .polygon-title-mobile {
+    .polygon-title {
        clip-path: polygon(0 4%, 20% 4%, 25% 29%, 75% 29%, 80% 4%, 100% 4%, 100% 71%, 80% 71%, 75% 96%, 25% 96%, 20% 71%, 0 71%);
-       
-   } 
-
-   .polygon-title-mobile-shadow {
-       clip-path: polygon(0 0, 20% 0, 25% 25%, 75% 25%, 80% 0, 100% 0, 100% 75%, 80% 75%, 75% 100%, 25% 100%, 20% 75%, 0 75%);
-   }
-
-   .search-filter {
-       padding-top: 3%;
-        width: 80%;
-        margin: auto;
-        border:3px solid #523D24;
-    }
-  
-}
-
-@media only screen and (min-width:1025px){
-
-    body {color: #e62315;}
-
-   #nav-mobile-tablet ul{ display: none;}
-
-   .search-filter {display: none;}
-
-   .polygon-title-mobile {
-        clip-path: polygon(0 4%, 20% 4%, 25% 34%, 75% 34%, 80% 4%, 100% 4%, 100% 46%, 80% 46%, 75% 76%, 25% 76%, 20% 46%, 0 46%);
-    
     } 
 
-    .polygon-title-mobile-shadow {
-        clip-path: polygon(0 0, 20% 0, 25% 30%, 75% 30%, 80% 0, 100% 0, 100% 50%, 80% 50%, 75% 80%, 25% 80%, 20% 50%, 0 50%);
+   .polygon-title-border {
+       clip-path: polygon(0 0, 20% 0, 25% 25%, 75% 25%, 80% 0, 100% 0, 100% 75%, 80% 75%, 75% 100%, 25% 100%, 20% 75%, 0 75%);
+    }
+
+   .search-filter {
+       width: 80%;
+       margin: auto;
+       border:3px solid #523D24;
+    }
+
+    #championsPage {padding: 3%;}
+}
+
+/*--------- Estilos Desktop ---------*/
+@media only screen and (min-width:1025px){
+    
+    body {color: #e62315;}
+    
+    #nav-mobile-tablet ul { display: none;}
+    
+    .search-filter {display: none;}
+    
+    .polygon-title {
+        clip-path: polygon(0 4%, 20% 4%, 25% 34%, 75% 34%, 80% 4%, 100% 4%, 100% 46%, 80% 46%, 75% 76%, 25% 76%, 20% 46%, 0 46%);
+    } 
+
+    .polygon-title-border {
+        clip-path: polygon(0 0, 20% 0, 25% 30%, 75% 30%, 80% 0, 100% 0, 100% 50%, 80% 50%, 75% 80%, 25% 80%, 20% 50%, 0 50%)
     }
    
    .search-filter-desktop {
@@ -55,6 +52,7 @@
         overflow-y: scroll;
         height: 500px;
     }
+    
     .filter-tags-desktop{
         display: flex;
         flex-direction: column;
@@ -67,5 +65,4 @@
         height: 20%;
         margin: 2% 1%;
     }
-
 } 

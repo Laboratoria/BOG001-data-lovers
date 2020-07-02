@@ -13,33 +13,36 @@
     <header>
       <img src="images/lolLogo.png" class="logo-Lol">
       
-      <div class="polygon-title-mobile-shadow">
-        <div class="polygon-title-mobile">
+      <div class="polygon-title-border">
+        <div class="polygon-title">
           <h1>CHAMPIONS</h1>
         </div>
-      </div>   
+      </div>  
+      
+      <div class="search-filter">
+        <input type="text"placeholder="search" class="filter-input">
+        <select class="filter-input">
+          <option>Order A-Z</option>
+          <option>Order Z-A</option>
+        </select>
+        <select class="filter-input">
+          <option disabled selected>Roles</option>
+          <option>Assassins</option>
+          <option>Marksmen</option>
+          <option>Supports</option>
+          <option>Fighters</option>
+          <option>Mages</option>
+          <option>Tanks</option>
+        </select>
+      </div> 
     </header>
    
     <main>
       <section class="home-page"></section>
         
       <section id="championsPage">
-        <div class="search-filter">
-          <input type="text"placeholder="search" class="filter-input">
-          <select class="filter-input">
-            <option>Order A-Z</option>
-            <option>Order Z-A</option>
-          </select>
-          <select class="filter-input">
-            <option disabled selected>Roles</option>
-            <option>Assassins</option>
-            <option>Marksmen</option>
-            <option>Supports</option>
-            <option>Fighters</option>
-            <option>Mages</option>
-            <option>Tanks</option>
-          </select>
-        </div>
+        
+
         <div class="search-filter-desktop">
             <div class="search-desktop">
               <input type="text"placeholder="search" >
@@ -60,13 +63,14 @@
         </div>
         
         <section class="card-champions"></section>
-
       </section>
 
-      
-
       <section id="mapPage"></section>
-
+    
+      <div id="root"></div>
+    </main>
+    
+    <footer>
       <nav id="nav-mobile-tablet">
         <ul>
           <li class="home" >
@@ -87,11 +91,6 @@
           </li>
         </ul>
       </nav>
-    
-      <div id="root"></div>
-    </main>
-    
-    <footer>
     </footer>
 
     <script src="main.js" type="module"></script>
