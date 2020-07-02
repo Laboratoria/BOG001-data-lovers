@@ -54,16 +54,21 @@ header {
     background-color: #cb954a;
 }
 
+.search-filter-desktop {
+  display: none;
+}
+
 /*--------- Estilos Section Champions + Cards ---------*/
 .search-filter {
     display: flex;
+    width: 100%;
     justify-content: space-around;
     margin-bottom: 3%;
     background-color: rgba(242, 229, 214, 0.16);
     border-bottom: 2px solid #523D24;
 }
 
-.search-filter select{
+.filter-input{
     background-color: transparent;
     border-style: none;
     width: 33%;
@@ -118,7 +123,7 @@ header {
     background: linear-gradient(180deg, #0F151D 13.54%, #0F151D 73.96%);
     position: fixed;
     bottom: 0;
-    border-top: 3px solid #cb954a;
+    border-top: 3px solid #cb954a; 
 }
 
 #nav-mobile-tablet li {
@@ -126,7 +131,7 @@ header {
     margin-bottom: 2%;
 }
 
-footer img {
+ul img {
     width: 100%;
     height: 100%;
 }
