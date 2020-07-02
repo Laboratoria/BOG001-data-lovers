@@ -1,9 +1,31 @@
-// estas funciones son de ejemplo
+  export const lolDataHTML = () => {
+    return 'example';
+  };
+  
+  export const anotherExample = () => {
+    return 'OMG';
+  }; 
 
-export const example = () => {
-  return 'example';
-};
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -13,6 +13,9 @@ html, body{
     text-align: center;
     background-image: url("fondo.jpg");
     background-position: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navegation{
@@ -22,8 +25,9 @@ html, body{
     justify-content: space-between;
     height: 5vh;
     width: 100%;
-    align-items: center;
-    
+    align-items: center;    
+    position: fixed; 
+    top: 0;
 }
 
 .navegation  ul{
@@ -32,8 +36,8 @@ html, body{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: rgba( 3, 8, 46, 0.8);
-    top: 37px;
+    background-color: rgba( 3, 8, 46);
+    top: 5%;
     left: 0;
     color: #f1f1e6;
     transition: all .5s;
@@ -42,15 +46,16 @@ html, body{
 
 .navegation ul li{
     display: block;
-    margin: 50px 0;
-    font-size: 20px;
-    
+    margin: 18% 0;
+    font-size: 20px;   
+}
+
+.navegation ul li a{
+   color: #f1f1e6;
 }
 
 .navegation ul li:hover{
     background: #00C6C7;
-    width: 100%;
-    margin-left: 0;
 }
 
 .checkbtn{
@@ -120,12 +125,15 @@ html, body{
 .footerContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 5vh;
+    width: 100%;
     background-color:#f1f1e6;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 3px;
+    position: fixed;
+    bottom: 0;
 }
 
 .download{
@@ -156,6 +164,253 @@ html, body{
 
 }
 
+.uniqueChamp{
+    display: flex;
+    background-color: #00c6c2;
+    width: 25%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
 
+}
 
+.imageChampion{
+    width: 100%;
+}
 
+.champName{
+    font-size: 16px;
+}
+
+#here{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+}
+
+@media only screen and (min-width: 640px) {
+
+    .checkbtn{
+        font-size: 30px;
+        line-height: 30px;
+        margin-left: 30px;
+    }
+
+    .search{
+        margin-top: 2px;
+        margin-right: 5px;
+    }
+
+    .titleContainer{
+        font-size: 24px;
+        margin-left: -140px;
+    }
+
+    .itemTitle2{
+        font-size: 36px;
+        margin-top: -15px;
+        margin-bottom: 10px;
+    }
+
+    .footerContainer{
+        height: 5vh;
+        padding: 3px;
+    }
+
+    .download{
+        padding: 9px;
+    }
+
+    .footerContainer p{
+        font-size: 14px;
+    }
+
+    .uniqueChamp{
+        margin: 10px;
+        width: 27%;
+    }
+
+    .champName{
+        font-size: 16px;
+    }
+
+    #here{
+        margin: 100px 0; 
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .checkbtn{
+        font-size: 30px;
+        line-height: 30px;
+        margin-left: 10px;
+    }
+
+    .search{
+        margin-top: 2px;
+        margin-right: 15px;
+        padding: 10px;
+    }
+
+    .titleContainer{
+        justify-content: center;
+        margin-left: 20px;
+    }
+
+    .itemTitle1{
+        font-size: 43px;
+        margin-left: -230px;
+    }
+    .itemTitle2{
+        font-size: 60px;
+        margin-top: -15px;
+        margin-bottom: 10px;
+    }
+
+    .explore{
+        padding: 13px;
+        font-size: 20px;
+    }
+
+    .download{
+        padding: 13px;
+        font-size: 20px;
+    }
+
+    .footerContainer p{
+        font-size: 20px;
+    }
+
+    .champName{
+        font-size: 24px;
+    }
+
+    .navegation ul li{
+        display: block;
+        margin: 12% 0;
+        font-size: 30px;   
+    }
+
+    .uniqueChamp{
+        width: 15%;
+    }
+
+    #here{
+        margin: 180px 0;
+    }
+
+@media only screen and (min-width: 992px) {
+
+    html, body{
+        width: 80%;
+    }
+    .checkbtn{
+        display: none;
+    }
+
+    .navegation{
+        height: 0;
+    }
+
+    .navegation  ul{
+        margin: 20px 40px;;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        width: 93%;
+        height: 40px;
+        background-color: #f1f1e6;
+        transition: none;
+        transform: none;
+        align-items: center;  
+        cursor: pointer;
+        color:black;
+    }
+
+    .navegation ul li{
+        justify-content: space-between;
+        display: inline;
+        margin-left: 90px;
+        font-size: 20px; 
+        padding: 2px 18px;  
+    }
+
+    .navegation ul li a{
+        color: black;
+     }
+
+    .navegation ul li:hover{
+        background-color: #00C6C7;
+        padding: 20px 18px;
+    }
+
+    .search{
+       display: none;
+    }
+
+    .titleContainer{
+        justify-content: center;
+        margin-left: 29%;
+    }
+
+    .itemTitle1{
+        font-size: 53px;
+        margin-left: -300px;
+    }
+
+    .itemTitle2{
+        font-size: 80px;
+        margin-top: -35px;
+        margin-bottom: 10px;
+    }
+
+    .explore{
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .download{
+        font-size: 18px;
+    }
+        
+    .footerContainer p{
+        font-size: 14px;
+    
+    }
+        
+    .uniqueChamp{
+        display: flex;
+        background-color: #00c6c2;
+        width: 7%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    
+    }
+    
+    .imageChampion{
+        width: 100%;
+    }
+    
+    .champName{
+        font-size: 12px;
+    }
+
+    #here{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 200px;
+        margin-left: 240px;
+        margin-right: -240px;
+    }
+}
+}
