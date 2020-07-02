@@ -1,4 +1,4 @@
-@media only screen and (min-device-width:768px) {
+@media only screen and (min-width:768px) {
 
     body {
         color: #72c92b;
@@ -15,16 +15,15 @@
    }
 
    .search-filter {
+       padding-top: 3%;
         width: 80%;
-        margin-right: 10%;
-        margin-left: 10%;
-        margin-top: 3%;
+        margin: auto;
         border:3px solid #523D24;
     }
   
 }
 
-@media only screen and (min-device-width:1025px){
+@media only screen and (min-width:1025px){
 
     body {color: #e62315;}
 
