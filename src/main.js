@@ -42,6 +42,11 @@ const dataPromise = fetch(endpoint);
     lolDataArray.forEach(logLolData);
 
     let lolDataHTML;
+    let lolDataHTML1;
+    let lolDataHTML2;
+    let lolDataHTML3;
+    let lolDataHTML4;
+    let lolDataHTML5;
 
     everyChampArray = everyChampArray.reverse();
 
@@ -53,7 +58,53 @@ const dataPromise = fetch(endpoint);
       </div>` + lolDataHTML;
   }
 
+  for(let i=105; i<134; i++){
+    lolDataHTML1 = `
+      <div data-arrayposition="${[i]}" class = "uniqueChamp">
+      <img class ="imageChampion"src = "${everyChampArray[i].img}">
+      <h2 class = "champName">${everyChampArray[i].id}</h2>
+      </div>` + lolDataHTML1;
+  }
+
+  for(let i=75; i<104; i++){
+    lolDataHTML2 = `
+      <div data-arrayposition="${[i]}" class = "uniqueChamp">
+      <img class ="imageChampion"src = "${everyChampArray[i].img}">
+      <h2 class = "champName">${everyChampArray[i].id}</h2>
+      </div>` + lolDataHTML2;
+  }
+
+  for(let i=45; i<74; i++){
+    lolDataHTML3 = `
+      <div data-arrayposition="${[i]}" class = "uniqueChamp">
+      <img class ="imageChampion"src = "${everyChampArray[i].img}">
+      <h2 class = "champName">${everyChampArray[i].id}</h2>
+      </div>` + lolDataHTML3;
+  }
+
+  for(let i=15; i<44; i++){
+    lolDataHTML4 = `
+      <div data-arrayposition="${[i]}" class = "uniqueChamp">
+      <img class ="imageChampion"src = "${everyChampArray[i].img}">
+      <h2 class = "champName">${everyChampArray[i].id}</h2>
+      </div>` + lolDataHTML4;
+  }
+
+  for(let i=0; i<14; i++){
+    lolDataHTML5 = `
+      <div data-arrayposition="${[i]}" class = "uniqueChamp">
+      <img class ="imageChampion"src = "${everyChampArray[i].img}">
+      <h2 class = "champName">${everyChampArray[i].id}</h2>
+      </div>` + lolDataHTML5;
+  }
+
   document.getElementById("here").innerHTML = lolDataHTML;
+  document.getElementById("hehe").innerHTML = lolDataHTML1; //aatrox - fiora
+  document.getElementById("hehe").innerHTML = lolDataHTML2;
+  document.getElementById("hehe").innerHTML = lolDataHTML3;
+  document.getElementById("hehe").innerHTML = lolDataHTML4;
+  document.getElementById("hehe").innerHTML = lolDataHTML5;
+
 
   //const myFragment = document.createRange().createContextualFragment(lolDataHTML);
   //document.getElementById("here").innerHTML = myFragment;
@@ -71,33 +122,33 @@ const dataPromise = fetch(endpoint);
 
 
       const champDescription = `
-      <div>
-      <img class ="imageChampion"src = "${everyChampArray[specificTarget].splash}">
+      <div class = "champDescription">
+      
+        <br>
         <h1>${everyChampArray[specificTarget].id}</h1>
         <h3>${everyChampArray[specificTarget].title}</h3>
+        <br>
+        <div class = "descriptionText">
+        <img class = "imgSplash" src = "${everyChampArray[specificTarget].splash}">
+        </br>
         <h3>${everyChampArray[specificTarget].tags}</h3>
+        <br>
         <p>${everyChampArray[specificTarget].blurb}</p>
-      </div>`;
+        </br>
+        <input type="checkbox"> 
+          <label for="check" class="return">
+          <i class="fa fa-mail-reply"></i>
+        </label>
+        </div>
+        </br>
+        `;
 
       document.getElementById("here too").innerHTML = champDescription;
-
-    //   const infoChamp = `
-    //   <div class = "uniqueChamp ${everyChampArray[i].id}">
-    //   <img class ="imageChampion"src = "${everyChampArray[i].img}">
-    //   <h2 class = "champName">${everyChampArray[i].id}</h2>
-    //   </div>`
-
-
-
-      
-
   }
 
   uniqueChampDiv.forEach(function(clickEvent){ //anon function
     clickEvent.addEventListener('click', selectChamp);
   });
-
-
 
   }) //Api end
   

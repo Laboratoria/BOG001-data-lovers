@@ -303,6 +303,7 @@ html, body{
     #here{
         margin: 180px 0;
     }
+}
 
 @media only screen and (min-width: 992px) {
 
@@ -412,5 +413,26 @@ html, body{
         margin-left: 240px;
         margin-right: -240px;
     }
+
 }
+
+.champDescription{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color:#f0f0d1;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
+    margin-top: 20%;
+}
+
+.descriptionText{
+    background-color: #020024;
+    padding: 3%;
+}
+
+.imgSplash{
+  border: 5px;
+  width: 100%;
 }
