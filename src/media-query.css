@@ -30,6 +30,43 @@
 
    #nav-mobile-tablet ul{ display: none;}
 
-   .search-filter {display: none;}  
+   .search-filter {display: none;}
+
+   .polygon-title-mobile {
+        clip-path: polygon(0 4%, 20% 4%, 25% 34%, 75% 34%, 80% 4%, 100% 4%, 100% 46%, 80% 46%, 75% 76%, 25% 76%, 20% 46%, 0 46%);
+    
+    } 
+
+    .polygon-title-mobile-shadow {
+        clip-path: polygon(0 0, 20% 0, 25% 30%, 75% 30%, 80% 0, 100% 0, 100% 50%, 80% 50%, 75% 80%, 25% 80%, 20% 50%, 0 50%);
+    }
+   
+   .search-filter-desktop {
+        display:flex;
+        flex-direction: column; 
+        margin-left: 3%;
+        justify-content: space-evenly;
+    }
+
+    #championsPage{
+        display: flex;
+    }
+
+    .card-champions {
+        overflow-y: scroll;
+        height: 500px;
+    }
+    .filter-tags-desktop{
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .card {
+        max-width:200px; 
+        max-height: 250px;
+        width: 20%;
+        height: 20%;
+        margin: 2% 1%;
+    }
 
 } 
