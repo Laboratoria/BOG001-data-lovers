@@ -1,23 +1,41 @@
-/*--------- Estilos Tablet ---------
+/*--------- Estilos Tablet ---------*/
 @media only screen and (min-device-width:768px) {
+    .title-page{background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)50%);}
 
-    body {color: #72c92b;}
+    .polygon-title {clip-path: polygon(0 4%, 20% 4%, 25% 29%, 75% 29%, 80% 4%, 100% 4%, 100% 71%, 80% 71%, 75% 96%, 25% 96%, 20% 71%, 0 71%);} 
+    
+    .polygon-title-border {clip-path: polygon(0 0, 20% 0, 25% 25%, 75% 25%, 80% 0, 100% 0, 100% 75%, 80% 75%, 75% 100%, 25% 100%, 20% 75%, 0 75%);}
 
-    .polygon-title {
-       clip-path: polygon(0 4%, 20% 4%, 25% 29%, 75% 29%, 80% 4%, 100% 4%, 100% 71%, 80% 71%, 75% 96%, 25% 96%, 20% 71%, 0 71%);
-    } 
-
-   .polygon-title-border {
-       clip-path: polygon(0 0, 20% 0, 25% 25%, 75% 25%, 80% 0, 100% 0, 100% 75%, 80% 75%, 75% 100%, 25% 100%, 20% 75%, 0 75%);
+    .polygon-title h1 {
+        font-size: 2em;
+        padding: 3% 0 1% 0;
     }
-
-   .search-filter {
+    
+    #championsPage {padding: 3%;}
+    
+    .search-filter {
        width: 80%;
        margin: auto;
        border:3px solid #523D24;
     }
 
-    #championsPage {padding: 3%;}
+    .filter-input, .search-input::placeholder {font-size: 1.2em;}
+    
+    .card {
+        width:250px; 
+        min-height:300px;
+    }
+
+    .name-title-container h2 {font-size: 2em;}
+     
+    .name-title-container p {
+        font-size: 1em;
+        padding-bottom: 7%;
+    }
+    
+    #nav-mobile-tablet li {font-size: 1.1em;}
+    
+    #nav-mobile-tablet ul {height: 7%;}
 }
 
 /*--------- Estilos Desktop ---------
