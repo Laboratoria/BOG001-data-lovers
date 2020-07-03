@@ -1,4 +1,4 @@
-/*--------- Estilos Tablet ---------*/
+/*--------- Estilos Tablet ---------
 @media only screen and (min-device-width:768px) {
 
     body {color: #72c92b;}
@@ -20,7 +20,7 @@
     #championsPage {padding: 3%;}
 }
 
-/*--------- Estilos Desktop ---------*/
+/*--------- Estilos Desktop ---------
 @media only screen and (min-device-width:1025px){
     
     body {color: #e62315;}
@@ -65,4 +65,4 @@
         height: 20%;
         margin: 2% 1%;
     }
-} 
+} */

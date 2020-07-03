@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -17,24 +16,24 @@ main {
 
 /*--------- Estilos Header ---------*/
 header {
-    /*display:flex;
-    flex-direction: column;
-    justify-content: flex-end;*/
     background: url(images/lolBgHeaderV2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     text-align: right;
-    /*min-height: 350px;*/
-    position: fixed;
-    top: 0;
     width: 100%;
 }
 
 .logo-Lol {
-    width: 50%;
-    height: 50%;
-    padding: 8%;
+    width: 25%;
+    height: 25%;
+    padding: 5% 5% 2% 0;
+}
+
+.polygon-title-border {
+    width: 100%;
+    clip-path: polygon(0 0, 10% 0, 20% 40%, 80% 40%, 90% 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #cb954a;
 }
 
 .polygon-title {
@@ -45,94 +44,104 @@ header {
 }
 
 .polygon-title h1 {
+    font-family:'PT Serif';
+    font-size: 1.6em;
     text-align: center;
-    padding: 6% 0 1% 0;
-    font-family: 'PT Serif';
-    font-size: 35px;
-}
-
-.polygon-title-border {
-    width: 100%;
-    clip-path: polygon(0 0, 10% 0, 20% 40%, 80% 40%, 90% 0, 100% 0, 100% 100%, 0 100%);
-    background-color: #cb954a;
+    padding: 8% 0 1% 0;
 }
 
 .search-filter-desktop {
   display: none;
 }
 
-/*--------- Estilos Section Champions + Cards ---------*/
+/*--------- Estilos Search + Filter ---------*/
 .search-filter {
     display: flex;
     width: 100%;
     justify-content: space-around;
     background-color: rgba(242, 229, 214, 0.16);
     border-bottom: 2px solid #523D24;
+    padding: 2% 0; 
 }
 
 .filter-input{
     background-color: transparent;
     border-style: none;
-    width: 33%;
+    width: 30%;
     font-family: 'Merriweather';
     color: #E9CA7B;
-    font-size: 20px; /*[--> FALTA FONT-SIZE OPTION]*/
-    margin: 2%;
+    font-size: 1em; /*[--> FALTA FONT-SIZE OPTION]*/
 }
 
+.search-input {
+    width: 25%;
+    border-style: solid;
+    /*background-color: rgba(255, 255, 255, 0.3);*/
+    background-color: transparent;
+    border: 2px solid #523D24;
+    border-radius: 5px;
+}
+
+.search-input::placeholder {
+    font-family: 'Merriweather';
+    color: #E9CA7B;
+    font-size: 1em;
+    padding: 0 10%;
+}
+
+/*--------- Estilos Section Champions + Cards ---------*/
 .card-champions {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 300px;
-    padding-bottom: 120px;
+    padding: 5% 0 15% 0;
 }
 
 .card {
     display: flex;
     align-items: flex-end; 
-    width:40%; 
-    min-height: 300px;
-    margin-bottom: 4%;
-    border: 3px solid rgba(203, 149, 74, 0.87);
+    width:150px; 
+    min-height:200px;
+    margin-bottom: 5%;
+    border: 3px solid #CB954A;
     background-position: center;
     background-size: cover;
 }
 
 .name-title-container {
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)90%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)50%);
 }
  
 .name-title-container h2 {
     font-family: 'PT Serif';
-    font-size: 35px;
+    font-size: 1.3em;
+    text-shadow: 2px 2px #523D24;
+    padding-bottom: 2%;
 }
  
 .name-title-container p {
-    font-size: 15px;
-    margin-bottom: 6%;
+    font-size: 0.8em;
+    padding-bottom: 5%;
 }
 
 /*--------- Estilos Footer ---------*/
 #nav-mobile-tablet ul{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-height:120px;
-    list-style-type:none;
-    background: linear-gradient(180deg, #0F151D 13.54%, #0F151D 73.96%);
     position: fixed;
     bottom: 0;
-    border-top: 3px solid #cb954a; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height:9%;
+    list-style-type:none;
+    background-color:#0F151D;
+    border-top: solid #cb954a; 
 }
 
-#nav-mobile-tablet li {
-    padding: 1.7%;
-    margin-bottom: 2%;
-}
+#nav-mobile-tablet li {font-size: 0.6em;}
 
-ul img {
-    width: 80%;
-    height: 80%;
+#nav-mobile-tablet img {
+    width: 40%;
+    height: 40%;
 }

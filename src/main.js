@@ -17,9 +17,3 @@ const attribute = lolData.map(champions=> `
 
  championsCards.innerHTML= attribute;
 };
-
-
- 
-
-
-

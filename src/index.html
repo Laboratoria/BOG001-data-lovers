@@ -2,11 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!-- meta name="viewport" content="width=device-width, initial-scale=1">  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Data Lovers LoL</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="media-query.css"/>
+    <script src="https://kit.fontawesome.com/0b32af8212.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -18,30 +19,29 @@
           <h1>CHAMPIONS</h1>
         </div>
       </div>  
-      
-      <div class="search-filter">
-        <input type="text"placeholder="search" class="filter-input">
-        <select class="filter-input">
-          <option>Order A-Z</option>
-          <option>Order Z-A</option>
-        </select>
-        <select class="filter-input">
-          <option disabled selected>Roles</option>
-          <option>Assassins</option>
-          <option>Marksmen</option>
-          <option>Supports</option>
-          <option>Fighters</option>
-          <option>Mages</option>
-          <option>Tanks</option>
-        </select>
-      </div> 
     </header>
    
-    <main>
+    <main id=root >
       <section class="home-page"></section>
         
       <section id="championsPage">
-        
+        <div class="search-filter">
+          <input type="text" placeholder="Search" class="search-input">
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+          <select class="filter-input">
+            <option>Order A-Z</option>
+            <option>Order Z-A</option>
+          </select>
+          <select class="filter-input">
+            <option disabled selected>Roles</option>
+            <option>Assassins</option>
+            <option>Marksmen</option>
+            <option>Supports</option>
+            <option>Fighters</option>
+            <option>Mages</option>
+            <option>Tanks</option>
+          </select>
+        </div> 
 
         <div class="search-filter-desktop">
             <div class="search-desktop">
@@ -66,8 +66,6 @@
       </section>
 
       <section id="mapPage"></section>
-    
-      <div id="root"></div>
     </main>
     
     <footer>
