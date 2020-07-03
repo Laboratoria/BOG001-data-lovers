@@ -2,49 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Rick y Morty
-    </title>
-    <link rel="stylesheet" href="style.css">
-
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="images/favicon-32x32.png" />
+    <title>Rick y Morty</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2eed4717d6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="content-cabecera">
-        <div class="content-logo">
-            <img src="images/logo.png">
+    <header>
+        <div class="main-nav">
+            <div class="Icon-menu" id="main-menu-button">
+                <i class="fas fa-bars"> </i>
+            </div>
+            <img src="Images/logo.png" alt="logo_image" class="logo" />
         </div>
-</div>
+        <ul class="main-menu">
+            <li class="menu-item"> <a href="https://www.rickandmorty.com/">About us</a></li>
+            <li class="menu-item"> <a href="">Streams</a></li>
+            <li class="menu-item"> <a href="">Games</a></li>
+            <li class="menu-item"> <a href="">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner">
+        <img src="Images/RickMortyMobile.png" alt="Mobile_image" />
+    </section>
+    <div class="Character-row">
+        <button class="buttonC" type="Character">Characters</button>
+    </div>
+    <div class="Fun-facts">
 
-     <main>
-         
-        <div class="content1">
-            <div class="img-content1">
-                <img src="images/datos.jpg">
-            </div>
-            <div class="text-content1">
-                <h1>Datos Curiosos</h1>
-            </div>
-
-           <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae facilis voluptatem maiores quo
-                nemo iusto nam, exercitationem vel a unde natus eum at dolores pariatur, commodi voluptate.
-                Voluptate autem, perferendis inventore laboriosam, tempora omnis quibusdam eum earum iusto similique
-                ex, reiciendis ratione hic voluptates consequuntur molestiae animi veniam repellat?</p>
-           </div> 
-               
+        
 
 
-            </div>
-        </div>
+    </div>
 
 
-    </main>
-    <div id="root"></div>
+
+
+
+
+
+
+
     <script src="main.js" type="module"></script>
+    <!-- 
+    <select class="filter-input">
+        <option>Order A-Z</option>
+        <option>Order Z-A</option>
+    </select>
+    -->
 </body>
 
 </html>
