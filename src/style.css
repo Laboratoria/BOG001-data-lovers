@@ -28,6 +28,7 @@ header {
     /*min-height: 350px;*/
     position: fixed;
     top: 0;
+    width: 100%;
 }
 
 .logo-Lol {
@@ -90,7 +91,7 @@ header {
 .card {
     display: flex;
     align-items: flex-end; 
-    width:43%; 
+    width:40%; 
     min-height: 300px;
     margin-bottom: 4%;
     border: 3px solid rgba(203, 149, 74, 0.87);
