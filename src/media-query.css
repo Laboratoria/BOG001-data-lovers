@@ -71,6 +71,14 @@
         color: chartreuse;;
     }
 
+    .title-page-desktop {display: block;}
+
+    h1.title-page-desktop {font-size: 2.5em;}
+
+    p.title-page-desktop {font-size: 1.8em; padding-top: 1%;}
+    
+    .card-champions {padding: 3% 0 15% 0;}
+
    /* .search-filter-desktop {
         display:flex;
         flex-direction: column; 
