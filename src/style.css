@@ -50,9 +50,9 @@ header {
     padding: 8% 0 1% 0;
 }
 
-.search-filter-desktop {
-  display: none;
-}
+.search-filter-desktop {display: none;}
+
+#nav-desktop {display: none;}
 
 /*--------- Estilos Search + Filter ---------*/
 .search-filter {

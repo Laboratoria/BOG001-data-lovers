@@ -1,5 +1,6 @@
 /*--------- Estilos Tablet ---------*/
 @media only screen and (min-device-width:768px) {
+
     .title-page{background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)50%);}
 
     .polygon-title {clip-path: polygon(0 4%, 20% 4%, 25% 29%, 75% 29%, 80% 4%, 100% 4%, 100% 71%, 80% 71%, 75% 96%, 25% 96%, 20% 71%, 0 71%);} 
@@ -38,24 +39,39 @@
     #nav-mobile-tablet ul {height: 7%;}
 }
 
-/*--------- Estilos Desktop ---------
+/*--------- Estilos Desktop ---------*/
 @media only screen and (min-device-width:1025px){
     
-    body {color: #e62315;}
-    
     #nav-mobile-tablet ul { display: none;}
-    
-    .search-filter {display: none;}
-    
-    .polygon-title {
-        clip-path: polygon(0 4%, 20% 4%, 25% 34%, 75% 34%, 80% 4%, 100% 4%, 100% 46%, 80% 46%, 75% 76%, 25% 76%, 20% 46%, 0 46%);
-    } 
 
-    .polygon-title-border {
-        clip-path: polygon(0 0, 20% 0, 25% 30%, 75% 30%, 80% 0, 100% 0, 100% 50%, 80% 50%, 75% 80%, 25% 80%, 20% 50%, 0 50%)
+    .search-filter, .polygon-title h1 {display: none;}
+
+    #nav-desktop {
+        display: block;
+        height: 100px;}
+
+    #nav-desktop ul {
+        display: flex;
+        justify-content: space-around;
     }
-   
-   .search-filter-desktop {
+
+    #nav-desktop li {
+        margin: 2% 0 2% 0;
+        list-style-type: none;
+        font-family:'PT Serif';
+        font-size: 2em;
+    }
+
+   #nav-desktop a {
+        text-decoration: none;
+    }
+
+    .champions-rails {
+        margin-top: 45px;
+        color: chartreuse;;
+    }
+
+   /* .search-filter-desktop {
         display:flex;
         flex-direction: column; 
         margin-left: 3%;
