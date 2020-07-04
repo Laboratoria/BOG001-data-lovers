@@ -48,27 +48,32 @@
 
     #nav-desktop ul {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
     }
 
     #nav-desktop li {
         list-style-type: none;
         font-family:'PT Serif';
-        font-size: 2em;
+        font-size: 1.6em;
+        text-transform: uppercase;
     }
 
-   #nav-desktop a {text-decoration: none; color:#F2E5D6;}
-
-   #nav-desktop .home-play {padding-top:7px}
-
-   #nav-desktop .champions-rails {
+    a {text-decoration: none; color:#F2E5D6;}
+    /*a:link Enlaces no visitados, a:visited Enlaces visitados, a:hover El usuario esta sobre el enlace, a:active Enlaces activos */
+    a:hover {color: #B48030;}
+    a:active {color: red;}
+    
+    #nav-desktop .home-play {padding-top:10px}
+    
+    #nav-desktop .champions-rails {
         padding-top: 30px;
         padding-bottom: 10px;
     }
 
     .title-page-desktop {display: block;}
-    h1.title-page-desktop {font-size: 2.5em;}
-    p.title-page-desktop {font-size: 1.8em; padding-top: 1%;}
+    h1.title-page-desktop {font-size: 2.3em;}
+    p.title-page-desktop {font-size: 1.5em; padding-top: 0.5%;}
     
     .card-champions {padding: 3% 0 15% 0;}
 
