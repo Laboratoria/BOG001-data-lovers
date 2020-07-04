@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto de parallax mobile</title>
+    <link rel="stylesheet" href="styleCharacters.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Pangolin&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+    <div id=navbar>
+        <img src="images/menu2.png" id="menu">        
+    </div>
+
+    <div id="hero">
+        <h1>
+            <span id= "one" class="textSpan">Go with <strong>RICK</strong></span>
+            <span id="two" class="textSpan">to discover the</span>
+            <span id="three" class="textSpan">CHARACTERS</span>
+        </h1>
+            
+
+        <div id="containerRick">
+            <img src="images/rick.png" id="rick">
+        </div>
+
+        <div id="containerPort">
+            <img src="images/portal.png" id="port">
+        </div>
+
+        <div id="containerFrontPort">
+            <img src="images/portal front.png" id="frontPort">
+        </div>
+        
+    </div>
+        
+    <section id="containerCharacters">
+        
+        <div id=filtersBar>
+            <div id="filter" class="containersOptionsFilter">
+                <h2 class="optionsFilter">Filter</h2>
+                <img src="images/filter2.png" id="imgFilter" class="imgOptionsFilter">
+            </div>
+            
+            <div id="order" class="containersOptionsFilter">
+                <h2 class="optionsFilter">Order</h2>
+                <img src="images/order2.png" id="imgOrder" class="imgOptionsFilter">
+            </div>
+        </div>
+
+        <div id="characters">
+      
+        </div>
+
+        <div>
+            <button id="previus" class="previusNextIcons" class="show" type="button"><img src="images/previus.png"></button>
+            <button id="next" class="previusNextIcons" type="button"><img src="images/next.png"></button>
+        </div>
+        
+    </section> 
+    
+    <script type="module" src="./mainCharacters.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;  
+    /* box-sizing:border-box;   */
+   }
+   
+   body{
+       width: 100%;
+   }
+   
+   #navbar{
+       background-color: #ffffff0d;
+       position: absolute;
+       z-index: 5;
+       width: 100%;    
+   }
+   
+   #hero h1 {
+       color: ivory;
+       font-family: "Gloria Hallelujah";
+       position: absolute;
+       top:20vh;
+       font-size: 30px;
+   }
+   
+   .textSpan{
+       display: block;
+   }
+   
+   #one strong{
+       font-size: 40px;
+   }
+   
+   #three {
+       letter-spacing: 7px;
+   }
+   
+   #menu{
+       width: 50px;
+       margin: 15px 20px;
+   }
+   
+   #hero {
+       /* background-image: url("/images/lab.jpg"); */
+       background-color: #151619;
+       background-attachment: fixed;
+       background-repeat: no-repeat;
+       background-position: top center;
+       /* background-size: 200vh;     */
+       height: 620px;
+       display: flex;
+       justify-content: center;
+       align-items: flex-end;
+       position: relative;    
+   }
+   
+   #containerRick {
+       position: absolute;
+       display: flex;
+       justify-content: center; 
+       /* align-items: flex-end; */
+       bottom: 0;
+       z-index: 2;   
+   }
+   
+   #rick {
+       height: 300px;
+       /* width: 100%; */
+       bottom: 40px;
+   }
+   
+   
+   #containerPort {
+       position: absolute;
+       z-index: 1;
+       /* width: 10px; */
+       bottom: -30px;
+       /* display: flex; */
+   }
+   
+   #port {
+   width: 300px;
+   /* bottom: 300px; */
+   }
+   
+   #containerFrontPort {
+       position: absolute;
+       /* width: 10px; */
+       bottom: -30px;
+       z-index: 3;
+       /* display: flex; */
+   }
+   
+   #frontPort{
+       width: 270px;
+   }
+   
+   
+    #containerCharacters {
+        background-image: url("images/galaxy.jpg");
+        /* background-color: #000; */
+        height: 1000px;
+        z-index: 4;
+        position: relative;
+   }
+   
+   #filtersBar{
+       background-color: #151619;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       height: 70px;
+       width: 100%;
+   }
+   
+   .containersOptionsFilter{
+       /* padding: 100px 0px; */
+       display: flex;
+       align-items: center;
+   } 
+   
+   .imgOptionsFilter {
+       width: 50px;
+   }
+   
+   .optionsFilter{
+       color: #eae9ec;
+       margin-right: 10px;
+       font-family: "Gloria Hallelujah";
+   }
+
+   #characters {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);       
+   }
+
+   #characters div {
+       margin: 10px 10px;
+       
+   }
+
+   .show {
+       display:none
+   }
+
+
