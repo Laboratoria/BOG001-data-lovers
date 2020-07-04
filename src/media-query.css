@@ -42,13 +42,9 @@
 /*--------- Estilos Desktop ---------*/
 @media only screen and (min-device-width:1025px){
     
-    #nav-mobile-tablet ul { display: none;}
+    #nav-mobile-tablet, .search-filter, .polygon-title h1 {display: none;}
 
-    .search-filter, .polygon-title h1 {display: none;}
-
-    #nav-desktop {
-        display: block;
-        height: 100px;}
+    #nav-desktop {display: block;}
 
     #nav-desktop ul {
         display: flex;
@@ -56,25 +52,22 @@
     }
 
     #nav-desktop li {
-        margin: 2% 0 2% 0;
         list-style-type: none;
         font-family:'PT Serif';
         font-size: 2em;
     }
 
-   #nav-desktop a {
-        text-decoration: none;
-    }
+   #nav-desktop a {text-decoration: none; color:#F2E5D6;}
 
-    .champions-rails {
-        margin-top: 45px;
-        color: chartreuse;;
+   #nav-desktop .home-play {padding-top:7px}
+
+   #nav-desktop .champions-rails {
+        padding-top: 30px;
+        padding-bottom: 10px;
     }
 
     .title-page-desktop {display: block;}
-
     h1.title-page-desktop {font-size: 2.5em;}
-
     p.title-page-desktop {font-size: 1.8em; padding-top: 1%;}
     
     .card-champions {padding: 3% 0 15% 0;}
