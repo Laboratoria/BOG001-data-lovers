@@ -8,20 +8,18 @@
   </head>
   <body>
     <header>
-      <div id="backHome">
-        <img
-          src="https://media.cdn.adultswim.com/uploads/20191004/191041327281-r&m4_Hero_000000.png"
-          alt="Encabezado"
-        />
+      <div class="container">
+        <div class="row">
+          <div id="backHome" class="header-bar">
+            <img src="/src/image/ricknmorty-header.png" alt="Encabezado" />
+          </div>
+          <nav id="navBar" class="nav-bar">
+            <input type="button" value="characters" />
+            <input type="button" value="episodes" />
+            <input type="button" value="locations" id="bttnLocations" />
+          </nav>
+        </div>
       </div>
-      <!-- <div>
-        <img src="/src/image/Logo.jpeg" alt="Logotipo" />
-      </div> -->
-      <nav class="nav-bar">
-        <input type="button" value="characters" />
-        <input type="button" value="episodes" />
-        <input type="button" value="locations" id="bttnLocations" />
-      </nav>
     </header>
 
     <main>
@@ -81,55 +79,55 @@
             <div class="trend-loc-row slider-container">
               <section class="slider-content">
                 <div>
-                  <h2>Rick Sanchez</h2>
+                  <h2>Citadele of Ricks</h2>
                   <img
-                    src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/1.jpeg"
-                    alt="Rick Sanchez"
+                    src="/src/image/Citadel of Ricks.jpg"
+                    alt="Citadele of Ricks"
                   />
                 </div>
               </section>
               <section class="slider-content">
                 <div>
-                  <h2>Morty Smith</h2>
+                  <h2>Unity's Planet</h2>
                   <img
-                    src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg"
-                    alt="Morty Smith"
+                    src="/src/image/Unity's Planet.jpg"
+                    alt="Unity's Planet"
                   />
                 </div>
               </section>
               <section class="slider-content">
                 <div>
-                  <h2>Summer Smith</h2>
+                  <h2>Pawn Shop Planet</h2>
                   <img
-                    src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/3.jpeg"
-                    alt="Summer Smith"
+                    src="/src/image/Pawn Shop Planet.jpg"
+                    alt="Pawn Shop Planet"
                   />
                 </div>
               </section>
               <section class="slider-content">
                 <div>
-                  <h2>Beth Smith</h2>
+                  <h2>Galactic Federation Prison</h2>
                   <img
-                    src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/4.jpeg"
-                    alt="Beth Smith"
+                    src="/src/image/Galactic Federation Prison.jpg"
+                    alt="Galactic Federation Prison"
                   />
                 </div>
               </section>
               <section class="slider-content">
                 <div>
-                  <h2>Jerry Smith</h2>
+                  <h2>Blips and Chitz</h2>
                   <img
-                    src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/5.jpeg"
-                    alt="Jerry Smith"
+                    src="/src/image/Blips and Chitz.jpg"
+                    alt="Blips and Chitz"
                   />
                 </div>
               </section>
               <section class="slider-content">
                 <div>
-                  <h2>Rick Sanchez</h2>
+                  <h2>Citadele of Ricks</h2>
                   <img
-                    src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/1.jpeg"
-                    alt="Rick Sanchez"
+                    src="/src/image/Citadel of Ricks.jpg"
+                    alt="Citadele of Ricks"
                   />
                 </div>
               </section>
@@ -138,9 +136,113 @@
           <div class="all-loc-col">
             <h1>All Locations</h1>
             <div class="all-loc-row">
-              <a href="">Link</a>
+              <!-- <input type="button" value="SortData" id="routSortData" /> -->
+              <!-- <input type="button" value="FilterData" /> -->
             </div>
           </div>
+        </div>
+      </div>
+      <div id="sortingView" style="display: none;">
+        <div class="row-az">
+          <div class="col-az">
+            <!-- <p>ALL LOCATIONS</p> -->
+            <div class="row-az">
+              <ul class="alphabethic-list-container">
+                <li class="alphabethic-letter">
+                  <input type="button" value="A" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="B" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="C" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="D" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="E" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="F" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="G" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="H" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="I" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="J" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="K" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="L" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="M" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="N" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="O" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="P" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="Q" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="R" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="S" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="T" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="U" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="V" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="W" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="X" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="Y" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="Z" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input type="button" value="OTHERS" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="page-button">
+          <input id="returnPageLink" type="button" value="prev" />
+          <span id="pagesNumber">0</span>
+          <input id="advancePageLink" type="button" value="next" />
+        </div> -->
+        <div id="showAll" class="col"></div>
+        <div class="page-button">
+          <input id="returnPageLink" type="button" value="prev" />
+          <span id="pagesNumber">0</span>
+          <input id="advancePageLink" type="button" value="next" />
         </div>
       </div>
     </main>

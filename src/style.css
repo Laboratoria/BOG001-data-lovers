@@ -17,6 +17,15 @@
   --background-color-mobile: #151619;
   --background-color-header: #ffffff0d;
 }
+.header-bar {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.header-bar img {
+  height: 150px;
+  width: 350px;
+}
 
 body {
   font-family: var(--font-titles);
@@ -95,6 +104,44 @@ img {
 .slider-content h2 {
   font-weight: 300;
   text-align: center;
+}
+
+.alphabethic-list-container {
+  display: flex;
+  list-style: none;
+  overflow-x: scroll;
+  padding: 0;
+}
+/* .alphabethic-letter {
+  background: #bed1cf;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 15px 17px;
+} */
+.alphabethic-letter input {
+  text-decoration: none;
+  color: #088488;
+  font-family: var(--font-titles);
+}
+
+.alphabethic-letter:not(:last-child) {
+  margin-right: 1px;
+}
+
+.page-button input {
+  font-family: var(--font-titles);
+}
+
+.card-location {
+  padding: 20px;
+}
+
+.card-location h2 {
+  font-size: var(--font-size2);
+}
+.card-location img {
+  width: 200px;
+  height: 150px;
 }
 
 .col-1200-66,
