@@ -13,14 +13,18 @@ let contador = 1;
 let intervalo = 3000;
 let pageNumber = 0;
 let uniqueLocations = [];
+let uniqueLocationsAndUrl = [];
 const advancePageLink = document.getElementById("advancePageLink");
 const returnPageLink = document.getElementById("returnPageLink");
 const pagesNumber = document.getElementById("pagesNumber");
+const pagesControl = document.getElementById("pagesControl");
+const showAllLocations = document.getElementById("showAllLocations");
 // const cardContainer = document.getElementById("cardContainer");
 
 advancePageLink.addEventListener("click", advancePage);
 returnPageLink.addEventListener("click", returnPage);
 bttnLocations.addEventListener("click", showLocation);
+showAllLocations.addEventListener("click", returnAllLocations);
 backHome.addEventListener("click", returnHome);
 // routSortData.addEventListener("click", showAZ);
 window.addEventListener("resize", resizeWindow);
@@ -29,10 +33,46 @@ let width = 0;
 
 window.onload = function () {
   loadLocations();
+  let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+  // console.log(alphabet);
+  for (let i = 0; i < alphabet.length; i++) {
+    let buttonId = "btn" + alphabet[i];
+    let button = document.getElementById(buttonId);
+    button.addEventListener("click", function () {
+      filterList(alphabet[i]);
+      pagesControl.style.display = "none";
+      showAllLocations.style.display = "block";
+    });
+  }
 };
+function returnAllLocations() {
+  showAllLocations.style.display = "none";
+  pagesControl.style.display = "block";
+  let listLocations = loadLocationsPage(0);
+
+  let showAll = document.getElementById("showAll");
+  showAll.innerHTML =
+    `<div class="row" style="justify-content: center;">` +
+    listLocations +
+    `</div>`;
+}
+
+function filterList(letter) {
+  let filterLocations = uniqueLocations.filter(function (locationName) {
+    return locationName.charAt(0) === letter;
+  });
+  let listLocations = loadFilterLocations(filterLocations);
+
+  let showAll = document.getElementById("showAll");
+  showAll.innerHTML =
+    `<div class="row" style="justify-content: center;">` +
+    listLocations +
+    `</div>`;
+}
 
 function showLocation() {
   firstPage.style.display = "none";
+  showAllLocations.style.display = "none";
   locations.style.display = "block";
   sortingView.style.display = "block";
   width = individualSlider[0].clientWidth;
@@ -57,9 +97,19 @@ function loadLocations() {
   for (let i = 0; i < data.results.length; i++) {
     if (uniqueLocations.includes(data.results[i].location.name) === false) {
       uniqueLocations.push(data.results[i].location.name);
+      fetch(data.results[i].location.url).then((response) => {
+        if (response.ok) {
+          response.json().then((json) => {
+            let obj = {};
+            obj["name"] = data.results[i].location.name;
+            obj["dimension"] = json.dimension;
+            obj["type"] = json.type;
+            uniqueLocationsAndUrl.push(obj);
+          });
+        }
+      });
     }
   }
-
   uniqueLocations = uniqueLocations.sort();
   uniqueLocations.pop();
   listLocations = loadLocationsPage(0);
@@ -73,11 +123,50 @@ function loadLocations() {
 
 function loadLocationsPage(startIndex) {
   let listLocations = "";
+  let dimension = "";
+  let type = "";
   for (let i = startIndex; i < startIndex + 6; i++) {
-    listLocations += `<div class="card-location" id="${"card" + i}">
+    for (let j = 0; j < uniqueLocationsAndUrl.length; j++) {
+      if (uniqueLocationsAndUrl[j].name === uniqueLocations[i]) {
+        dimension = uniqueLocationsAndUrl[j].dimension;
+        type = uniqueLocationsAndUrl[j].type;
+      }
+    }
+    listLocations += `<div class="card-location " id="${"card" + i}">
               <h2>${uniqueLocations[i]}</h2>
+              <div class="flip-card">
+            <div id="cardInner" class="flip-card-inner" onclick="
+              if(this.style.transform === 'rotateY(180deg)'){
+                this.style.transform = 'rotateY(0deg)';
+              }else{
+                this.style.transform = 'rotateY(180deg)';
+              }
+            " >
+              <div class="flip-card-front">
               <img src="${
                 "/src/image/" + uniqueLocations[i] + ".jpg"
+              }" onerror="this.src='/src/image/error404.svg';" />
+              </div>
+              <div class="flip-card-back">
+                <h1>${uniqueLocations[i]}</h1>
+                <p>Dimension: ${dimension.replace("Dimension", "")}</p>
+                <p>Type: ${type}</p>
+              </div>
+            </div>
+          </div>
+              
+            </div>`;
+  }
+  return listLocations;
+}
+
+function loadFilterLocations(filterLocations) {
+  let listLocations = "";
+  for (let i = 0; i < filterLocations.length; i++) {
+    listLocations += `<div class="card-location" id="${"card" + i}">
+              <h2>${filterLocations[i]}</h2>
+              <img src="${
+                "/src/image/" + filterLocations[i] + ".jpg"
               }" onerror="this.src='/src/image/error404.svg';" />
             </div>`;
   }
