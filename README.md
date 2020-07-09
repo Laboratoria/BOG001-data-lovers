@@ -1,5 +1,10 @@
 # Data Lovers
 
+## Duplas
+* Lorena Ripe
+* Mayerly Bernal
+
+
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
