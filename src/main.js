@@ -5,7 +5,7 @@ const locations = document.getElementById("locations");
 const firstPage = document.getElementById("firstPage");
 const bttnLocations = document.getElementById("bttnLocations");
 const backHome = document.getElementById("backHome");
-const routSortData = document.getElementById("routSortData");
+// const routSortData = document.getElementById("routSortData");
 const sortingView = document.getElementById("sortingView");
 let slider = document.querySelector(".slider-container");
 let individualSlider = document.querySelectorAll(".slider-content");
@@ -20,6 +20,7 @@ const pagesNumber = document.getElementById("pagesNumber");
 const pagesControl = document.getElementById("pagesControl");
 const showAllLocations = document.getElementById("showAllLocations");
 // const cardContainer = document.getElementById("cardContainer");
+let width = 0;
 
 advancePageLink.addEventListener("click", advancePage);
 returnPageLink.addEventListener("click", returnPage);
@@ -28,8 +29,6 @@ showAllLocations.addEventListener("click", returnAllLocations);
 backHome.addEventListener("click", returnHome);
 // routSortData.addEventListener("click", showAZ);
 window.addEventListener("resize", resizeWindow);
-
-let width = 0;
 
 window.onload = function () {
   loadLocations();
@@ -104,6 +103,7 @@ function loadLocations() {
             obj["name"] = data.results[i].location.name;
             obj["dimension"] = json.dimension;
             obj["type"] = json.type;
+            listLocations = loadLocationsPage(0);
             uniqueLocationsAndUrl.push(obj);
           });
         }
@@ -112,7 +112,6 @@ function loadLocations() {
   }
   uniqueLocations = uniqueLocations.sort();
   uniqueLocations.pop();
-  listLocations = loadLocationsPage(0);
 
   let showAll = document.getElementById("showAll");
   showAll.innerHTML =
