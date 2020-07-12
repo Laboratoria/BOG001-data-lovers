@@ -1,6 +1,6 @@
 
-import { name } from './data.js';
+import { personajes } from './data.js';
 
-import data from './data/rickandmorty/rickandmorty.js';
+import informacion from './data/rickandmorty/rickandmorty.js';
 
-console.log( name , data);
+console.log( informacion );

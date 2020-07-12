@@ -1,5 +1,5 @@
-export default {
-  "info": {
+export default function informacion() { 
+  "info":  {
       "count": 493,
       "pages": 25,
       "next": "https://rickandmortyapi.com/api/character/?page=2",
@@ -11162,4 +11162,5 @@ export default {
           "created": "2018-05-22T17:51:07.373Z"
       }
   ]
+
 };
