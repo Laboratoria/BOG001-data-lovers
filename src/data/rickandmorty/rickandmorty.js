@@ -1,4 +1,4 @@
-export default function informacion() { 
+export default  { 
   "info":  {
       "count": 493,
       "pages": 25,

@@ -2,9 +2,7 @@
 
 //const aNumeroTarjeta = Array.from(creditCardNumber1);
 
-import informacion from "./data/rickandmorty/rickandmorty"
-
-export const personajes = () => { informacion.map(informacion => `${informacion.name} ${informacion.status}`);
+export const personajes = () => {
   return 'personajes';
 };
 
