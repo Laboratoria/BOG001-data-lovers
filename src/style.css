@@ -1,0 +1,64 @@
+/* ---------- Footer-pie de pagina ----------*/
+.container-footer{
+	width: 100%;
+	padding: 40px 0;
+	background-color: rgba(245, 245, 245, 0.89);
+	margin-top: 40px;
+}
+
+.container-footer footer{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.container-footer footer .logo-footer{
+	text-align: center;
+}
+
+.container-footer footer .logo-footer img{
+	width: 100px;
+}
+
+.container-footer footer .redes-footer{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.container-footer footer .redes-footer .icon-red-footer{
+	font-size: 20px;
+	margin: 20px;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	color: #a2a2a2;
+}
+
+.container-footer footer .redes-footer .fa-facebook:hover{
+	background: #41579a;
+	color: #fff;
+}
+
+.container-footer footer .redes-footer .fa-twitter:hover{
+	background: #4470f7;
+	color: #fff;
+}
+
+.container-footer footer .redes-footer .fa-instagram:hover{
+	background:linear-gradient(to top right, #FCDE30,#E9712A,#D2313B,#AE4198,#7540A1,#5443A8);
+	color: #fff;
+}
+.container-footer footer hr{
+	margin-top: 20px;
+	border: none;
+	height: 2px;
+	background: #a8a8a87a;
+}
+.container-footer footer h4{
+	text-align: center;
+	margin-top: 40px;
+	color: #8e8e8e;
+	font-weight: 500;
+}
