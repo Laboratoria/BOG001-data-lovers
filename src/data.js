@@ -1,9 +1,12 @@
 // estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
-};
+import data from './data/lol/lol.js';
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+let champions = Object.values(data.data);
+console.log(champions);
+alert("Hello! I am an alert box!!");
+
+export let list=() => {
+    return champions;
+}
+ export default {list};
