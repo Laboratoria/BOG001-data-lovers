@@ -1,3 +1,21 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(200.6deg, #353A40 -3.02%, #121416 93.08%);
+  width: auto;
+  height: 600px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  width: 200px;
+}
+
 /* ---------- Footer-pie de pagina ----------*/
 .container-footer{
 	width: 100%;

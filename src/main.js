@@ -1,3 +1,4 @@
+
 import data from "./data.js";
 
 let champions = data.list();
@@ -16,3 +17,4 @@ champions.forEach(element => {
 });
 
  
+
