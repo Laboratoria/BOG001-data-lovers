@@ -40,7 +40,7 @@
     <section id="containerCharacters">
         
         <div id=filtersBar>
-            <div id="filter" class="containersOptionsFilter">
+            <div id="btnFilter" class="containersOptionsFilter">
                 <h2 class="optionsFilter">Filter</h2>
                 <img src="images/filter2.png" id="imgFilter" class="imgOptionsFilter">
             </div>
@@ -51,13 +51,38 @@
             </div>
         </div>
 
+        <div id="filtersOptions" class="filtersOptions hide">
+            
+            <div id="specie" class="options">
+                <p>Specie</p>
+                <label for="Human"> <input type="checkbox" class="specie" value="Human" id="Human" name="specie"> Human</label>
+                <label for="Alien"> <input type="checkbox" class="specie" value="Alien" id="Alien" name="specie"> Alien</label>
+                <label for="Poopybutthole"> <input type="checkbox" class="specie" value="Poopybutthole" id="Poopybutthole" name="specie"> Poopybutthole</label>
+                <label for="Humanoid"> <input type="checkbox" class="specie" value="Humanoid" id="Humanoid" name="specie"> Humanoid</label>
+                <label for="Mytholog"> <input type="checkbox" class="specie" value="Mytholog" id="Mytholog" name="specie"> Mytholog</label>
+                <label for="Animal"> <input type="checkbox" class="specie" value="Animal" id="Animal" name="specie"> Animal</label>
+                <label for="Vampire"> <input type="checkbox" class="specie" value="Vampire" id="Vampire" name="specie"> Vampire</label>
+                <label for="Robot"> <input type="checkbox" class="specie" value="Robot" id="Robot" name="specie"> Robot</label>
+                <label for="Cronenberg"> <input type="checkbox" class="specie" value="Cronenberg" id="Cronenberg" name="specie"> Cronenberg</label>
+                <label for="Disease"> <input type="checkbox" class="specie" value="Disease" id="Disease" name="specie"> Disease</label>
+                <label for="Parasite"> <input type="checkbox" class="specie" value="Parasite" id="Parasite" name="specie"> Parasite</label>                               
+            </div>
+
+            <div id="gender" class="options">
+                <p>Gender</p>
+                <label for="female"><input type="radio" id="female" name="gender"> Female</label>
+                <label for="male"><input type="radio" id="male" name="gender"> Male</label>
+            </div>
+            
+        </div>
+        
         <div id="characters">
       
         </div>
 
-        <div>
-            <button id="previus" class="previusNextIcons" class="show" type="button"><img src="images/previus.png"></button>
-            <button id="next" class="previusNextIcons" type="button"><img src="images/next.png"></button>
+        <div id="btnPrevNext">            
+            <img src="images/previus.png" id="previus" class="previusNextIcons">
+            <img src="images/next.png" id="next" class="previusNextIcons">
         </div>
         
     </section> 

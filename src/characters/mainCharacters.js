@@ -1,134 +1,268 @@
 import data from "../data/rickandmorty/rickandmorty.js";
+import filterFunctions from "./dataCharacters.js";
 
-//Efecto parallax
+// ----------------Efecto parallax-------------------
 let rick = document.getElementById("containerRick");
-window.addEventListener('scroll',function(){    
+window.addEventListener('scroll',function(){
     var value = window.scrollY;
     rick.style.bottom = value * -0.5 + 'px';
 });
 
-//Paginación
+//-------------Ocultar o mostrar ventana de filtros al darle click al icono de filtro 
+let btnFilter = document.getElementById("btnFilter");
+let filtersOptions = document.getElementById("filtersOptions");
+btnFilter.addEventListener('click',function(){
+    filtersOptions.classList.toggle('hide');
+});
 
-//URL base 
-let url = window.location.href;
-let separatorUrl = url.split('?');
-let firstPage = separatorUrl[0];
-// window.location.assign(firstPage + "?page=0");
-console.log(firstPage);
-
+// ------------- Cambio de pagina ---------------
 let btnPrevius = document.getElementById("previus");
 let btnNext = document.getElementById("next");
-let parameterUrl = window.location.search;
-let currentPage;
-let separatorParameter = parameterUrl.split('=');
-let page = parseInt (separatorParameter[1]);
-console.log(separatorParameter);
-console.log(parameterUrl);
-console.log(page);
+let containerBtnPreviusNext = document.getElementById("btnPrevNext");
 
-//boton siguiente
-btnNext.addEventListener('click',function() {
-    nextPag(firstPage, parameterUrl, page);
-});
+// containerBtnPreviusNext.addEventListener('click', function(e){
+        
+//     console.log(e.Target);
 
+// });
+
+//Evento boton siguiente
+btnNext.addEventListener('click', setFilterParameters);
+
+//Evento boton atras
+btnPrevius.addEventListener('click', setFilterParameters);
+
+// Almacenar los checkbox   
+let arrChkbSpecies = document.querySelectorAll('.specie');
+let optionsFilter = document.getElementById('specie');
+//Declaración de variables
+const dataGroup = data.results;
+const characters = document.getElementById("characters");
+
+// Almacenar la URL base 
+let urlFull = window.location.href;
+let separatorUrl = urlFull.split('?');
+let urlBase = separatorUrl[0];
+
+//Obtener numero pagina
+const parameterUrl = separatorUrl[1];
+let page;
+if (parameterUrl !== undefined){
+    const separatorParameter = parameterUrl.split('=');
+    page = parseInt (separatorParameter[1]);
+} else {
+    page = 0
+}
+
+//Función para establecer los parametros de los filtros activos 
+function setFilterParameters (event) {
+    console.log(event.currentTarget.id);
+
+    let filterParmeters = []; 
+    let initParameter = "&filter="
+    let arrActiveFilters = filterFunctions.detectCheck(arrChkbSpecies);
+    arrActiveFilters.forEach(element => {
+        filterParmeters.push(initParameter + element);
+    });
+    if (event.currentTarget.id == "next"){
+        nextPag(urlBase, page, filterParmeters);
+    } 
+} 
 
 //funcion pagina siguiente:
-const nextPag = (firstPage, parameterUrl, page) => {
-    if (parameterUrl == "") {
-        //page = 1
-        currentPage = firstPage + "?page=1";
-        window.location.href = currentPage;
-    } else {
-        // let separatorParameter = parameterUrl.split('=');
-        // console.log(separatorParameter);
-        let nextPage = page + 1;
-        console.log(nextPage);
-        let currentParameter = "?page=" + nextPage;
-        console.log(currentParameter);
-        currentPage = firstPage + currentParameter;
-        console.log(currentPage);
-        window.location.href = currentPage;
-        console.log(window.location.href);
-    };
-};
+const nextPag = (urlBase, page, filterParameters) => {    
+    const nextPage = page + 1;
+    const nextParameterPage = "?page=" + nextPage;    
+    const nextUrl = urlBase + nextParameterPage + filterParameters; //+ lo que me devuelva la funcion de parametros de filtros
+    const a = nextUrl.replace(",", "&", "gi");
+    const newNextUrl = a.replace("&&", "&", "gi");
+    window.location.href = newNextUrl;
+}; 
+
+checkFilters(arrChkbSpecies);
+//Función que lea parametros de filtros en URL y activarlos en pagina actual
+function checkFilters (checkbox) {
+    const currentUrl = window.location.search.substring(1);
+    const arrUrlParameters = currentUrl.split("&");
+    console.log(arrUrlParameters);
+    let arrParam = [];
+    let arrFilterParam = [];
+    arrUrlParameters.forEach(element => {
+        arrParam.push(element.split('='));   
+    });
+    for (let index = 1; index < arrParam.length; index++) {            
+        const element = arrParam[index];
+        arrFilterParam.push(element[1]);
+    }
+    console.log(arrParam);
+    console.log(arrFilterParam); // arr filtros en parametros
+    console.log(checkbox[1]);
+    checkbox.forEach(chb => {
+        arrFilterParam.forEach(filterParameter => {
+            if (chb.value == filterParameter){
+                chb.checked = true;
+                console.log("true")
+            }
+        });
+    }); 
 
 
-//Boton anterior
-btnPrevius.addEventListener('click',function() {
-    previusPag(firstPage, parameterUrl, page);
-});
 
 //funcion pagina anterior:
-const previusPag = (firstPage, parameterUrl, page) => {
-    if (parameterUrl == "") {
-        //page = 1
-                
-    } else {
-        btnPrevius.classList.remove('show');
-        let separatorParameter = parameterUrl.split('=');
-        console.log(separatorParameter);
-        let previusPage = page - 1;
-        console.log(previusPage);
-        let currentParameter = "?page=" + previusPage;
-        console.log(currentParameter);
-        currentPage = firstPage + currentParameter;
-        console.log(currentPage);
-        window.location.href = currentPage;
-        console.log(window.location.href);
-    };
+const previusPag = (urlBase, page) => {   
+    btnPrevius.classList.remove('hide');       
+    const previusPage = page - 1;
+    const currentParameter = "?page=" + previusPage;
+    const nextUrl = urlBase + currentParameter;
+    window.location.href = nextUrl;
 };
 
 
+//Esconder boton de atras
+if (page==0) {
+    btnPrevius.classList.add('hide'); 
+}
 
-// if (page == 0) {
-//     window.location.href = firstPage;
+//Evento para detectar cuando se selecciona o se quita un filtro 
+optionsFilter.addEventListener('change', filter);
+// let pageData;
+
+function filter() {
+    let filters = filterFunctions.detectCheck(arrChkbSpecies);
+    console.log(filters);
+    let dataFiltered = filterFunctions.filterData(dataGroup,filters);
+    console.log(dataFiltered);
+    let pagination = filterFunctions.paginate(page, dataFiltered);
+    renderData(pagination);
+}
+
+let prueba = document.getElementById('characters');
+filter();
+// prueba.innerHTML = "";
+function renderData(pageData) {    
+    prueba.innerHTML = "";
+    let fragment = document.createDocumentFragment();    
+    pageData.forEach(function(current){
+        let image = current.image;
+        let name = current.name;
+        let gender = current.gender;
+        let species = current.species;
+        let origin = current.origin.name;
+
+        let containerCharacter = document.createElement('div');
+        let imgCharacter = document.createElement('img');
+        let containerInfoCharacter = document.createElement('div');
+        let textName = document.createElement('h4');
+        let textGender = document.createElement('h5');
+        let textSpecies = document.createElement('h5');
+        let textOrigin = document.createElement('h5');
+        
+        containerInfoCharacter.setAttribute("id","infoCharacter");
+        containerInfoCharacter.setAttribute("class","infoCharac");
+        containerCharacter.setAttribute("class","containerCharacter");
+        imgCharacter.setAttribute("src",image);
+        imgCharacter.setAttribute("class","imgCharacter");
+        textName.textContent = name;
+        textGender.textContent = gender;
+        textSpecies.textContent = species;
+        textOrigin.textContent = origin;
+
+        containerCharacter.appendChild(imgCharacter);
+        containerInfoCharacter.appendChild(textName);
+        containerInfoCharacter.appendChild(textGender);
+        containerInfoCharacter.appendChild(textSpecies);
+        containerInfoCharacter.appendChild(textOrigin);
+        containerCharacter.appendChild(containerInfoCharacter);
+
+        
+        fragment.appendChild(containerCharacter);    
+    })
+
+    characters.appendChild(fragment);
+}
+
+
+//------------------------------------------------------------------------
+//Funcion para mostrar la info de personajes cuando se de click en la img
+// renderData();
+// let infoCharac = getElementsByClassName("infoCharac");
+// let imgCharacter = getElementsByClassName("imgCharacter");
+// infoCharac.classList.add.hide;
+// imgCharacter.addEventListener('click', function(){
+//     showInfo(imgCharacter, infoCharac);
+// });
+// function showInfo(img, info) {
+//     img.classList.add('info')
+//     info.classList.remove('hide')
 // }
-
-// //Fragment HTML
-
+//--------------------------------------------------------------------------
 
 
-const characters = document.getElementById("characters");
-let dataGroup = data.results;
-let x = page * 10;
-let y = x + 10;
-let arrData = dataGroup.slice(x,y);
-// let arrData = dataGroup.slice(0,10);
+
+// console.log(fragment);
+
+//filtro especie
+let specieHuman = document.getElementById('Human');
+let specie = document.getElementsByClassName('specie');
+let divCheckbox = document.getElementById('specie');
+// console.log(specieHuman);
+
+// specieHuman.addEventListener ('change', function (event) {
+//     if (specieHuman.checked) {
+//         alert("estoy check");
+//     } else {
+//         alert("NO estoy checked");
+//     }
+// });
 
 
-let fragment = document.createDocumentFragment();
-let dataMap = arrData.map(function(current, index){
-    let image = arrData[index].image;
-    let name = arrData[index].name;
-    let gender = arrData[index].gender;
-    let species = arrData[index].species;
-    let origin = arrData[index].origin.name;
-
-    let containerCharacters = document.createElement('div');
-    let imgCharacter = document.createElement('img');
-    let textName = document.createElement('p');
-    let textGender = document.createElement('p');
-    let textSpecies = document.createElement('p');
-    let textOrigin = document.createElement('p');
-
-    imgCharacter.setAttribute("src",image);
-    textName.textContent = name;
-    textGender.textContent = gender;
-    textSpecies.textContent = species;
-    textOrigin.textContent = origin;
-
-    characters.appendChild(containerCharacters);
-    containerCharacters.appendChild(imgCharacter);
-    containerCharacters.appendChild(textName);
-    containerCharacters.appendChild(textGender);
-    containerCharacters.appendChild(textSpecies);
-    containerCharacters.appendChild(textOrigin);
 
 
-    fragment.appendChild(containerCharacters);
+
+// function detectCheck() {
+//     filtersChecked = [];
+//     arrChkbSpecies.forEach(function (element){
+//         if (element.checked) {
+//             filtersChecked.push(element.value);
+//        }
+//     });    
+//     console.log(filtersChecked);
+//     xdf(filtersChecked);
+//     // return filtersChecked;
+// } 
+// console.log(filtersChecked);
+
+// let prueba = detectCheck();
+
+
+// filtersChecked.forEach(element => {
+//     dataGroup.species === filtersChecked.element
+//     console.log(element);
     
-    return fragment
-})
-characters.appendChild(fragment);
+// });
 
-console.log(fragment);
+
+// arrChkbSpecies.forEach(function(element, i){
+//     element.addEventListener ('change', function (event) {
+//         console.log(element);
+//         if (element.checked) {
+//             filtersChecked.push(element.value);
+//             console.log(filtersChecked);
+//         } 
+//     });
+// });
+
+// dataGroup.forEach(element => {
+//     if (element.species === "Human"){
+
+//     }
+// });
+// const arrSpecie = data.results[index].species
+// console.log(data.results[index].species);
+
+// arrSpecie.forEach(function(element){
+    
+// });
+
+}
+
