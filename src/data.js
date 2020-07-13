@@ -1,22 +1,12 @@
 // estas funciones son de ejemplo
 
-//export const example = () => {
-//  return 'example';
-//};
+import data from './data/lol/lol.js';
 
-//export const anotherExample = () => {
-//  return 'OMG';
-//};
-import champions from './data/lol/lol.js';
+let champions = Object.values(data.data);
+console.log(champions);
+alert("Hello! I am an alert box!!");
 
-let dataChampions = Object.values(champions.data);
-
-console.log(dataChampions);
-
-export let list = () => {
-  return dataChampions;
+export let list=() => {
+    return champions;
 }
-
-export default {
-  list
-};
+ export default {list};
