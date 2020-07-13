@@ -14,5 +14,3 @@ champions.forEach(element => {
     championContainer.appendChild(image);
     contenedor.appendChild(championContainer);
 });
-
- 
