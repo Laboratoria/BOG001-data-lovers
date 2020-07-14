@@ -1,0 +1,150 @@
+@media (max-width:800px){   
+    .media{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+    }  
+
+    .buttonMenu {        
+        margin-right: 20px;
+    }
+
+    .pokemonContainer{  
+        margin-top: 380px;  
+    }
+}
+@media (max-width:710px){
+    .media{
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }    
+    .buttonMenu {   
+        width: 70px;
+        padding: 4px;  
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    #logo{
+        width: 55%;
+        height: auto;
+    }
+    .logocontainer{
+        margin: auto;
+        text-align: center;
+    }
+
+    .inputSearch{
+        margin: auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }    
+
+    .pokemonContainer{  
+        max-width: 80%;
+        margin-top: 370px;  
+        padding-bottom: 10%;     
+    }
+        
+    .pokemonsCard{
+        max-width: 45%;
+        width: 45%;
+        height: 45%;              
+    }
+    
+}
+
+@media (max-width:547px){
+    header{
+        height: 250px;
+    }
+    .media{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .containerPokeMenu{
+        display: flex;
+        width: 170px;
+        height: 40px;
+        /*margin:auto;*/
+    }
+
+    .iconMenu {
+        display:block;
+        background: url("./images/pokeball.png");
+        background-size: cover;
+        background-position: center;
+        /*margin:auto;*/
+        border: none;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: block;
+        flex-direction: column;
+        margin-left: 5px; 
+        height: 0;
+        transition: height .3s linear;
+        overflow: hidden;
+        cursor: pointer;       
+    }
+
+    .appear {
+        height: 130px;
+    }
+
+    .buttonMenu {        
+        padding: 4px;
+        width: 70px;
+        margin-bottom: 1px;
+        font-size: 18px;
+        color:rgba(11, 26, 65, 0.91);
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+        border-radius: 6px 6px 6px 6px;
+    }
+
+    .buttonMenu:hover {
+        background: #a89009;
+    }
+
+    .pokemonsCard{
+        max-width: 130%;
+        width: 130%;
+        height: 130%;              
+    }
+
+    .pokemonContainer{  
+        max-width: 50%;
+        margin-top: 300px; 
+    }
+
+    .inputSearch{
+        display: inline-block;
+    }
+    
+    .search {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 0;
+    }
+    .input {
+        float: left;
+    }
+}
+
+@media (max-width:380px){
+    .socialMedia{
+        margin-left: 0;
+    }
+
+    .pokemonContainer{  
+        margin-top: 310px; 
+    }
+
+}
+
