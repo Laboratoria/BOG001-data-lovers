@@ -1,16 +1,19 @@
 import data from "./data.js";
 
 let champions = data.list();
-console.log(data)  
+console.log(data)
 
 champions.forEach(element => {
-    console.log(element.name)
-    let contenedor = document.getElementById("champions");
-    let championContainer = document.createElement("div");
-    championContainer.classList.add("champions");
-    championContainer.appendChild(document.createTextNode(element.name))
-    const image = document.createElement("img");
-    image.src = element.img;
-    championContainer.appendChild(image);
-    contenedor.appendChild(championContainer);
+  console.log(element.name)
+  let contenedor = document.getElementById("champions");
+  let championContainer = document.createElement("div");
+  championContainer.classList.add("champions");
+  const image = document.createElement("img");
+  //const imgContenedor = document.createElement("div");
+  image.classList.add("imgContenedor");
+  image.src = element.img;
+  championContainer.appendChild(image);
+  championContainer.appendChild(document.createTextNode(element.name));
+  championContainer.appendChild(document.createTextNode("Rol:" + "" + element.tags));
+  contenedor.appendChild(championContainer);
 });
