@@ -1,6 +1,10 @@
-/* eslint-disable no-unused-vars */
-import { example } from './data.js';
+//import { example } from './data.js';	
+//console.log( example );
 
-import data from './data/rickandmorty/rickandmorty.js';
+import data from './data/rickandmorty/rickandmorty.js';	
+const datos = data.results
 
-//console.log(example, data);
+console.log( datos);
+
+
+
