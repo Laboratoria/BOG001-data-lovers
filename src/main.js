@@ -61,43 +61,23 @@ function printPokemons (pokemonGroup) {
 };
     
 function pokemonInfo (pokemon) {
+
     root.style.display = 'none';
+    let infoCard = document.querySelector("#infoCard");  
+    let evolution;
+    let preEvolution;
 
-    let infoCard = document.querySelector("#infoCard");
-    /*let evolution = document.createElement("div");
-    let infoEvolution = document.createElement("span");
-    infoEvolution.innerHTML = `${pokemonEvo.name}`;
-    evolution.appendChild(infoEvolution);
-    infoCard.appendChild(evolution);
-
-       if (pokemon.next_evolution) {
-            pokemon.next_evolution.forEach(pokemonEvo => {
-               return pokemonEvo.name;
+    if (pokemon.next_evolution) {
+        pokemon.next_evolution.forEach(pokemonEvo => {
+             evolution = pokemonEvo.name;
         }); 
     }
-    console.log(evolution);*/
-    /*if (pokemon.prev_evolution) {
-            pokemon.prev_evolution.forEach(pokemonEvo => {
-                console.log(pokemonEvo.name);
-            });
-    }*/
-    function pokemonEvolution() {
-        if (pokemon.next_evolution) {
-            pokemon.next_evolution.forEach(pokemonEvo => {
-                return pokemonEvo.name;
-            }); 
-        }
-        if (pokemon.prev_evolution) {
-            pokemon.prev_evolution.forEach(pokemonEvo => {
-                return pokemonEvo.name;
-            });
-        }
-    }; /*console.log(pokemonEvolution());*/
-
-
-
-
-
+    if (pokemon.prev_evolution) {
+        pokemon.prev_evolution.forEach(pokemonEvo => {
+            preEvolution = pokemonEvo.name;
+        }); 
+        
+    }
 
     infoCard.innerHTML=
     `<div class="template_nameId">
@@ -128,12 +108,11 @@ function pokemonInfo (pokemon) {
         </div>
     </div>
     <div class="evolutions">
-        <h3>Evolutions:</h3>
-        <p><span></span></p>
+        <h3>Evoluciones</h3>
+        <p><span> Preevolución: ${preEvolution} Evolución:${evolution} </span></p>
 
        
     </div>`
-    /*console.log(infoCard);*/
 
 };
 
@@ -141,40 +120,6 @@ function pokemonInfo (pokemon) {
 printPokemons(pokeDex);
 
    
-    //let title = document.createElement("h1");
-    //title.appendChild(pokemon.name);
-    /*document.body.appendChild(container);
-    container.innerHTML= pokemon.id;
-    console.log(pokemon.id);
-
-    /*
-    const pokemonElement = document.createElement('div');*/
-    //div o root ?
-
-//let arrayData = ["juan", "maria", "julian"];
-
-
-// import data from './data/;
-/*const dataPokemon = data.pokemon;
-const root = document.querySelector("#root");
-const pokemonsNumber = 151;
-
-const findPokemons = () => {
-    for (let i=1; i<= pokemonsNumber; i++) {
-        dataPokemon(i);
-    };
-    const pokemon = {};
-    pokemon['name'] = dataPokemon.name;
-    pokemon['id'] = dataPokemon.id;
-    pokemon['img'] = dataPokemon.img;
-    pokemon['type'] = dataPokemon.type;
-};
-
-function pokemonCard(pokemon) {
-    const pokemonElement = document.createElement('div');
-    //div o root ?
-}*/
-
 
 
 

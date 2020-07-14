@@ -136,6 +136,12 @@
         float: left;
     }
 }
+.infocard{
+    margin-top: 350px;
+    border-color: 3px blue solid;
+    width: 250px;
+    height: 150px;
+}
 
 @media (max-width:380px){
     .socialMedia{
