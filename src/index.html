@@ -5,6 +5,17 @@
     <title>The Citadel</title>
 
     <link rel="stylesheet" href="style.css" />
+    <script>
+      function rotateCard(cardId) {
+        let card = document.getElementById(cardId);
+
+        if (card.style.transform === "rotateY(180deg)") {
+          card.style.transform = "rotateY(0deg)";
+        } else {
+          card.style.transform = "rotateY(180deg)";
+        }
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -13,12 +24,20 @@
           <div id="backHome" class="header-bar">
             <img src="/src/image/ricknmorty-header.png" alt="Encabezado" />
           </div>
-          <nav id="navBar" class="nav-bar">
-            <input type="button" value="characters" />
-            <input type="button" value="episodes" />
-            <input type="button" value="locations" id="bttnLocations" />
-          </nav>
+          <div>
+            <img
+              id="menuHamburguer"
+              src="/src/image/hamburguer-menu.png"
+              alt="icono menu"
+              style="width: 50px; height: 50px;"
+            />
+          </div>
         </div>
+        <nav id="navBar" class="hidde-button">
+          <input type="button" value="characters" />
+          <input type="button" value="episodes" />
+          <input type="button" value="locations" id="bttnLocations" />
+        </nav>
       </div>
     </header>
 
@@ -74,75 +93,21 @@
       </div>
       <div id="locations" class="cont-locations" style="display: none;">
         <div class="row-locations">
-          <div class="trend-loc-col trend-container">
-            <h1>Trending Locations</h1>
-            <div class="trend-loc-row slider-container">
-              <section class="slider-content">
-                <div>
-                  <h2>Citadele of Ricks</h2>
-                  <img
-                    src="/src/image/Citadel of Ricks.jpg"
-                    alt="Citadele of Ricks"
-                  />
-                </div>
-              </section>
-              <section class="slider-content">
-                <div>
-                  <h2>Unity's Planet</h2>
-                  <img
-                    src="/src/image/Unity's Planet.jpg"
-                    alt="Unity's Planet"
-                  />
-                </div>
-              </section>
-              <section class="slider-content">
-                <div>
-                  <h2>Pawn Shop Planet</h2>
-                  <img
-                    src="/src/image/Pawn Shop Planet.jpg"
-                    alt="Pawn Shop Planet"
-                  />
-                </div>
-              </section>
-              <section class="slider-content">
-                <div>
-                  <h2>Galactic Federation Prison</h2>
-                  <img
-                    src="/src/image/Galactic Federation Prison.jpg"
-                    alt="Galactic Federation Prison"
-                  />
-                </div>
-              </section>
-              <section class="slider-content">
-                <div>
-                  <h2>Blips and Chitz</h2>
-                  <img
-                    src="/src/image/Blips and Chitz.jpg"
-                    alt="Blips and Chitz"
-                  />
-                </div>
-              </section>
-              <section class="slider-content">
-                <div>
-                  <h2>Citadele of Ricks</h2>
-                  <img
-                    src="/src/image/Citadel of Ricks.jpg"
-                    alt="Citadele of Ricks"
-                  />
-                </div>
-              </section>
-            </div>
-          </div>
           <div class="all-loc-col">
             <h1>All Locations</h1>
             <div class="all-loc-row"></div>
           </div>
         </div>
       </div>
-      <input id="showAllLocations" type="button" value="All" />
+      <input
+        id="showAllLocations"
+        type="button"
+        value="All"
+        style="display: none;"
+      />
       <div id="sortingView" style="display: none;">
         <div class="row-az">
-          <div class="col-az">
+          <div class="col-az a-z-bar">
             <div class="row-az">
               <ul class="alphabethic-list-container">
                 <li class="alphabethic-letter">
@@ -230,24 +195,7 @@
             </div>
           </div>
         </div>
-        <div id="showAll" class="col">
-          <!-- <div class="flip-card">
-            <div id="cardInner" class="flip-card-inner">
-              <div class="flip-card-front">
-                <img
-                  src="/src/image/Citadel of Ricks.jpg"
-                  alt="Avatar"
-                  style="width: 300px; height: 300px;"
-                />
-              </div>
-              <div class="flip-card-back">
-                <h1>John Doe</h1>
-                <p>Architect & Engineer</p>
-                <p>We love that guy</p>
-              </div>
-            </div>
-          </div> -->
-        </div>
+        <div id="showAll" class="col"></div>
         <div id="pagesControl" class="page-button">
           <input id="returnPageLink" type="button" value="prev" />
           <span id="pagesNumber">0</span>
