@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,700&display=swap');
+
 
 body {
   margin: 0;
   padding: 0;
   background: linear-gradient(200.6deg, #353A40 -3.02%, #121416 93.08%);
   width: auto;
-  height: 600px;
+  font-family: 'Open Sans', sans-serif;
+  color: #D6E1EF;
 }
 
 header {
@@ -16,67 +19,114 @@ header img {
   width: 200px;
 }
 
+/* --------Styles Cards Champions--------*/
+
+.championsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.champions {
+  width: 165px;
+  height: 212px;
+  background: linear-gradient(204.67deg, #353A40 -49.23%, #121416 93.08%);
+  box-shadow: 36px 8px 64px rgba(2, 3, 3, 0.7), inset -8px -6px 80px rgba(248, 249, 249, 0.02);
+  border-radius: 24px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  display: block;
+}
+
+main p {
+  width: 80%;
+  margin: auto;
+}
+
+.champions img {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  width: 74px;
+  height: 74px;
+  text-align: center;
+  object-fit: cover;
+}
+
+.champions .imgContenedor {
+  background: linear-gradient(324.43deg, #32383E -114.89%, #17191C 124.22%);
+  box-shadow: 12px 12px 58px rgba(0, 0, 0, 0.74), -12px -10px 32px rgba(195, 200, 205, 0.12);
+  filter: blur(8px);
+  border-radius: 93px;
+}
+
 /* ---------- Footer-pie de pagina ----------*/
-.container-footer{
-	width: 100%;
-	padding: 40px 0;
-	background-color: rgba(245, 245, 245, 0.89);
-	margin-top: 40px;
+.container-footer {
+  width: 100%;
+  padding: 40px 0;
+  background-color: rgba(245, 245, 245, 0.89);
+  margin-top: 40px;
 }
 
-.container-footer footer{
-	max-width: 1200px;
-	margin: auto;
+.container-footer footer {
+  max-width: 1200px;
+  margin: auto;
 }
 
-.container-footer footer .logo-footer{
-	text-align: center;
+.container-footer footer .logo-footer {
+  text-align: center;
 }
 
-.container-footer footer .logo-footer img{
-	width: 100px;
+.container-footer footer .logo-footer img {
+  width: 100px;
 }
 
-.container-footer footer .redes-footer{
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-}
-.container-footer footer .redes-footer .icon-red-footer{
-	font-size: 20px;
-	margin: 20px;
-	width: 50px;
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 100%;
-	color: #a2a2a2;
+.container-footer footer .redes-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.container-footer footer .redes-footer .fa-facebook:hover{
-	background: #41579a;
-	color: #fff;
+.container-footer footer .redes-footer .icon-red-footer {
+  font-size: 20px;
+  margin: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #a2a2a2;
 }
 
-.container-footer footer .redes-footer .fa-twitter:hover{
-	background: #4470f7;
-	color: #fff;
+.container-footer footer .redes-footer .fa-facebook:hover {
+  background: #41579a;
+  color: #fff;
 }
 
-.container-footer footer .redes-footer .fa-instagram:hover{
-	background:linear-gradient(to top right, #FCDE30,#E9712A,#D2313B,#AE4198,#7540A1,#5443A8);
-	color: #fff;
+.container-footer footer .redes-footer .fa-twitter:hover {
+  background: #4470f7;
+  color: #fff;
 }
-.container-footer footer hr{
-	margin-top: 20px;
-	border: none;
-	height: 2px;
-	background: #a8a8a87a;
+
+.container-footer footer .redes-footer .fa-instagram:hover {
+  background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+  color: #fff;
 }
-.container-footer footer h4{
-	text-align: center;
-	margin-top: 40px;
-	color: #8e8e8e;
-	font-weight: 500;
+
+.container-footer footer hr {
+  margin-top: 20px;
+  border: none;
+  height: 2px;
+  background: #a8a8a87a;
+}
+
+.container-footer footer h4 {
+  text-align: center;
+  margin-top: 40px;
+  color: #8e8e8e;
+  font-weight: 500;
 }
