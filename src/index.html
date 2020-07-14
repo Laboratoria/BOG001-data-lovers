@@ -2,11 +2,58 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Data Lovers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="respstyle.css" /> 
   </head>
   <body>
-    <div id="root"></div>
+    <header>
+      <div class="headerContainer">
+        <div class="logocontainer">
+          <img src="./images/pokemonLogo.png" alt="" id="logo">
+        </div>
+        <div class="inputSearch">
+          <input type="button" class="search">
+          <input type="text" class="input" placeholder="Name or Number">
+        </div>
+      </div>
+      <nav>
+        <div class="containerPokeMenu">
+            <span class="iconMenu" id="buttonPokeMenu"></span>
+            <ul class="menu" id="menu">
+              <li>
+                <a href="" class="buttonMenu">Menu</a>
+              </li>
+              <li>
+                <a href="" class="buttonMenu">About us</a>
+              </li>
+              <li>
+                <a href="" class="buttonMenu">Contact us</a>
+              </li>
+            </ul>
+        </div>
+        <div class="socialMedia">
+            <a href=""><img src="./images/logo facebook.png" alt="" class="media"></a>
+            <a href=""><img src="./images/logo instagram.png" alt="" class="media"></a>
+            <a href=""><img src="./images/logo twiter.png"  alt="" class="media"></a>
+            <a href=""><img src="./images/logo whatsapp.png" alt="" class="media"></a>
+        </div>
+    </nav>
+    </header>
+    <main>
+      <div id="root" class="pokemonContainer"></div>
+      <div id="infoCard" class="infocard"></div> 
+    </main>
+    <footer>
+      <div class="contentFooter">
+        <div class="copyright">
+          <p>Copyright© 2020; Todos los derechos reservados</p>
+          <p> Marcela Gonzalez & Johanna Alvarez</p>
+        </div>
+      </div>
+    </footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>
