@@ -266,7 +266,6 @@ function returnPage() {
 function advancePage() {
   movePage("+");
 }
-
 function movePage(symbol) {
   if (pageNumber === 0 && symbol === "-") {
     return;
