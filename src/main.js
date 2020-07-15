@@ -19,15 +19,6 @@ characterButtons.innerHTML = names;
 //${onclick = information }
 
 
- let information = [];
-for ( var i = 0; i < personajes.length; i++)
-{
-    information += `<img src="${personajes[i].image } "><p> Name: ${personajes[i].name}
-    </p> <p> Gender: ${personajes[i].gender} </p> <p> Species: ${personajes[i].species} </p>
-    <p> Origin: ${personajes[i].origin.name} </p> <id= ${personajes[i].id } > </button>`
-};
-var characterCards = document.getElementById("pruebaTarjeta");
-characterCards.innerHTML= information; 
 
 
 
