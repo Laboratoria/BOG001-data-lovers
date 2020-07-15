@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;  
     box-sizing:border-box;  
+    font-family: "Gloria Hallelujah";
+    color: #eae9ec;
+
    }
    
    body{
@@ -10,11 +13,27 @@
        font-family: "Gloria Hallelujah";
    }
    /* Estilos header */
+
    #navbar{
-       background-color: #ffffff0d;
+       /* background-color: #ffffff0d; */
+       background-color: #1e1f1e;
        position: absolute;
        z-index: 5;
-       width: 100%;    
+       width: 100%;
+       transition: all 0.3s ease-in-out;
+   }
+
+   #menu{
+    width: 50px;
+    margin: 15px 20px;
+    }
+
+   #containerCategoriesMenu{
+       /* background-color: #151619; */
+       font-size: 25px;
+       text-align: center;
+       padding: 20px 0;
+       z-index: 8;
    }
    
    #hero h1 {
@@ -33,12 +52,7 @@
    
    #three {
        letter-spacing: 7px;
-   }
-   
-   #menu{
-       width: 50px;
-       margin: 15px 20px;
-   }
+   }  
    
    #hero {
        /* background-image: url("/images/lab.jpg"); */
@@ -135,14 +149,14 @@
         position: sticky;
         top: 70px;
         z-index: 7;
-        /* display:grid;
-        grid-template-columns: repeat(2, 1fr); */
+       
     }
     
     .options {
         display: grid;
         margin: 20px 30px;
         font-family: "Gloria Hallelujah";
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .options p {

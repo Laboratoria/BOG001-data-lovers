@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing:border-box;  
+    font-family: "Gloria Hallelujah";
+    color: #eae9ec;
+}
+
+#navbar{
+    background-color: #1e1f1e;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+#containerCategoriesMenu{
+    /* background-color: #151619; */
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 8;
+}
+
+#menu{
+    width: 50px;
+    margin: 15px 20px;
+}
