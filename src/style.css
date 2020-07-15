@@ -13,6 +13,7 @@ body {
 header {
   display: flex;
   justify-content: center;
+  height: auto;
 }
 
 header img {
@@ -59,7 +60,7 @@ main p {
 .champions .imgContenedor {
   background: linear-gradient(324.43deg, #32383E -114.89%, #17191C 124.22%);
   box-shadow: 12px 12px 58px rgba(0, 0, 0, 0.74), -12px -10px 32px rgba(195, 200, 205, 0.12);
-  filter: blur(8px);
+  /*filter: blur(8px);*/
   border-radius: 93px;
 }
 
