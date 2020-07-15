@@ -224,3 +224,11 @@ footer{
     font-size: 15px;
     text-align: center;
 }
+.template_image{
+    border: 5px solid blue;
+    width: 130px;
+}
+.containerInfoCard{
+    border:5px solid blue;
+    
+}

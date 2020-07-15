@@ -63,57 +63,60 @@ function printPokemons (pokemonGroup) {
 function pokemonInfo (pokemon) {
 
     root.style.display = 'none';
-    let infoCard = document.querySelector("#infoCard");  
+    let infoCard = document.querySelector("#infoCard"); 
     let evolution;
     let preEvolution;
+    
+    console.log(evolution);
+    
 
     if (pokemon.next_evolution) {
-        pokemon.next_evolution.forEach(pokemonEvo => {
-             evolution = pokemonEvo.name;
-        }); 
+        evolution = pokemon.next_evolution.map(pokemonEvo => 
+            pokemonEvo.name)
     }
+
     if (pokemon.prev_evolution) {
-        pokemon.prev_evolution.forEach(pokemonEvo => {
-            preEvolution = pokemonEvo.name;
-        }); 
-        
-    }
+        preEvolution = pokemon.prev_evolution.map(pokemonEvo => 
+       pokemonEvo.name)   
+    }   
 
     infoCard.innerHTML=
-    `<div class="template_nameId">
-        <h2>${pokemon.name} Num. ${pokemon.num}</h2>
-    </div >
-    <div class="template_image">
-        <img class="template_imagePokemon" src= "${pokemon.img}">
-    </div>
-    <div>
-        <h2>Type</h2>
-        <p><span>${pokemon.type}</span></p>
-    </div>
-    <div class="template_traits">
-        <div>
-            <h3>Traits</h3>
-            <p>Height: <span>${pokemon.height}</span></p>
-            <p>Weight: <span>${pokemon.weight}</span></p>
-            <p>Candy: <span>${pokemon.candy}</span></p>
-            <p>Candy count: <span>${pokemon.candy_count}</span></p>
+    `<div class= "containerInfoCard">
+        <div class="template_nameId">
+            <h2>${pokemon.name} Num. ${pokemon.num}</h2>
+        </div >
+        <div class="template_image">
+            <img class="template_imagePokemon" src= "${pokemon.img}">
         </div>
         <div>
-            <h3>Multipliers:</h3>
-            <p><span>${pokemon.multipliers}</span></p>
+            <h2>Type</h2>
+            <p><span>${pokemon.type}</span></p>
         </div>
-        <div>
-            <h2>Weaknesses:</h2>
-            <p><span>${pokemon.weaknesses}</span></p>
+        <div class="template_traits">
+            <div>
+                <h3>Traits</h3>
+                <p>Height: <span>${pokemon.height}</span></p>
+                <p>Weight: <span>${pokemon.weight}</span></p>
+                <p>Candy: <span>${pokemon.candy}</span></p>
+                <p>Candy count: <span>${pokemon.candy_count}</span></p>
+            </div>
+            <div>
+                <h3>Multipliers:</h3>
+                <p><span>${pokemon.multipliers}</span></p>
+            </div>
+            <div>
+                <h2>Weaknesses:</h2>
+                <p><span>${pokemon.weaknesses}</span></p>
+            </div>
         </div>
-    </div>
-    <div class="evolutions">
-        <h3>Evoluciones</h3>
-        <p><span> Preevolución: ${preEvolution} Evolución:${evolution} </span></p>
-
-       
+        <div class="evolutions">
+            <h3>Evolutions</h3>
+            <h4> Pre-evolution:</h4> 
+            <p><span>${preEvolution}</span></p>
+            <h4> Evolution:</h4> 
+            <p><span>${evolution}</span></p>
+        </div>
     </div>`
-
 };
 
 
