@@ -10,7 +10,7 @@ export default {
       name: "Aatrox",
       title: "the Darkin Blade",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt570145160dd39dca/5db05fa8347d1c6baa57be25/RiotX_ChampionList_aatrox.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
       blurb:
@@ -62,7 +62,7 @@ export default {
       name: "Ahri",
       title: "the Nine-Tailed Fox",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Ahri.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg",
       blurb:
@@ -114,7 +114,7 @@ export default {
       name: "Akali",
       title: "the Fist of Shadow",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Akali.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt80ff58fe809777ff/5db05fa8adc8656c7d24e7d6/RiotX_ChampionList_akali.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg",
       blurb:
@@ -166,7 +166,7 @@ export default {
       name: "Alistar",
       title: "the Minotaur",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Alistar.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3b366925d2fd8fdb/5db05fa856458c6b3fc1750b/RiotX_ChampionList_alistar.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg",
       blurb:
@@ -218,7 +218,7 @@ export default {
       name: "Amumu",
       title: "the Sad Mummy",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Amumu.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt40dfbe48a61c439f/5db05fa80b39e86c2f83dbf9/RiotX_ChampionList_amumu.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg",
       blurb:
@@ -270,7 +270,7 @@ export default {
       name: "Anivia",
       title: "the Cryophoenix",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Anivia.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3d24a1482453088a/5db05fa8df78486c826dcce8/RiotX_ChampionList_anivia.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_0.jpg",
       blurb:
@@ -322,7 +322,7 @@ export default {
       name: "Annie",
       title: "the Dark Child",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Annie.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt28c708665427aef6/5db05fa89481396d6bdd01a6/RiotX_ChampionList_annie.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_0.jpg",
       blurb:
@@ -374,7 +374,7 @@ export default {
       name: "Ashe",
       title: "the Frost Archer",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Ashe.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt943aae038e2dee98/5db05fa8e9effa6ba5295f91/RiotX_ChampionList_ashe.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg",
       blurb:
@@ -426,7 +426,7 @@ export default {
       name: "Aurelion Sol",
       title: "The Star Forger",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/AurelionSol.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt5dd3569fc67d6664/5db05fa8bd24496c390ae4d8/RiotX_ChampionList_aurelionsol.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/AurelionSol_0.jpg",
       blurb:
@@ -478,7 +478,7 @@ export default {
       name: "Azir",
       title: "the Emperor of the Sands",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Azir.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt0e3f847946232167/5db05fa889fb926b491ed7ff/RiotX_ChampionList_azir.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_0.jpg",
       blurb:
@@ -530,7 +530,7 @@ export default {
       name: "Bard",
       title: "the Wandering Caretaker",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Bard.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltbbe3ce0c0ae1305b/5db05fb23a326d6df6c0e7b3/RiotX_ChampionList_bard.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_0.jpg",
       blurb:
@@ -582,7 +582,7 @@ export default {
       name: "Blitzcrank",
       title: "the Great Steam Golem",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Blitzcrank.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd7ef7e56ce1fe17b/5db05fb26af83b6d7032c8f8/RiotX_ChampionList_blitzcrank.jpg?quality=90&width=250g",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_0.jpg",
       blurb:
@@ -634,7 +634,7 @@ export default {
       name: "Brand",
       title: "the Burning Vengeance",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Brand.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc8ca2e9bba653dda/5db05fb2dc674266df3d5d30/RiotX_ChampionList_brand.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Brand_0.jpg",
       blurb:
@@ -686,7 +686,7 @@ export default {
       name: "Braum",
       title: "the Heart of the Freljord",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Braum.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd140e30fa86d6ddd/5db05fb2242f426df132f95d/RiotX_ChampionList_braum.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Braum_0.jpg",
       blurb:
@@ -738,7 +738,7 @@ export default {
       name: "Caitlyn",
       title: "the Sheriff of Piltover",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Caitlyn.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt014f4b6fc9bacd10/5db05fb00b39e86c2f83dbff/RiotX_ChampionList_caitlyn.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_0.jpg",
       blurb:
@@ -790,7 +790,7 @@ export default {
       name: "Camille",
       title: "the Steel Shadow",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Camille.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt413fcd7681fe0773/5db05fb089fb926b491ed805/RiotX_ChampionList_camille.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Camille_0.jpg",
       blurb:
@@ -842,7 +842,7 @@ export default {
       name: "Cassiopeia",
       title: "the Serpent's Embrace",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Cassiopeia.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte189be8189da97ea/5db05fb1bd24496c390ae4de/RiotX_ChampionList_cassiopeia.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_0.jpg",
       blurb:
@@ -894,7 +894,7 @@ export default {
       name: "Cho'Gath",
       title: "the Terror of the Void",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Chogath.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt4dfb71de3ddc8166/5db05fb13a326d6df6c0e7ad/RiotX_ChampionList_chogath.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg",
       blurb:
@@ -946,7 +946,7 @@ export default {
       name: "Corki",
       title: "the Daring Bombardier",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Corki.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltdd918c4d0a86347a/5db05fb1df78486c826dccee/RiotX_ChampionList_corki.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Corki_0.jpg",
       blurb:
@@ -998,7 +998,7 @@ export default {
       name: "Darius",
       title: "the Hand of Noxus",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Darius.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt38b52be4a2cb1004/5db05fb19481396d6bdd01ac/RiotX_ChampionList_darius.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_0.jpg",
       blurb:
@@ -1050,7 +1050,7 @@ export default {
       name: "Diana",
       title: "Scorn of the Moon",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Diana.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt56570083d2a5e20e/5db05fbc823d426762825fdf/RiotX_ChampionList_diana.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_0.jpg",
       blurb:
@@ -1102,7 +1102,7 @@ export default {
       name: "Draven",
       title: "the Glorious Executioner",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Draven.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc0be728e4cbb8f2a/5db05fbc89fb926b491ed80b/RiotX_ChampionList_draven.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_0.jpg",
       blurb:
@@ -1154,7 +1154,7 @@ export default {
       name: "Dr. Mundo",
       title: "the Madman of Zaun",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/DrMundo.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte88a3d7e9e408904/5db05fbce9effa6ba5295f99/RiotX_ChampionList_drmundo.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/DrMundo_0.jpg",
       blurb:
@@ -1206,7 +1206,7 @@ export default {
       name: "Ekko",
       title: "the Boy Who Shattered Time",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Ekko.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf22ba7e6328e4376/5db05fbd242f426df132f963/RiotX_ChampionList_ekko.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_0.jpg",
       blurb:
@@ -1258,7 +1258,7 @@ export default {
       name: "Elise",
       title: "the Spider Queen",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Elise.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltfe21ff2ddb84d5d1/5db05fbd0b39e86c2f83dc05/RiotX_ChampionList_elise.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Elise_0.jpg",
       blurb:
@@ -1310,7 +1310,7 @@ export default {
       name: "Evelynn",
       title: "the Widowmaker",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Evelynn.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte24b4c6ec1beebb9/5db05fbddf78486c826dccf4/RiotX_ChampionList_evelynn.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg",
       blurb:
@@ -1362,7 +1362,7 @@ export default {
       name: "Ezreal",
       title: "the Prodigal Explorer",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Ezreal.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt60f687c95425f73f/5db05fbd2dc72966da746704/RiotX_ChampionList_ezreal.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg",
       blurb:
@@ -1414,7 +1414,7 @@ export default {
       name: "Fiddlesticks",
       title: "the Harbinger of Doom",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/FiddleSticks.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1151ac1242311053/5db05fbca6470d6ab91ce594/RiotX_ChampionList_fiddlesticks.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiddlesticks_0.jpg",
       blurb:
@@ -1466,7 +1466,7 @@ export default {
       name: "Fiora",
       title: "the Grand Duelist",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Fiora.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt935dd149b2617ac8/5db05fbcdc674266df3d5d36/RiotX_ChampionList_fiora.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_0.jpg",
       blurb:
@@ -1518,7 +1518,7 @@ export default {
       name: "Fizz",
       title: "the Tidal Trickster",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Fizz.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt6000fa69e03c25c0/5db05fbc56458c6b3fc17513/RiotX_ChampionList_fizz.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_0.jpg",
       blurb:
@@ -1570,7 +1570,7 @@ export default {
       name: "Galio",
       title: "the Sentinel's Sorrow",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Galio.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt5890d1ab5c8be01f/5db05fc6823d426762825fe5/RiotX_ChampionList_galio.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Galio_0.jpg",
       blurb:
@@ -1622,7 +1622,7 @@ export default {
       name: "Gangplank",
       title: "the Saltwater Scourge",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Gangplank.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltfdff3781ccfb2a5c/5db05fc689fb926b491ed811/RiotX_ChampionList_gangplank.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gangplank_0.jpg",
       blurb:
@@ -1674,7 +1674,7 @@ export default {
       name: "Garen",
       title: "The Might of Demacia",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Garen.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte41a162aed9339b7/5db05fc60b39e86c2f83dc0d/RiotX_ChampionList_garen.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg",
       blurb:
@@ -1726,7 +1726,7 @@ export default {
       name: "Gnar",
       title: "the Missing Link",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Gnar.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blta80f79dd96ee5d30/5db05fc6df78486c826dcd00/RiotX_ChampionList_gnar.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_0.jpg",
       blurb:
@@ -1778,7 +1778,7 @@ export default {
       name: "Gragas",
       title: "the Rabble Rouser",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Gragas.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt795841adba722f85/5db05fc43a326d6df6c0e7b9/RiotX_ChampionList_gragas.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_0.jpg",
       blurb:
@@ -1830,7 +1830,7 @@ export default {
       name: "Graves",
       title: "the Outlaw",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Graves.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt2e7cd286d7b6182e/5e9a59c245a2a97194a1d4c7/RiotX_ChampionList_graves-cigar.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Graves_0.jpg",
       blurb:
@@ -1883,7 +1883,7 @@ export default {
       title: "the Shadow of War",
       champkey: "Hecarim",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Hecarim.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blteb9ce5304ec48e19/5db05fc5df78486c826dccfa/RiotX_ChampionList_hecarim.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_0.jpg",
       blurb:
@@ -1935,7 +1935,7 @@ export default {
       name: "Heimerdinger",
       title: "the Revered Inventor",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Heimerdinger.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd30d85446d154070/5db05fc57d28b76cfe4397ef/RiotX_ChampionList_heimerdinger.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_0.jpg",
       blurb:
@@ -1987,7 +1987,7 @@ export default {
       name: "Illaoi",
       title: "the Kraken Priestess",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Illaoi.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc44e90a5547120a2/5db05fc5347d1c6baa57be2b/RiotX_ChampionList_illaoi.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Illaoi_0.jpg",
       blurb:
@@ -2039,7 +2039,7 @@ export default {
       name: "Irelia",
       title: "the Will of the Blades",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Irelia.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf5f2b8de93870aef/5db05fcea6470d6ab91ce59a/RiotX_ChampionList_irelia.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_0.jpg",
       blurb:
@@ -2091,7 +2091,7 @@ export default {
       name: "Ivern",
       title: "the Green Father",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Ivern.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt5fff73e1df1873de/5db05fce7d28b76cfe4397f5/RiotX_ChampionList_ivern.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_0.jpg",
       blurb:
@@ -2143,7 +2143,7 @@ export default {
       name: "Janna",
       title: "the Storm's Fury",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Janna.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt02bf5329f8abe45d/5db05fcedf78486c826dcd06/RiotX_ChampionList_janna.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Janna_0.jpg",
       blurb:
@@ -2195,7 +2195,7 @@ export default {
       name: "Jarvan IV",
       title: "the Exemplar of Demacia",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/JarvanIV.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt5898626d7016d222/5db05fcfdc674266df3d5d3c/RiotX_ChampionList_jarvaniv.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/JarvanIV_0.jpg",
       blurb:
@@ -2247,7 +2247,7 @@ export default {
       name: "Jax",
       title: "Grandmaster at Arms",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Jax.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt6b301613598c3f17/5db05fcf89fb926b491ed81d/RiotX_ChampionList_jax.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_0.jpg",
       blurb:
@@ -2299,7 +2299,7 @@ export default {
       name: "Jayce",
       title: "the Defender of Tomorrow",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Jayce.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt51557edc36ad88a1/5db05fcf0b39e86c2f83dc13/RiotX_ChampionList_jayce.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_0.jpg",
       blurb:
@@ -2351,7 +2351,7 @@ export default {
       name: "Jhin",
       title: "the Virtuoso",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Jhin.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltbf6c70d9272a5a2a/5db05fcfe9d7526ab429e532/RiotX_ChampionList_jhin.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_0.jpg",
       blurb:
@@ -2403,7 +2403,7 @@ export default {
       name: "Jinx",
       title: "the Loose Cannon",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Jinx.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blta2cba784d9fad4b8/5db05fce89fb926b491ed817/RiotX_ChampionList_jinx.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg",
       blurb:
@@ -2455,7 +2455,7 @@ export default {
       name: "Kalista",
       title: "the Spear of Vengeance",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Kalista.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltb7f0196921c74e8c/5db05fcee9d7526ab429e52c/RiotX_ChampionList_kalista.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_0.jpg",
       blurb:
@@ -2507,7 +2507,7 @@ export default {
       name: "Karma",
       title: "the Enlightened One",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Karma.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt39748c7b67252d6f/5db05fd70b39e86c2f83dc19/RiotX_ChampionList_karma.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_0.jpg",
       blurb:
@@ -2559,7 +2559,7 @@ export default {
       name: "Karthus",
       title: "the Deathsinger",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Karthus.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt69b8fad9d1e78514/5db05fd7df78486c826dcd0c/RiotX_ChampionList_karthus.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karthus_0.jpg",
       blurb:
@@ -2611,7 +2611,7 @@ export default {
       name: "Kassadin",
       title: "the Void Walker",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Kassadin.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt20773f2f67e00a74/5db05fd7bd24496c390ae4ea/RiotX_ChampionList_kassadin.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kassadin_0.jpg",
       blurb:
@@ -2663,7 +2663,7 @@ export default {
       name: "Katarina",
       title: "the Sinister Blade",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Katarina.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltb73e3edb5937676a/5db05fd7823d426762825feb/RiotX_ChampionList_katarina.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_0.jpg",
       blurb:
@@ -2715,7 +2715,7 @@ export default {
       name: "Kayle",
       title: "The Judicator",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Kayle.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt2c7675893b5c76bc/5db05fd77d28b76cfe4397fb/RiotX_ChampionList_kayle.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_0.jpg",
       blurb:
@@ -2767,7 +2767,7 @@ export default {
       name: "Kennen",
       title: "the Heart of the Tempest",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Kennen.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc87932e656d1076e/5db05fd6adc8656c7d24e7dc/RiotX_ChampionList_kennen.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_0.jpg",
       blurb:
@@ -2819,7 +2819,7 @@ export default {
       name: "Kha'Zix",
       title: "the Voidreaver",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Khazix.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt363d7d62846ffc87/5db05fd6e9effa6ba5295f9f/RiotX_ChampionList_khazix.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Khazix_0.jpg",
       blurb:
@@ -2871,7 +2871,7 @@ export default {
       name: "Kindred",
       title: "The Eternal Hunters",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Kindred.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc0f0007660b7a07b/5db05fd689fb926b491ed823/RiotX_ChampionList_kindred.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg",
       blurb:
@@ -2923,7 +2923,7 @@ export default {
       name: "Kled",
       title: "the Cantankerous Cavalier",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Kled.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1670a0dd8fd5edca/5db05fd66e8b0c6d038c5ca8/RiotX_ChampionList_kled.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kled_0.jpg",
       blurb:
@@ -2975,7 +2975,7 @@ export default {
       name: "Kog'Maw",
       title: "the Mouth of the Abyss",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/KogMaw.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltaf483c8f812369fa/5db05fde823d426762825ff1/RiotX_ChampionList_kogmaw.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg",
       blurb:
@@ -3027,7 +3027,7 @@ export default {
       name: "LeBlanc",
       title: "the Deceiver",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Leblanc.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt4aaf881bb90b509f/5db05fde6e8b0c6d038c5cae/RiotX_ChampionList_leblanc.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_0.jpg",
       blurb:
@@ -3079,7 +3079,7 @@ export default {
       name: "Lee Sin",
       title: "the Blind Monk",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/LeeSin.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt075d278529811445/5db05fde6af83b6d7032c8fe/RiotX_ChampionList_leesin.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_0.jpg",
       blurb:
@@ -3131,7 +3131,7 @@ export default {
       name: "Leona",
       title: "the Radiant Dawn",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Leona.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt8d46ada03ea1da8c/5db05fdf347d1c6baa57be31/RiotX_ChampionList_leona.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_0.jpg",
       blurb:
@@ -3183,7 +3183,7 @@ export default {
       name: "Lissandra",
       title: "the Ice Witch",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Lissandra.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt08f869e897566c5b/5db05fdf7d28b76cfe439801/RiotX_ChampionList_lissandra.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_0.jpg",
       blurb:
@@ -3235,7 +3235,7 @@ export default {
       name: "Lucian",
       title: "the Purifier",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Lucian.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3db0d62352b0b4f1/5db05fdf6e8b0c6d038c5cb4/RiotX_ChampionList_lucian.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_0.jpg",
       blurb:
@@ -3287,7 +3287,7 @@ export default {
       name: "Lulu",
       title: "the Fae Sorceress",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Lulu.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt424f04814efb3aca/5db05fdfe9d7526ab429e538/RiotX_ChampionList_lulu.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_0.jpg",
       blurb:
@@ -3339,7 +3339,7 @@ export default {
       name: "Lux",
       title: "the Lady of Luminosity",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Lux.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltb94b4161d8022c45/5db05fdfe9d7526ab429e53c/RiotX_ChampionList_lux.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg",
       blurb:
@@ -3391,7 +3391,7 @@ export default {
       name: "Malphite",
       title: "Shard of the Monolith",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Malphite.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltb94b4161d8022c45/5db05fdfe9d7526ab429e53c/RiotX_ChampionList_lux.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malphite_0.jpg",
       blurb:
@@ -3443,7 +3443,7 @@ export default {
       name: "Malzahar",
       title: "the Prophet of the Void",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Malzahar.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd58a3a2bf5035834/5db05fde0b39e86c2f83dc1f/RiotX_ChampionList_malzahar.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malzahar_0.jpg",
       blurb:
@@ -3495,7 +3495,7 @@ export default {
       name: "Maokai",
       title: "the Twisted Treant",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Maokai.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt757d0e8855d51e03/5db05fe72140ec675d68f4a1/RiotX_ChampionList_maokai.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg",
       blurb:
@@ -3547,7 +3547,7 @@ export default {
       name: "Master Yi",
       title: "the Wuju Bladesman",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/MasterYi.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt46e861d7e6c0ab0c/5db05fe8df78486c826dcd12/RiotX_ChampionList_masteryi.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_0.jpg",
       blurb:
@@ -3599,7 +3599,7 @@ export default {
       name: "Miss Fortune",
       title: "the Bounty Hunter",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/MissFortune.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf36fa7fd7ecb59fb/5db05fe89481396d6bdd01b8/RiotX_ChampionList_missfortune.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_0.jpg",
       blurb:
@@ -3651,7 +3651,7 @@ export default {
       name: "Wukong",
       title: "the Monkey King",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/MonkeyKing.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltaf44673e1a16af30/5db05fe87d28b76cfe439807/RiotX_ChampionList_monkeyking.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg",
       blurb:
@@ -3703,7 +3703,7 @@ export default {
       name: "Mordekaiser",
       title: "the Iron Revenant",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Mordekaiser.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt2392a60ff2a2d726/5db05fe8242f426df132f96d/RiotX_ChampionList_mordekaiser.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_0.jpg",
       blurb:
@@ -3755,7 +3755,7 @@ export default {
       name: "Morgana",
       title: "Fallen Angel",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Morgana.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_0.jpg",
       blurb:
@@ -3807,7 +3807,7 @@ export default {
       name: "Nami",
       title: "the Tidecaller",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Nami.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt13bec39f49dc35ee/5db05fe956458c6b3fc1751f/RiotX_ChampionList_nami.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nami_0.jpg",
       blurb:
@@ -3859,7 +3859,7 @@ export default {
       name: "Nasus",
       title: "the Curator of the Sands",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Nasus.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt20a4b154b1756b56/5db05fe7a6470d6ab91ce5a0/RiotX_ChampionList_nasus.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg",
       blurb:
@@ -3911,7 +3911,7 @@ export default {
       name: "Nautilus",
       title: "the Titan of the Depths",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Nautilus.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf945a57aa16cea57/5db05fe7347d1c6baa57be37/RiotX_ChampionList_nautilus.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_0.jpg",
       blurb:
@@ -3963,7 +3963,7 @@ export default {
       name: "Nidalee",
       title: "the Bestial Huntress",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Nidalee.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt5a2da06d413f7c15/5db05ff1df78486c826dcd18/RiotX_ChampionList_nidalee.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg",
       blurb:
@@ -4015,7 +4015,7 @@ export default {
       name: "Nocturne",
       title: "the Eternal Nightmare",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Nocturne.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltfc73e3c7dda28d31/5db05ff2adc8656c7d24e7f0/RiotX_ChampionList_nocturne.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nocturne_0.jpg",
       blurb:
@@ -4067,7 +4067,7 @@ export default {
       name: "Nunu",
       title: "the Yeti Rider",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Nunu.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf613746635c6d3c8/5db05ff256458c6b3fc17527/RiotX_ChampionList_nunu.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_0.jpg",
       blurb:
@@ -4119,7 +4119,7 @@ export default {
       name: "Olaf",
       title: "the Berserker",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Olaf.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte922bda45062964b/5db05ff0a6470d6ab91ce5a6/RiotX_ChampionList_olaf.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Olaf_0.jpg",
       blurb:
@@ -4171,7 +4171,7 @@ export default {
       name: "Orianna",
       title: "the Lady of Clockwork",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Orianna.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3318fc0e8103706d/5db05ff02140ec675d68f4a7/RiotX_ChampionList_orianna.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_0.jpg",
       blurb:
@@ -4223,7 +4223,7 @@ export default {
       name: "Pantheon",
       title: "the Artisan of War",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Pantheon.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3f84c538bd36ef02/5db05ff17d28b76cfe43980d/RiotX_ChampionList_pantheon.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_0.jpg",
       blurb:
@@ -4275,7 +4275,7 @@ export default {
       name: "Poppy",
       title: "Keeper of the Hammer",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Poppy.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt0df0f7bcaf851737/5db05ff1242f426df132f973/RiotX_ChampionList_poppy.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_0.jpg",
       blurb:
@@ -4327,7 +4327,7 @@ export default {
       name: "Quinn",
       title: "Demacia's Wings",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Quinn.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt5cc3e3a189961d90/5db05ffbadc8656c7d24e7fc/RiotX_ChampionList_quinn.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Quinn_0.jpg",
       blurb:
@@ -4379,7 +4379,7 @@ export default {
       name: "Rammus",
       title: "the Armordillo",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Rammus.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt50cccb68a58349f5/5db05ffbdc674266df3d5d48/RiotX_ChampionList_rammus.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rammus_0.jpg",
       blurb:
@@ -4431,7 +4431,7 @@ export default {
       name: "Rek'Sai",
       title: "the Void Burrower",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/RekSai.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt4affff3ef114e99b/5db05ffb347d1c6baa57be43/RiotX_ChampionList_reksai.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/RekSai_0.jpg",
       blurb:
@@ -4483,7 +4483,7 @@ export default {
       name: "Renekton",
       title: "the Butcher of the Sands",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Renekton.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt6b5bb4d917759184/5db05ffb242f426df132f979/RiotX_ChampionList_renekton.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renekton_0.jpg",
       blurb:
@@ -4535,7 +4535,7 @@ export default {
       name: "Rengar",
       title: "the Pridestalker",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Rengar.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt282bc8e033db4123/5db05ff9adc8656c7d24e7f6/RiotX_ChampionList_rengar.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rengar_0.jpg",
       blurb:
@@ -4587,7 +4587,7 @@ export default {
       name: "Riven",
       title: "the Exile",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Riven.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3925b81c7462e26e/5db05ffadc674266df3d5d42/RiotX_ChampionList_riven.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_0.jpg",
       blurb:
@@ -4639,7 +4639,7 @@ export default {
       name: "Rumble",
       title: "the Mechanized Menace",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Rumble.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd7c76610fa29d8d6/5db05ffa7d28b76cfe439813/RiotX_ChampionList_rumble.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rumble_0.jpg",
       blurb:
@@ -4691,7 +4691,7 @@ export default {
       name: "Ryze",
       title: "the Rune Mage",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Ryze.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt8af977ce4fa7804b/5db05ffa2dc72966da746714/RiotX_ChampionList_ryze.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_0.jpg",
       blurb:
@@ -4743,7 +4743,7 @@ export default {
       name: "Sejuani",
       title: "the Winter's Wrath",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Sejuani.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte4d521b893aa5a3e/5db05ffae9d7526ab429e544/RiotX_ChampionList_sejuani.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_0.jpg",
       blurb:
@@ -4795,7 +4795,7 @@ export default {
       name: "Shaco",
       title: "the Demon Jester",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Shaco.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc8b1d1ba926d01cc/5db060036e8b0c6d038c5cba/RiotX_ChampionList_shaco.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg",
       blurb:
@@ -4847,7 +4847,7 @@ export default {
       name: "Shen",
       title: "the Eye of Twilight",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Shen.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd142d174831b78e9/5db06004242f426df132f97f/RiotX_ChampionList_shen.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shen_0.jpg",
       blurb:
@@ -4899,7 +4899,7 @@ export default {
       name: "Shyvana",
       title: "the Half-Dragon",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Shyvana.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltdb320ec49e0e02a7/5db0600456458c6b3fc1752d/RiotX_ChampionList_shyvana.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shyvana_0.jpg",
       blurb:
@@ -4951,7 +4951,7 @@ export default {
       name: "Singed",
       title: "the Mad Chemist",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Singed.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt766d98c27adfde28/5db06004347d1c6baa57be4f/RiotX_ChampionList_singed.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_0.jpg",
       blurb:
@@ -5003,7 +5003,7 @@ export default {
       name: "Sion",
       title: "The Undead Juggernaut",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Sion.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt7f28f1d689e4ad3d/5db06004adc8656c7d24e802/RiotX_ChampionList_sion.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_0.jpg",
       blurb:
@@ -5055,7 +5055,7 @@ export default {
       name: "Sivir",
       title: "the Battle Mistress",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Sivir.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltbe8ea8bfd98ec1f3/5db06002a6470d6ab91ce5ac/RiotX_ChampionList_sivir.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_0.jpg",
       blurb:
@@ -5107,7 +5107,7 @@ export default {
       name: "Skarner",
       title: "the Crystal Vanguard",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Skarner.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt842a8149ba8b7a3d/5db06003bd24496c390ae4f6/RiotX_ChampionList_skarner.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Skarner_0.jpg",
       blurb:
@@ -5159,7 +5159,7 @@ export default {
       name: "Sona",
       title: "Maven of the Strings",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Sona.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt4810827f74fc21b9/5db06003347d1c6baa57be49/RiotX_ChampionList_sona.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_0.jpg",
       blurb:
@@ -5211,7 +5211,7 @@ export default {
       name: "Soraka",
       title: "the Starchild",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Soraka.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt2141839fdc483592/5db06003e9effa6ba5295fad/RiotX_ChampionList_soraka.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_0.jpg",
       blurb:
@@ -5263,7 +5263,7 @@ export default {
       name: "Swain",
       title: "the Master Tactician",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Swain.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1a64e469280b8b9f/5db060030b39e86c2f83dc25/RiotX_ChampionList_swain.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Swain_0.jpg",
       blurb:
@@ -5315,7 +5315,7 @@ export default {
       name: "Syndra",
       title: "the Dark Sovereign",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Syndra.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd9308eedab3a6fa5/5db0600c3a326d6df6c0e7bf/RiotX_ChampionList_syndra.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_0.jpg",
       blurb:
@@ -5367,7 +5367,7 @@ export default {
       name: "Tahm Kench",
       title: "the River King",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/TahmKench.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt87be9cf38f3bc986/5db0600c56458c6b3fc17533/RiotX_ChampionList_tahmkench.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_0.jpg",
       blurb:
@@ -5419,7 +5419,7 @@ export default {
       name: "Taliyah",
       title: "the Stoneweaver",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Taliyah.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt35c3537198ee86b9/5db05fc52140ec675d68f49b/RiotX_ChampionList_ialiyah.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taliyah_0.jpg",
       blurb:
@@ -5471,7 +5471,7 @@ export default {
       name: "Talon",
       title: "the Blade's Shadow",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Talon.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt20a737f99ebcd027/5db0600c89fb926b491ed829/RiotX_ChampionList_talon.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Talon_0.jpg",
       blurb:
@@ -5523,7 +5523,7 @@ export default {
       name: "Taric",
       title: "the Shield of Valoran",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Taric.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt6b2d37773c3621e1/5db0600d347d1c6baa57be55/RiotX_ChampionList_taric.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_0.jpg",
       blurb:
@@ -5575,7 +5575,7 @@ export default {
       name: "Teemo",
       title: "the Swift Scout",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Teemo.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt30ddbbdc0549078a/5db0600da6470d6ab91ce5b8/RiotX_ChampionList_teemo.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg",
       blurb:
@@ -5627,7 +5627,7 @@ export default {
       name: "Thresh",
       title: "the Chain Warden",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Thresh.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt46555de3bfa94d44/5db0600b2140ec675d68f4b5/RiotX_ChampionList_thresh.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg",
       blurb:
@@ -5679,7 +5679,7 @@ export default {
       name: "Tristana",
       title: "the Yordle Gunner",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Tristana.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltfbbc3205edf5207a/5db0600bdc674266df3d5d50/RiotX_ChampionList_tristana.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tristana_0.jpg",
       blurb:
@@ -5731,7 +5731,7 @@ export default {
       name: "Trundle",
       title: "the Troll King",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Trundle.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt05eb0518bbe963c0/5db0600ba6470d6ab91ce5b2/RiotX_ChampionList_trundle.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Trundle_0.jpg",
       blurb:
@@ -5783,7 +5783,7 @@ export default {
       name: "Tryndamere",
       title: "the Barbarian King",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Tryndamere.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3b217144ed3a7faa/5db08d643a326d6df6c0e907/RiotX_ChampionList_tryndamere.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tryndamere_0.jpg",
       blurb:
@@ -5835,7 +5835,7 @@ export default {
       name: "Twisted Fate",
       title: "the Card Master",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Maokai.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltaebcdb8b21d440a7/5db0600ce9effa6ba5295fb3/RiotX_ChampionList_twistedfate.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg",
       blurb:
@@ -5887,7 +5887,7 @@ export default {
       name: "Twitch",
       title: "the Plague Rat",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Twitch.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt674dca7d5611ebb0/5db060159481396d6bdd01be/RiotX_ChampionList_twitch.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Twitch_0.jpg",
       blurb:
@@ -5939,7 +5939,7 @@ export default {
       name: "Udyr",
       title: "the Spirit Walker",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Udyr.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt8350eda62a9ed56c/5db060150b39e86c2f83dc2b/RiotX_ChampionList_udyr.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Udyr_0.jpg",
       blurb:
@@ -5991,7 +5991,7 @@ export default {
       name: "Urgot",
       title: "the Headsman's Pride",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Urgot.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt162b78ba3ece1d4f/5db060157d28b76cfe43981b/RiotX_ChampionList_urgot.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Urgot_0.jpg",
       blurb:
@@ -6043,7 +6043,7 @@ export default {
       name: "Varus",
       title: "the Arrow of Retribution",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Varus.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt596158d85a8360d1/5db060132dc72966da74671a/RiotX_ChampionList_varus.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_0.jpg",
       blurb:
@@ -6095,7 +6095,7 @@ export default {
       name: "Vayne",
       title: "the Night Hunter",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Vayne.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt9eaabc908956c8b0/5db060146af83b6d7032c90a/RiotX_ChampionList_vayne.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_0.jpg",
       blurb:
@@ -6147,7 +6147,7 @@ export default {
       name: "Veigar",
       title: "the Tiny Master of Evil",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Veigar.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltda2b568b0c3e5847/5db06014e9effa6ba5295fb9/RiotX_ChampionList_veigar.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Veigar_0.jpg",
       blurb:
@@ -6199,7 +6199,7 @@ export default {
       name: "Vel'Koz",
       title: "the Eye of the Void",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Velkoz.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt825d0c333f6e74ae/5db060142140ec675d68f4bb/RiotX_ChampionList_velkoz.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Velkoz_0.jpg",
       blurb:
@@ -6250,7 +6250,7 @@ export default {
       key: "254",
       name: "Vi",
       title: "the Piltover Enforcer",
-      img: "https://www.masterypoints.com/assets/img/lol/champion_icons/Vi.png",
+      img: "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3bd79abf330fc807/5db06014dc674266df3d5d56/RiotX_ChampionList_vi.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vi_0.jpg",
       blurb:
@@ -6302,7 +6302,7 @@ export default {
       name: "Viktor",
       title: "the Machine Herald",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Viktor.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt6e54b3de49b7bbf3/5db06015df78486c826dcd1e/RiotX_ChampionList_viktor.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viktor_0.jpg",
       blurb:
@@ -6354,7 +6354,7 @@ export default {
       name: "Vladimir",
       title: "the Crimson Reaper",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Vladimir.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt39ab5027f6fa1b81/5db0601589fb926b491ed82f/RiotX_ChampionList_vladimir.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladimir_0.jpg",
       blurb:
@@ -6406,7 +6406,7 @@ export default {
       name: "Volibear",
       title: "the Thunder's Roar",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Volibear.png",
+        "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_0.jpg",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_0.jpg",
       blurb:
@@ -6458,7 +6458,7 @@ export default {
       name: "Warwick",
       title: "the Blood Hunter",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Warwick.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt08a92f3897cfc8f5/5db0601ddc674266df3d5d5c/RiotX_ChampionList_warwick.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_0.jpg",
       blurb:
@@ -6510,7 +6510,7 @@ export default {
       name: "Xerath",
       title: "the Magus Ascendant",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Xerath.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltbda694c8890e94e5/5db0601ce9effa6ba5295fbf/RiotX_ChampionList_xeratth.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_0.jpg",
       blurb:
@@ -6562,7 +6562,7 @@ export default {
       name: "Xin Zhao",
       title: "the Seneschal of Demacia",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/XinZhao.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltca4486a1630ef517/5db0601ce9d7526ab429e54a/RiotX_ChampionList_xinzhao.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/XinZhao_0.jpg",
       blurb:
@@ -6614,7 +6614,7 @@ export default {
       name: "Yasuo",
       title: "the Unforgiven",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Yasuo.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3a319fc884dc6880/5db0601c242f426df132f985/RiotX_ChampionList_yasuo.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg",
       blurb:
@@ -6666,7 +6666,7 @@ export default {
       name: "Yorick",
       title: "Shepherd of Souls",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Yorick.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt570d89dd9a76ba08/5db0601c823d426762825ff9/RiotX_ChampionList_yorick.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yorick_0.jpg",
       blurb:
@@ -6718,7 +6718,7 @@ export default {
       name: "Zac",
       title: "the Secret Weapon",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Zac.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt9412083c2b98b9c8/5db0601d6af83b6d7032c910/RiotX_ChampionList_zac.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zac_0.jpg",
       blurb:
@@ -6770,7 +6770,7 @@ export default {
       name: "Zed",
       title: "the Master of Shadows",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Zed.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt402d6da485218720/5db0601de9effa6ba5295fc5/RiotX_ChampionList_zed.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_0.jpg",
       blurb:
@@ -6822,7 +6822,7 @@ export default {
       name: "Ziggs",
       title: "the Hexplosives Expert",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Ziggs.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt0f8c12d54d8ecd28/5db0602289fb926b491ed835/RiotX_ChampionList_ziggs.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_0.jpg",
       blurb:
@@ -6874,7 +6874,7 @@ export default {
       name: "Zilean",
       title: "the Chronokeeper",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Zilean.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blta32de59397f53325/5db060222dc72966da746720/RiotX_ChampionList_zilean.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zilean_0.jpg",
       blurb:
@@ -6926,7 +6926,7 @@ export default {
       name: "Zyra",
       title: "Rise of the Thorns",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Zyra.png",
+        "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt9bc3497cdd04f6d5/5db060229481396d6bdd01c4/RiotX_ChampionList_zyra.jpg?quality=90&width=250",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_0.jpg",
       blurb:
