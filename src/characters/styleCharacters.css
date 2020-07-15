@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing:border-box;  
+    font-family: "Gloria Hallelujah";
+    color: #eae9ec;
+
+   }
+   
+   body{
+       width: 100%;
+       color: ivory;
+       font-family: "Gloria Hallelujah";
+   }
+   /* Estilos header */
+
+   #navbar{
+       /* background-color: #ffffff0d; */
+       background-color: #1e1f1e;
+       position: absolute;
+       z-index: 5;
+       width: 100%;
+       transition: all 0.3s ease-in-out;
+   }
+
+   #menu{
+    width: 50px;
+    margin: 15px 20px;
+    }
+
+   #containerCategoriesMenu{
+       /* background-color: #151619; */
+       font-size: 25px;
+       text-align: center;
+       padding: 20px 0;
+       z-index: 8;
+   }
+   
+   #hero h1 {
+       position: absolute;
+       top:20vh;
+       font-size: 30px;
+   }
+   
+   .textSpan{
+       display: block;
+   }
+   
+   #one strong{
+       font-size: 40px;
+   }
+   
+   #three {
+       letter-spacing: 7px;
+   }  
+   
+   #hero {
+       /* background-image: url("/images/lab.jpg"); */
+       background-color: #151619;
+       background-attachment: fixed;
+       background-repeat: no-repeat;
+       background-position: top center;
+       /* background-size: 200vh;     */
+       height: 620px;
+       display: flex;
+       justify-content: center;
+       align-items: flex-end;
+       position: relative;    
+   }
+   
+   #containerRick {
+       position: absolute;
+       display: flex;
+       justify-content: center; 
+       /* align-items: flex-end; */
+       bottom: 0;
+       z-index: 2;   
+   }
+   
+   #rick {
+       height: 300px;
+       /* width: 100%; */
+       bottom: 40px;
+   }
+   
+   
+   #containerPort {
+       position: absolute;
+       z-index: 1;
+       /* width: 10px; */
+       bottom: -30px;
+       /* display: flex; */
+   }
+   
+   #port {
+   width: 300px;
+   /* bottom: 300px; */
+   }
+   
+   #containerFrontPort {
+       position: absolute;
+       /* width: 10px; */
+       bottom: -30px;
+       z-index: 3;
+       /* display: flex; */
+   }
+   
+   #frontPort{
+       width: 270px;
+   }
+   
+   
+   /* Estilos filtros */
+   
+   #filtersBar{
+       background-color: #151619;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       height: 70px;
+       width: 100%;
+       position: sticky;
+       top: 0px;
+       z-index: 6;
+    }
+    
+    .containersOptionsFilter{
+        /* padding: 100px 0px; */
+        display: flex;
+        align-items: center;
+    } 
+    
+    .imgOptionsFilter {
+        width: 50px;
+    }
+    
+    .optionsFilter{
+        color: #eae9ec;
+        margin-right: 10px;
+        font-family: "Gloria Hallelujah";
+    }
+    
+    .filtersOptions{
+        background-color: #151619;
+        color: #eae9ec;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: sticky;
+        top: 70px;
+        z-index: 7;
+       
+    }
+    
+    .options {
+        display: grid;
+        margin: 20px 30px;
+        font-family: "Gloria Hallelujah";
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .options p {
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    
+    .options label {
+        padding: 4px;
+        font-size: 18px;
+    }
+    
+    /* Estilos seccion de personajes */
+ 
+     #containerCharacters {
+         background-image: url("images/galaxy.jpg");
+         /* background-color: #000; */
+         height: 100%;
+         z-index: 4;
+         position: relative;
+    }
+
+    #characters {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .containerCharacter {
+        position: relative;
+        margin: 10px 10px;       
+    }
+    
+    .imgCharacter{
+        max-width: 100%;
+    }
+
+    #infoCharacter{
+        position: absolute;
+        top: 0%;
+        
+    }
+
+
+   /* Estilos botones next y previus */
+   .hide {
+       display:none
+   }
+
+   .info {
+       background-color: #000;
+   }
+
+   #btnPrevNext{
+       text-align: center;       
+   }
+
+  
+   
