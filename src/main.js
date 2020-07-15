@@ -1,14 +1,20 @@
-import { removeDuplicates } from "./data.js";
-import { filterByLetter } from "./data.js";
+import {
+  removeDuplicates,
+  filterByLetter,
+  countCharactersByLocation,
+} from "./data.js";
+
 import data from "./data/rickandmorty/rickandmorty.js";
+import "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js";
 
 const navBar = document.getElementById("navBar");
 const menuHamburguer = document.getElementById("menuHamburguer");
+const doughnutChart = document.getElementById("doughnutChart");
+const myChart = document.getElementById("myChart");
 const locations = document.getElementById("locations");
 const firstPage = document.getElementById("firstPage");
 const bttnLocations = document.getElementById("bttnLocations");
 const backHome = document.getElementById("backHome");
-// const routSortData = document.getElementById("routSortData");
 const sortingView = document.getElementById("sortingView");
 let pageNumber = 0;
 let uniqueLocations = [];
@@ -19,17 +25,16 @@ const pagesNumber = document.getElementById("pagesNumber");
 const pagesControl = document.getElementById("pagesControl");
 const showAllLocations = document.getElementById("showAllLocations");
 
+doughnutChart.addEventListener("click", showDoughnut);
 advancePageLink.addEventListener("click", advancePage);
 returnPageLink.addEventListener("click", returnPage);
 bttnLocations.addEventListener("click", showLocation);
 showAllLocations.addEventListener("click", returnAllLocations);
 backHome.addEventListener("click", returnHome);
-// routSortData.addEventListener("click", showAZ);
 
 window.onload = function () {
   loadLocations();
   let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-  // console.log(alphabet);
   for (let i = 0; i < alphabet.length; i++) {
     let buttonId = "btn" + alphabet[i];
     let button = document.getElementById(buttonId);
@@ -64,6 +69,14 @@ function returnAllLocations() {
     `</div>`;
 }
 
+function showDoughnut() {
+  if (myChart.style.display === "block") {
+    myChart.style.display = "none";
+  } else if (myChart.style.display === "none") {
+    myChart.style.display = "block";
+  }
+}
+
 function filterList(letter) {
   let filterLocations = filterByLetter(uniqueLocations, letter);
   let listLocations = loadFilterLocations(filterLocations);
@@ -80,12 +93,14 @@ function showLocation() {
   showAllLocations.style.display = "none";
   locations.style.display = "block";
   sortingView.style.display = "block";
+  showMenu();
 }
 
 function returnHome() {
   firstPage.style.display = "block";
   locations.style.display = "none";
   sortingView.style.display = "none";
+  doughnutChart.style.display = "none";
 }
 
 function loadLocations() {
@@ -112,6 +127,56 @@ function loadLocations() {
       }
     }
   }
+  let charactersByLocation = countCharactersByLocation(uniqueLocations, data);
+  let labels = [];
+  let dataset = [];
+
+  for (let i = 0; i < charactersByLocation.length; i++) {
+    labels.push(charactersByLocation[i].name);
+    dataset.push(charactersByLocation[i].count);
+  }
+
+  let donut = document.getElementById("myChart").getContext("2d");
+  let myChart = new Chart(donut, {
+    type: "doughnut",
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          label: "Characters per location",
+          data: dataset,
+          backgroundColor: [
+            "rgba(255, 99, 132, 0.2)",
+            "rgba(54, 162, 235, 0.2)",
+            "rgba(255, 206, 86, 0.2)",
+            "rgba(75, 192, 192, 0.2)",
+            "rgba(153, 102, 255, 0.2)",
+            "rgba(255, 159, 64, 0.2)",
+          ],
+          borderColor: [
+            "rgba(255, 99, 132, 1)",
+            "rgba(54, 162, 235, 1)",
+            "rgba(255, 206, 86, 1)",
+            "rgba(75, 192, 192, 1)",
+            "rgba(153, 102, 255, 1)",
+            "rgba(255, 159, 64, 1)",
+          ],
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      scales: {
+        yAxes: [
+          {
+            ticks: {
+              beginAtZero: true,
+            },
+          },
+        ],
+      },
+    },
+  });
 
   setTimeout(function () {
     listLocations = loadLocationsPage(0);

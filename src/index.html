@@ -24,12 +24,11 @@
           <div id="backHome" class="header-bar">
             <img src="/src/image/ricknmorty-header.png" alt="Encabezado" />
           </div>
-          <div>
+          <div class="hamburguer">
             <img
               id="menuHamburguer"
               src="/src/image/hamburguer-menu.png"
               alt="icono menu"
-              style="width: 50px; height: 50px;"
             />
           </div>
         </div>
@@ -63,11 +62,15 @@
               </p>
             </div>
             <div class="row">
-              <h3>Trailer</h3>
-              <img
-                src="https://img.pngio.com/rick-and-morty-portal-png-transparent-png-700x684496250-rick-and-morty-portal-transparent-840_764.png  "
-                alt="Portal"
-              />
+              <h3>Teaser season 1</h3>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/WNhH00OIPP0"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
           <div class="col-1200-33 col-992-33 col-768-33 col-576-33">
@@ -90,6 +93,15 @@
             </p>
           </div>
         </div>
+      </div>
+      <div id="doughnutChart" class="doughnut-calc" style="display: none;">
+        <input type="button" value="Statistics" />
+        <canvas
+          id="myChart"
+          width="100"
+          height="100"
+          style="display: none;"
+        ></canvas>
       </div>
       <div id="locations" class="cont-locations" style="display: none;">
         <div class="row-locations">
@@ -206,20 +218,15 @@
 
     <footer>
       <div class="low-bar">
-        <div>
-          <h4>Follow us</h4>
-          <img src="" alt="icono facebook" />
-          <img src="" alt="icono instagram" />
-          <img src="" alt="icono twitter" />
-        </div>
-        <div class="center-bar">
-          <img src="" alt="Logotipo" />
-          <h5>
-            Copyright &copy; 2020 the citadele
-          </h5>
+        <div class="social-icons">
+          <img src="/src/image/facebook.png" alt="icono facebook" />
+          <img src="/src/image/instagram.png" alt="icono instagram" />
+          <img src="/src/image/twitter.png" alt="icono twitter" />
         </div>
         <div>
-          <h4>Community</h4>
+          <p>Copyright &copy; 2020 The Citadel</p>
+        </div>
+        <div class="community">
           <a href="#">Support</a>
           <a href="#">Help</a>
           <a href="#">About us</a>

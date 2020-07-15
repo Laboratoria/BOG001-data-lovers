@@ -21,11 +21,20 @@
   display: flex;
   justify-content: center;
   height: 100%;
-  width: 100%;
+  width: 85%;
 }
 .header-bar img {
   height: auto;
   width: 100%;
+}
+.hamburguer {
+  cursor: pointer;
+  margin-block-start: auto;
+}
+
+.hamburguer img {
+  width: 40px;
+  height: 40px;
 }
 
 .hidde-button {
@@ -33,13 +42,29 @@
 }
 
 .show-button {
-  display: block;
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+}
+
+.show-button input {
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 -1px 10px 0 #0a0a0a;
+  background-color: #c2c5ca;
+  /* margin-inline-start: auto;
+  width: 200px; */
 }
 
 body {
   font-family: var(--font-titles);
   background-color: var(--background-color-web);
   color: var(--font-color);
+}
+
+.doughnut-calc {
+  margin-top: 50px;
 }
 
 .column2 {
@@ -62,20 +87,6 @@ body {
   flex-flow: row wrap;
 }
 
-footer {
-  box-shadow: 0 -1px 10px 0 #372f2f;
-  padding-bottom: 0;
-}
-.low-bar {
-  display: flex;
-  justify-content: space-between;
-}
-
-img {
-  vertical-align: middle;
-  border-style: none;
-}
-
 .container {
   width: 100%;
   margin-right: auto;
@@ -91,6 +102,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 1;
+  background-color: #151619;
 }
 
 .trend-container {
@@ -104,12 +116,7 @@ img {
   overflow-x: scroll;
   padding: 0;
 }
-/* .alphabethic-letter {
-  background: #bed1cf;
-  font-size: 14px;
-  line-height: 14px;
-  padding: 15px 17px;
-} */
+
 .alphabethic-letter input {
   text-decoration: none;
   color: #088488;
@@ -122,6 +129,8 @@ img {
 
 .page-button input {
   font-family: var(--font-titles);
+  color: #088488;
+  border-radius: 5px;
 }
 
 .card-location {
@@ -179,6 +188,25 @@ img {
   color: white;
   transform: rotateY(180deg);
 }
+
+footer {
+  box-shadow: 0 -1px 10px 0 #372f2f;
+  padding-bottom: 0;
+}
+.low-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.community a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
 .col-1200-66,
 .col-1200-50,
 .col-1200-33,
