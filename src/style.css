@@ -227,31 +227,66 @@ footer{
 
 .containerInfoCard{
     border:3px solid blue;
+    margin-top: 400px;
+    margin-bottom: 100px;
+    width: 600px;
+    height: 300px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
     background-color: cornsilk;
+    font-size: 16.5px;
 }
 
 .template_image{
     display: flex;
     justify-content: center;
+    align-content: center;
+    width: 200px;
+    height: 180px;
+
+
+    
+}
+.template_imagePokemon{
+    width: 180px;
+    height: 180px;
+
 }
 
 .template_nameId{
     display: flex;
     justify-content: space-around;
-    border-bottom: 3px solid blue;
-    background-color: cornsilk;
+    align-content: center;
+    align-items: baseline;
+    border: 2px solid blue;
+    background-color: #389ac8e1;
+    margin-top: 20px;
+    font-size:20px ;
+    height: 35px;
+    width: 180px;
+}
+.tempNum{
+    font-size: 15px;
+    margin: auto;
+}
+.tempName{
+    margin: auto;
+
 }
 
 .template-type{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: cornsilk;
-    margin-bottom: 20px;
+    align-content: center;
+    align-items: baseline;
+    background-color: #F1CE00;
+    border: 2px solid blue;
+    font-size:20px ;
+    height: 35px;
+    width: 180px;
 }
 
 .template_traits{
@@ -260,14 +295,21 @@ footer{
     align-items: center;
     justify-content: space-around;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .traits{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    border: 3px solid blue;
+    float: right;
+    border: 2px solid blue;
+    width: 175px;
+    height: 150px;
+    padding-left: 10px;
+    border-right: 0;
+    transform: translateX(2px)
 }
 
 .multipliers{
@@ -276,6 +318,12 @@ footer{
     align-items: baseline;
     align-items: center;
     justify-content: center;
+    border: 2px solid blue;
+    width: 175px;
+    height: 75px;
+    margin-right: 5px;
+    border-bottom: 0;
+    transform: translateY(1px)
 }
 
 .weaknesses{
@@ -283,12 +331,19 @@ footer{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border: 3px solid blue;
+    border: 2px solid blue;
+    width: 175px;
+    height: 75px;
+    margin-right: 5px;
+    transform: translateY(-1.5px)
 }
 
 .evolutions{
     display: flex;
     flex-direction: column;
+    width: 368px;
+    margin-right: 5px;
+  
 }
 
 
@@ -297,13 +352,18 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 3px solid blue; 
+    border: 2px solid blue; 
+    border-bottom: 0;
+    background: rgb(236, 144, 4);
 }
 
 .evo{
     display: flex;
     flex-direction: row;
-    border: 3px solid blue;    
+    justify-content: space-around;
+    border: 2px solid blue; 
+    transform: translateY(-2px); 
+    height: 50px;  
 }
 
 .pre-evolution{
