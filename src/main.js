@@ -67,33 +67,39 @@ function pokemonInfo (pokemon) {
     let evolution;
     let preEvolution;
     
-    console.log(evolution);
     
-
     if (pokemon.next_evolution) {
         evolution = pokemon.next_evolution.map(pokemonEvo => 
             pokemonEvo.name)
     }
+    else{ evolution = "He has no evolution."}
 
     if (pokemon.prev_evolution) {
         preEvolution = pokemon.prev_evolution.map(pokemonEvo => 
        pokemonEvo.name)   
     }   
+    else{ preEvolution = "He has no pre-evolution."}
+
+
+    console.log(evolution);
+    console.log(preEvolution);
+
 
     infoCard.innerHTML=
     `<div class= "containerInfoCard">
         <div class="template_nameId">
-            <h2>${pokemon.name} Num. ${pokemon.num}</h2>
+            <div class="tempName"><h2>${pokemon.name}</h2></div>
+            <div class="tempNum"><h3>Num. ${pokemon.num}</h3></div>
         </div >
         <div class="template_image">
             <img class="template_imagePokemon" src= "${pokemon.img}">
         </div>
-        <div>
-            <h2>Type</h2>
-            <p><span>${pokemon.type}</span></p>
+        <div class="template-type">
+            <div class="tempTitleType"><h2>Type:</h2></div>
+            <div class="tempType"><p><span>${pokemon.type}</span></p></div>
         </div>
         <div class="template_traits">
-            <div>
+            <div class="traits">
                 <h3>Traits</h3>
                 <p>Height: <span>${pokemon.height}</span></p>
                 <p>Weight: <span>${pokemon.weight}</span></p>
@@ -101,20 +107,24 @@ function pokemonInfo (pokemon) {
                 <p>Candy count: <span>${pokemon.candy_count}</span></p>
             </div>
             <div>
-                <h3>Multipliers:</h3>
-                <p><span>${pokemon.multipliers}</span></p>
-            </div>
-            <div>
-                <h2>Weaknesses:</h2>
-                <p><span>${pokemon.weaknesses}</span></p>
-            </div>
+                <div class="multipliers">
+                    <h3>Multipliers:</h3>
+                    <p><span>${pokemon.multipliers}</span></p>
+                </div>
+                <div class="weaknesses">
+                    <h2>Weaknesses:</h2>
+                    <p><span>${pokemon.weaknesses}</span></p>
+                </div>
+            </div>    
         </div>
         <div class="evolutions">
-            <h3>Evolutions</h3>
-            <h4> Pre-evolution:</h4> 
-            <p><span>${preEvolution}</span></p>
-            <h4> Evolution:</h4> 
-            <p><span>${evolution}</span></p>
+            <h3 class="titleEvo">Evolutions</h3>
+            <div class="evo">
+                <div class="pre-evolution"><h4> Pre-evolution:</h4>
+                <p><span>${preEvolution}</span></p></div>
+                <div class="evolution"><h4> Evolution:</h4> 
+                <p><span>${evolution}</span></p></div>
+            </div>
         </div>
     </div>`
 };
