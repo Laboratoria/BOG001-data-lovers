@@ -13,6 +13,7 @@
         margin-top: 380px;  
     }
 }
+
 @media (max-width:710px){
     .media{
         width: 35px;
@@ -132,17 +133,99 @@
         height: 35px;
         margin-bottom: 0;
     }
+
     .input {
         float: left;
     }
+
+    .containerInfoCard{
+        display:flex;
+        align-content: center;
+        margin-top: 300px;
+        border-color: 3px blue solid;
+        width: 340px;
+        height: 500px;
+        margin-bottom: 50px;
+    }
+
+    .template_nameId{
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid blue;
+        width: 320px;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    .template_image{
+        width: 350px;
+        height: 120px;
+    }
+
+    .template-type{
+        display: flex;
+        border: 2px solid blue;
+        width: 320px;
+        height: 30px;
+    }
+
+    .template_traits{
+        display: flex;
+        width: 320px;
+        height: 150px;  
+    }
+    .multipliers{
+       width: 160px;
+       height: 73px;
+       border: 3px solid blue;
+       justify-content: space-around;
+       margin-bottom: 0;
+       transform: translateY(1px)
+    }
+    .traits{
+        width: 160px;
+        height: 150px;
+        margin-right: 0;
+        transform: translateX(2px)
+    }
+
+    .weaknesses{
+        width: 160px;
+        height: 73px;
+        justify-content: space-around;
+        margin-top: 1px;
+        transform: translateY(-1.8px)
+    }
+
+    .evolutions{
+        width: 320px;
+        height: 110px;
+    }
+
+    .pre-evolution{
+        width: 160px;
+        height: 40px;
+    }
+
+    .evolution{
+        width: 160px;
+        height: 40px;
+    }
+
+    .titleEvo{
+        width: 314px;
+        height: 30px;
+        margin-bottom: 0;  
+    }
+
+    .evo{
+        width: 314px;
+        height: 40px;
+        transform: translateY(-1.8px)
+    }
+    
 }
-.containerInfoCard{
-    margin-top: 350px;
-    border-color: 3px blue solid;
-    width: 100px;
-    height: 500px;
-    margin-bottom: 200px;
-}
+
 
 @media (max-width:380px){
     .socialMedia{
