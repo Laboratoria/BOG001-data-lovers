@@ -93,6 +93,7 @@ function showLocation() {
   showAllLocations.style.display = "none";
   locations.style.display = "block";
   sortingView.style.display = "block";
+  doughnutChart.style.display = "block";
   showMenu();
 }
 
@@ -270,6 +271,7 @@ function movePage(symbol) {
   if (pageNumber === 0 && symbol === "-") {
     return;
   }
+
   let maxPages = uniqueLocations.length / 6 - 1;
   if (pageNumber === maxPages && symbol === "+") {
     return;
