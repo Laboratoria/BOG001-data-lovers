@@ -4,28 +4,239 @@
     <meta charset="utf-8" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <script>
+      function rotateCard(cardId) {
+        let card = document.getElementById(cardId);
+
+        if (card.style.transform === "rotateY(180deg)") {
+          card.style.transform = "rotateY(0deg)";
+        } else {
+          card.style.transform = "rotateY(180deg)";
+        }
+      }
+    </script>
   </head>
   <body>
     <header>
-      <div id=navbar>
-        <img src="images/menu.png" id="menu">        
-        <div id="containerCategoriesMenu" class="hide">
-          <h5>Home</h5>
-          <h5>Characters</h5>
-          <h5>Locations</h5>        
-        </div>      
+      <div class="container">
+        <div class="row">
+          <div id="backHome" class="header-bar">
+            <img src="/src/image/ricknmorty-header.png" alt="Encabezado" />
+          </div>
+          
+          <div id=navbar>
+            <img src="image/menu.png" id="menu">        
+            <div id="containerCategoriesMenu" class="hide">
+              <h5>Home</h5>
+              <a href="characters/characters.html">Characters</a>
+              <a value="locations" id="bttnLocations">Locations</a>      
+              
+            </div>      
+          </div>
+
+
       </div>
-      <img src="images/header.png">      
     </header>
 
-    <section>
-      <p>Rick is an eccentric and alcoholic mad scientist, who eschews many ordinary conventions such as school, marriage, love, and family. He frequently goes on adventures with his 14-year-old grandson, Morty, a kind-hearted but easily distressed boy, whose naive but grounded moral compass plays counterpoint to Rick's Machiavellian ego.  </p>
-      
-    </section>
-    
-   
-    
+    <main>
+      <div id="firstPage" class="container">
+        <div class="row">
+          <div class="col-1200-66 col-992-66 col-768-66 col-576-66">
+            <div class="row">
+              <h2>General information</h2>
+              <p>
+                Rick Sánchez es un ejemplo del típico "científico loco". Es un
+                genio, pero es irresponsable, alcohólico, egoísta, un poco
+                depresivo y claramente con poca cordura. Rick por diferentes
+                razones termina mudándose a la casa de su hija Beth y en ese
+                momento se encuentra con su nieto Morty; un joven de 14 años
+                tímido y no muy listo. Al juntarse con su nieto, Rick y Morty
+                viven una variedad de aventuras a lo largo del Cosmos y
+                Universos paralelos. Y es mediante tantas vivencias y
+                reflexiones que Rick busca que su nieto Morty no acabe como su
+                padre, Jerry, un hombre muy poco exitoso que a pesar de tener
+                buenas intenciones resulta ser bastante inútil en muchas
+                ocasiones y depende mucho de su esposa, Beth, hija de Rick.
+              </p>
+            </div>
+            <div class="row">
+              <h3>Teaser season 1</h3>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/WNhH00OIPP0"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-1200-33 col-992-33 col-768-33 col-576-33">
+            <h3>Detailed Information Table</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
+              adipisci labore eveniet eos cumque corporis, aliquam quas sint.
+              Nulla eum inventore dignissimos mollitia ex ea blanditiis pariatur
+              enim explicabo labore. Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Iste adipisci labore eveniet eos cumque
+              corporis, aliquam quas sint. Nulla eum inventore dignissimos
+              mollitia ex ea blanditiis pariatur enim explicabo labore. Lorem
+              ipsum dolor, sit amet consectetur adipisicing elit. Iste adipisci
+              labore eveniet eos cumque corporis, aliquam quas sint. Nulla eum
+              inventore dignissimos mollitia ex ea blanditiis pariatur enim
+              explicabo labore. Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Iste adipisci labore eveniet eos cumque
+              corporis, aliquam quas sint. Nulla eum inventore dignissimos
+              mollitia ex ea blanditiis pariatur enim explicabo labore.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="doughnutChart" class="doughnut-calc" style="display: none;">
+        <input type="button" value="Statistics" />
+        <canvas
+          id="myChart"
+          width="100"
+          height="100"
+          style="display: none;"
+        ></canvas>
+      </div>
+      <div id="locations" class="cont-locations" style="display: none;">
+        <div class="row-locations">
+          <div class="all-loc-col">
+            <h1>All Locations</h1>
+            <div class="all-loc-row"></div>
+          </div>
+        </div>
+      </div>
+      <input
+        id="showAllLocations"
+        type="button"
+        value="All"
+        style="display: none;"
+      />
+      <div id="sortingView" style="display: none;">
+        <div class="row-az">
+          <div class="col-az a-z-bar">
+            <div class="row-az">
+              <ul class="alphabethic-list-container">
+                <li class="alphabethic-letter">
+                  <input id="btnA" type="button" value="A" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnB" type="button" value="B" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnC" type="button" value="C" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnD" type="button" value="D" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnE" type="button" value="E" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnF" type="button" value="F" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnG" type="button" value="G" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnH" type="button" value="H" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnI" type="button" value="I" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnJ" type="button" value="J" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnK" type="button" value="K" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnL" type="button" value="L" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnM" type="button" value="M" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnN" type="button" value="N" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnO" type="button" value="O" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnP" type="button" value="P" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnQ" type="button" value="Q" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnR" type="button" value="R" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnS" type="button" value="S" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnT" type="button" value="T" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnU" type="button" value="U" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnV" type="button" value="V" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnW" type="button" value="W" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnX" type="button" value="X" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnY" type="button" value="Y" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btnZ" type="button" value="Z" />
+                </li>
+                <li class="alphabethic-letter">
+                  <input id="btn" type="button" value="OTHERS" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="showAll" class="col"></div>
+        <div id="pagesControl" class="page-button">
+          <input id="returnPageLink" type="button" value="prev" />
+          <span id="pagesNumber">0</span>
+          <input id="advancePageLink" type="button" value="next" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="low-bar">
+        <div class="social-icons">
+          <img src="/src/image/facebook.png" alt="icono facebook" />
+          <img src="/src/image/instagram.png" alt="icono instagram" />
+          <img src="/src/image/twitter.png" alt="icono twitter" />
+        </div>
+        <div>
+          <p>Copyright &copy; 2020 The Citadel</p>
+        </div>
+        <div class="community">
+          <a href="#">Support</a>
+          <a href="#">Help</a>
+          <a href="#">About us</a>
+        </div>
+      </div>
+    </footer>
+
     <div id="root"></div>
     <script src="main.js" type="module"></script>
+
+    <!-- menu cami  -->
+    
+    
   </body>
 </html>

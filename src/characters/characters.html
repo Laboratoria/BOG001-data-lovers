@@ -1,99 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Efecto de parallax mobile</title>
-    <link rel="stylesheet" href="styleCharacters.css">
-    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Pangolin&display=swap" rel="stylesheet">
-
-
-</head>
-<body>
-    
-    <div id=navbar>
-        <img src="../images/menu.png" id="menu">        
-        <div id="containerCategoriesMenu" class="hide">
-            <h5>Home</h5>
-            <h5>Characters</h5>
-            <h5>Locations</h5>        
-        </div>
+    <link rel="stylesheet" href="styleCharacters.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="navbar">
+      <img src="../image/menu.png" id="menu" />
+      <div id="containerCategoriesMenu" class="hide">
+        <h5>Home</h5>
+        <h5>Characters</h5>
+        <h5>Locations</h5>
+      </div>
     </div>
-
-
 
     <div id="hero">
-        <h1>
-            <span id= "one" class="textSpan">Go with <strong>RICK</strong></span>
-            <span id="two" class="textSpan">to discover the</span>
-            <span id="three" class="textSpan">CHARACTERS</span>
-        </h1>
-            
+      <h1>
+        <span id="one" class="textSpan">Go with <strong>RICK</strong></span>
+        <span id="two" class="textSpan">to discover the</span>
+        <span id="three" class="textSpan">CHARACTERS</span>
+      </h1>
 
-        <div id="containerRick">
-            <img src="images/rick.png" id="rick">
-        </div>
+      <div id="containerRick">
+        <img src="images/rick.png" id="rick" />
+      </div>
 
-        <div id="containerPort">
-            <img src="images/portal.png" id="port">
-        </div>
+      <div id="containerPort">
+        <img src="images/portal.png" id="port" />
+      </div>
 
-        <div id="containerFrontPort">
-            <img src="images/portal front.png" id="frontPort">
-        </div>
-        
+      <div id="containerFrontPort">
+        <img src="images/portal front.png" id="frontPort" />
+      </div>
     </div>
-        
+
     <section id="containerCharacters">
-        
-        <div id=filtersBar>
-            <div id="btnFilter" class="containersOptionsFilter">
-                <h2 class="optionsFilter">Filter</h2>
-                <img src="images/filter2.png" id="imgFilter" class="imgOptionsFilter">
-            </div>
-            
-            <div id="order" class="containersOptionsFilter">
-                <h2 class="optionsFilter">Order</h2>
-                <img src="images/order2.png" id="imgOrder" class="imgOptionsFilter">
-            </div>
+      <div id="filtersBar">
+        <div id="btnFilter" class="containersOptionsFilter">
+          <h2 class="optionsFilter">Filter</h2>
+          <img
+            src="images/filter2.png"
+            id="imgFilter"
+            class="imgOptionsFilter"
+          />
         </div>
 
-        <div id="filtersOptions" class="filtersOptions hide">
-            
-            <div id="specie" class="options">
-                <p>Specie</p>
-                <label for="Human"> <input type="checkbox" class="specie" value="Human" id="Human" name="specie"> Human</label>
-                <label for="Alien"> <input type="checkbox" class="specie" value="Alien" id="Alien" name="specie"> Alien</label>
-                <label for="Poopybutthole"> <input type="checkbox" class="specie" value="Poopybutthole" id="Poopybutthole" name="specie"> Poopybutthole</label>
-                <label for="Humanoid"> <input type="checkbox" class="specie" value="Humanoid" id="Humanoid" name="specie"> Humanoid</label>
-                <label for="Mytholog"> <input type="checkbox" class="specie" value="Mytholog" id="Mytholog" name="specie"> Mytholog</label>
-                <label for="Animal"> <input type="checkbox" class="specie" value="Animal" id="Animal" name="specie"> Animal</label>
-                <label for="Vampire"> <input type="checkbox" class="specie" value="Vampire" id="Vampire" name="specie"> Vampire</label>
-                <label for="Robot"> <input type="checkbox" class="specie" value="Robot" id="Robot" name="specie"> Robot</label>
-                <label for="Cronenberg"> <input type="checkbox" class="specie" value="Cronenberg" id="Cronenberg" name="specie"> Cronenberg</label>
-                <label for="Disease"> <input type="checkbox" class="specie" value="Disease" id="Disease" name="specie"> Disease</label>
-                <label for="Parasite"> <input type="checkbox" class="specie" value="Parasite" id="Parasite" name="specie"> Parasite</label>                               
-            </div>
+        <div id="order" class="containersOptionsFilter">
+          <h2 class="optionsFilter">Order</h2>
+          <img src="images/order2.png" id="imgOrder" class="imgOptionsFilter" />
+        </div>
+      </div>
 
-            <!-- <div id="gender" class="options">
+      <div id="filtersOptions" class="filtersOptions hide">
+        <div id="specie" class="options">
+          <p>Specie</p>
+          <label for="Human">
+            <input
+              type="checkbox"
+              class="specie"
+              value="Human"
+              id="Human"
+              name="specie"
+            />
+            Human</label
+          >
+          <label for="Alien">
+            <input
+              type="checkbox"
+              class="specie"
+              value="Alien"
+              id="Alien"
+              name="specie"
+            />
+            Alien</label
+          >
+          <label for="Poopybutthole">
+            <input
+              type="checkbox"
+              class="specie"
+              value="Poopybutthole"
+              id="Poopybutthole"
+              name="specie"
+            />
+            Poopybutthole</label
+          >
+          <label for="Humanoid">
+            <input
+              type="checkbox"
+              class="specie"
+              value="Humanoid"
+              id="Humanoid"
+              name="specie"
+            />
+            Humanoid</label
+          >
+          <label for="Mytholog">
+            <input
+              type="checkbox"
+              class="specie"
+              value="Mytholog"
+              id="Mytholog"
+              name="specie"
+            />
+            Mytholog</label
+          >
+          <label for="Animal">
+            <input
+              type="checkbox"
+              class="specie"
+              value="Animal"
+              id="Animal"
+              name="specie"
+            />
+            Animal</label
+          >
+          <label for="Vampire">
+            <input
+              type="checkbox"
+              class="specie"
+              value="Vampire"
+              id="Vampire"
+              name="specie"
+            />
+            Vampire</label
+          >
+          <label for="Robot">
+            <input
+              type="checkbox"
+              class="specie"
+              value="Robot"
+              id="Robot"
+              name="specie"
+            />
+            Robot</label
+          >
+          <label for="Cronenberg">
+            <input
+              type="checkbox"
+              class="specie"
+              value="Cronenberg"
+              id="Cronenberg"
+              name="specie"
+            />
+            Cronenberg</label
+          >
+          <label for="Disease">
+            <input
+              type="checkbox"
+              class="specie"
+              value="Disease"
+              id="Disease"
+              name="specie"
+            />
+            Disease</label
+          >
+          <label for="Parasite">
+            <input
+              type="checkbox"
+              class="specie"
+              value="Parasite"
+              id="Parasite"
+              name="specie"
+            />
+            Parasite</label
+          >
+        </div>
+
+        <!-- <div id="gender" class="options">
                 <p>Gender</p>
                 <label for="female"><input type="radio" id="female" name="gender"> Female</label>
                 <label for="male"><input type="radio" id="male" name="gender"> Male</label>
             </div> -->
-            
-        </div>
-        
-        <div id="characters">
-      
-        </div>
+      </div>
 
-        <div id="btnPrevNext">            
-            <img src="images/previus.png" id="previus" class="previusNextIcons">
-            <img src="images/next.png" id="next" class="previusNextIcons">
-        </div>
-        
-    </section> 
-    
+      <div id="characters"></div>
+
+      <div id="btnPrevNext">
+        <img src="images/previus.png" id="previus" class="previusNextIcons" />
+        <img src="images/next.png" id="next" class="previusNextIcons" />
+      </div>
+    </section>
+
     <script type="module" src="./mainCharacters.js"></script>
-</body>
+  </body>
 </html>
