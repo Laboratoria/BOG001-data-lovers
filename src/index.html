@@ -3,24 +3,50 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name= "viewport" content="width" device-width, initial-scale=1  , maximun-scale=1>
   <title>Rick and Morty</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <h1>Rick and Morty</h1>
+  <div class="titulo">
+    <h1>Rick and Morty</h1>
+  </div>
   <br>
   <p>Rick is a mentally gifted, but sociopathic and alcoholic scientist and a grandfather to Morty; an awkward,
     impressionable, and somewhat spineless teenage boy. Rick moves into the family home of Morty, where he immediately
     becomes a bad influence.</p>
 
 
-  <div id="charactersZone"></div>
+  <button class="menuButtons" id=toCharacters> Characters </button>
+   
+  <script> function turnPageC() { window.location.href = 'Personajes.html'; } 
+  document.querySelector('#toCharacters').addEventListener('click', turnPageC) 
+  </script>
 
-  <div id="pruebaTarjeta"></div>
+<button class="menuButtons" id=toWorlds> Worlds </button>
+   
+<script> function turnPageW() { window.location.href = 'Mundo.html'; } 
+document.querySelector('#toWorlds').addEventListener('click', turnPageW) 
+</script>
 
-  <div id="root"></div>
-  <script src="main.js" type="module"></script>
+<button class="menuButtons" id=toSeasons> Seasons </button>
+   
+<script> function turnPageS() { window.location.href = 'Temporada.html'; } 
+document.querySelector('#toSeasons').addEventListener('click', turnPageS) 
+</script>
+
+
+
+
+  <br>
+  <br>
+
+
+
+
+  <div id="root"> Derechos Reservados | Carolina & Natalia &copy; </div>
+
 </body>
 
 </html>
