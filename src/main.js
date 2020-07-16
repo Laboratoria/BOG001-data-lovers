@@ -1,7 +1,5 @@
 import data from "./data.js";
 
-;
-
 let champions = data.list();
 console.log(data)
 
@@ -19,3 +17,19 @@ champions.forEach(element => {
   championContainer.appendChild(document.createTextNode("Rol:" + "" + element.tags));
   contenedor.appendChild(championContainer);
 });
+
+/* --------Menu--------*/
+var burgerMenu = document.getElementById('burger-menu');
+var show = document.getElementById('menu');
+var menuRol = document.getElementById('menuRol');
+
+burgerMenu.addEventListener('click', function(){
+    this.classList.toggle("close");
+    show.classList.toggle("show");
+})
+menuRol.addEventListener('click', function(){
+  this.classList.toggle("close");
+  show.classList.toggle("show");
+})
+
+
