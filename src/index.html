@@ -2,8 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="normalize.css" /> -->
     <script>
       function rotateCard(cardId) {
         let card = document.getElementById(cardId);
@@ -18,22 +20,21 @@
   </head>
   <body>
     <header>
+
+      <div id=navbar>
+        <img src="image/menu.png" id="menu">        
+        <div id="containerCategoriesMenu" class="hide">
+          <h5>Home</h5>
+          <a href="characters/characters.html">Characters</a>
+          <a value="locations" id="bttnLocations">Locations</a>
+        </div>      
+      </div>
+
       <div class="container">
         <div class="row">
           <div id="backHome" class="header-bar">
             <img src="/src/image/ricknmorty-header.png" alt="Encabezado" />
           </div>
-          
-          <div id=navbar>
-            <img src="image/menu.png" id="menu">        
-            <div id="containerCategoriesMenu" class="hide">
-              <h5>Home</h5>
-              <a href="characters/characters.html">Characters</a>
-              <a value="locations" id="bttnLocations">Locations</a>      
-              
-            </div>      
-          </div>
-
 
       </div>
     </header>
