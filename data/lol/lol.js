@@ -7,7 +7,7 @@ export default {
       version: "6.24.1",
       id: "Aatrox",
       key: "266",
-      name: "Aatrox",
+      name: "Aatrox", 
       title: "the Darkin Blade",
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png",
