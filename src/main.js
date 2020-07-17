@@ -13,6 +13,7 @@ const doughnutChart = document.getElementById("doughnutChart");
 const myChart = document.getElementById("myChart");
 const locations = document.getElementById("locations");
 const firstPage = document.getElementById("firstPage");
+// const bttnCharacters = document.getElementById("bttnCharacters");
 const bttnLocations = document.getElementById("bttnLocations");
 const backHome = document.getElementById("backHome");
 const sortingView = document.getElementById("sortingView");
@@ -25,6 +26,7 @@ const pagesNumber = document.getElementById("pagesNumber");
 const pagesControl = document.getElementById("pagesControl");
 const showAllLocations = document.getElementById("showAllLocations");
 
+// bttnCharacters.addEventListener("click", showCharacters);
 doughnutChart.addEventListener("click", showDoughnut);
 advancePageLink.addEventListener("click", advancePage);
 returnPageLink.addEventListener("click", returnPage);
@@ -87,6 +89,10 @@ function filterList(letter) {
     listLocations +
     `</div>`;
 }
+
+// function showCharacters() {
+//   window.location.href = "characters.html";
+// }
 
 function showLocation() {
   firstPage.style.display = "none";
