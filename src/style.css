@@ -1,14 +1,39 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Patrick Hand', cursive;  
 }
+.titulo {
+    align-items: center;
+    font-size: 4em;
+}
+.grid {
+    background-color: #FC9B57;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    justify-content: space-around;
+  }
 .personajes1 {
-
-    background-color: darkorange;
+    align-items: center;
+    background-color: #F48134;
+    box-shadow: #D8702A;
+    color: white;
+    justify-content: center;
     border-radius: 2em;
-    padding-left: 2em;
-    padding-top: 2em;
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-top: 1em;
     box-sizing: border-box; 
+    margin: 1em;
+    font-size: 1em;
+
+}
+
+.image {
+    width: 45% ; 
+    border-radius: 2em;
 
 }
 
