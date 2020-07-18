@@ -15,6 +15,20 @@
     margin: auto;
     justify-content: space-around;
   }
+
+  .imagenUno {
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+  }
+
+
+  .contenedorUno {
+    margin: 0;
+    padding: 0;
+    background-color: #BBDA94;
+    width: 100%;
+}
 .personajes1 {
     align-items: center;
     background-color: #F48134;
@@ -36,15 +50,24 @@
     border-radius: 2em;
 
 }
+.root {
+    background-color: rgb(159, 190, 115);
+
+}
+
+.Sinopsis {
+
+    font-size: 2em;
+}
 
 /* Computador  */
-@media   (min-width 780px) and (max-width 1024px){};
+@media   (min-width: 780px) and (max-width: 1024px){};
 
 /* Tablet */
-@media   (min-width 480px) and (max-width 780px) {};
+@media   (min-width: 480px) and (max-width: 780px) {};
 
 /* Celular */
-@media   (max-width 480px){
+@media   (max-width: 480px){
 
     .personajes1 {
 
