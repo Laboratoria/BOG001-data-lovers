@@ -96,6 +96,7 @@ function showLocation() {
   showAllLocations.style.display = "none";
   locations.style.display = "block";
   sortingView.style.display = "block";
+  doughnutChart.style.display = "block";
   showMenu();
 }
 

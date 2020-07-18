@@ -131,6 +131,8 @@ body {
   text-decoration: none;
   color: #088488;
   font-family: var(--font-titles);
+  width: 55px;
+  height: 45px;
 }
 
 .alphabethic-letter:not(:last-child) {
@@ -174,7 +176,7 @@ body {
 
 .card-location {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 }
 .flip-card-front,
