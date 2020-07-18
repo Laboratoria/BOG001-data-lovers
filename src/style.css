@@ -2,19 +2,24 @@
     margin: 0;
     padding: 0;
     font-family: 'Patrick Hand', cursive;  
+    word-break: break-all;
+}
+/* .container{
+    display: flex;
+    height: 100vh;
+    font-size: 2rem;
+  } */
+  .contenedorUno {
+    margin: 0;
+    padding: 0;
+    background-color: #BBDA94;
+    width: 100%;
 }
 .titulo {
     align-items: center;
     font-size: 4em;
 }
-.grid {
-    background-color: #FC9B57;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 800px;
-    margin: auto;
-    justify-content: space-around;
-  }
+
 
   .imagenUno {
       margin: 0;
@@ -22,18 +27,24 @@
       max-width: 100%;
   }
 
+  .grid {
+    background-color: #FC9B57;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    justify-content: space-around;
+    
+  }
 
-  .contenedorUno {
-    margin: 0;
-    padding: 0;
-    background-color: #BBDA94;
-    width: 100%;
-}
 .personajes1 {
     align-items: center;
     background-color: #F48134;
     box-shadow: #D8702A;
     color: white;
+    display: flex;
+    height: 150px;
+    width: 150px;  
     justify-content: center;
     border-radius: 2em;
     padding-left: 0em;
@@ -42,12 +53,16 @@
     box-sizing: border-box; 
     margin: 1em;
     font-size: 1em;
-
+    border: 0;
+    flex-direction: column
+}
+.nombres {
+    word-break: break-word;
 }
 
 .image {
-    width: 45% ; 
-    border-radius: 2em;
+    width: 70% ; 
+    border-radius: 1em;
 
 }
 .root {

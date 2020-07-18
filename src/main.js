@@ -33,7 +33,7 @@ function popUp(e) {
 let names = [];
 for (let i = 0; i < personajes.length; i++) {
   names += `<button class= "personajes1"  id="${personajes[i].id}-${i}"> <img class= "image" data-personajes="${i}" src="${personajes[i].image} ">
-  <p data-personajes="${i}" > Name: ${personajes[i].name} </p>  </button>`
+  <br> <p data-personajes="${i}" class= "nombres" > Name: ${personajes[i].name} </p>  </button>`
 };
 
 let  characterButtons = document.getElementById("charactersZone");
