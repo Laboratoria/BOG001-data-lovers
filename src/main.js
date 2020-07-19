@@ -4,9 +4,20 @@ import data from './data/pokemon/pokemon.js';
 
 const pokeDex = data.pokemon;
 const root = document.querySelector("#root");
-const pokemonsNumber = 151;
+const containerInfoCard = document.querySelector(".containerInfocard");
 const menu = document.querySelector("#menu");
 const buttonPokeMenu = document.querySelector("#buttonPokeMenu");
+const close = document.querySelector("#closed");
+
+/*if(close)
+{close.addEventListener("click", closeTemplate)};
+
+function closeTemplate(){
+
+   if(containerInfoCard) {containerInfoCard.style.display = 'none';
+    root.style.display = 'block';}
+    console.log(containerInfoCard);
+};*/
 
 buttonPokeMenu.addEventListener("click", showMenu);
 
@@ -72,13 +83,13 @@ function pokemonInfo (pokemon) {
         evolution = pokemon.next_evolution.map(pokemonEvo => 
             pokemonEvo.name)
     }
-    else{ evolution = "He has no evolution."}
+    else{ evolution = "None"}
 
     if (pokemon.prev_evolution) {
         preEvolution = pokemon.prev_evolution.map(pokemonEvo => 
        pokemonEvo.name)   
     }   
-    else{ preEvolution = "He has no pre-evolution."}
+    else{ preEvolution = "None"}
 
 
     console.log(evolution);
@@ -87,6 +98,7 @@ function pokemonInfo (pokemon) {
 
     infoCard.innerHTML=
     `<div class= "containerInfoCard">
+        <div class= "close" id= "closed">X</div>
         <div class="template_nameId">
             <div class="tempName"><h2>${pokemon.name}</h2></div>
             <div class="tempNum"><h3>Num. ${pokemon.num}</h3></div>
@@ -95,20 +107,20 @@ function pokemonInfo (pokemon) {
             <img class="template_imagePokemon" src= "${pokemon.img}">
         </div>
         <div class="template-type">
-            <div class="tempTitleType"><h2>Type:</h2></div>
+            <div class="tempTitleType"><h3>Type:</h3></div>
             <div class="tempType"><p><span>${pokemon.type}</span></p></div>
         </div>
         <div class="template_traits">
             <div class="traits">
-                <h3>Traits</h3>
+                <h2 class= "h2Title">Traits</h2>
                 <p>Height: <span>${pokemon.height}</span></p>
                 <p>Weight: <span>${pokemon.weight}</span></p>
                 <p>Candy: <span>${pokemon.candy}</span></p>
                 <p>Candy count: <span>${pokemon.candy_count}</span></p>
             </div>
-            <div>
+            <div class = "multiWeak">
                 <div class="multipliers">
-                    <h3>Multipliers:</h3>
+                    <h2 class= "h2Title">Multipliers:</h2>
                     <p><span>${pokemon.multipliers}</span></p>
                 </div>
                 <div class="weaknesses">
@@ -118,11 +130,11 @@ function pokemonInfo (pokemon) {
             </div>    
         </div>
         <div class="evolutions">
-            <h3 class="titleEvo">Evolutions</h3>
+            <h2 class="titleEvo h2Title">Evolutions</h2>
             <div class="evo">
-                <div class="pre-evolution"><h4> Pre-evolution:</h4>
+                <div class="pre-evolution"><h3> Pre-evolution:</h3>
                 <p><span>${preEvolution}</span></p></div>
-                <div class="evolution"><h4> Evolution:</h4> 
+                <div class="evolution"><h3> Evolution:</h3> 
                 <p><span>${evolution}</span></p></div>
             </div>
         </div>
