@@ -52,7 +52,7 @@ export default {
       1.6
     ],
     "weaknesses": [
-      "Fire",
+      "Fire", 
       "Ice",
       "Flying",
       "Psychic"
