@@ -35,6 +35,10 @@ body {
   z-index: 8;
 }
 
+#containerCategoriesMenu a {
+  text-decoration: none;
+}
+
 #hero h1 {
   position: absolute;
   top: 20vh;
@@ -168,7 +172,7 @@ body {
 /* Estilos seccion de personajes */
 
 #containerCharacters {
-  background-image: url("images/galaxy.jpg");
+  background-image: url("../image/galaxy.jpg");
   /* background-color: #000; */
   height: 100%;
   z-index: 4;
@@ -205,4 +209,35 @@ body {
 
 #btnPrevNext {
   text-align: center;
+}
+
+footer {
+  box-shadow: 0 -1px 10px 0 #372f2f;
+  padding-bottom: 0;
+  height: 150px;
+  color: #ae28f0;
+  background-color: #1e1f1e;
+}
+
+.low-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px 0px 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.community a {
+  text-decoration: none;
+  color: var(--font-color);
+  padding: 5px;
+}
+
+.foot {
+  display: grid;
+  justify-items: center;
 }

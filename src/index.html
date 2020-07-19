@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>The Citadel</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
     <script>
       function rotateCard(cardId) {
@@ -19,22 +19,20 @@
   </head>
   <body>
     <header>
+
+      <div id=navbar>
+        <img src="image/menu.png" id="menu">        
+        <div id="containerCategoriesMenu" class="hide">    
+          <a href="characters/characters.html">Characters</a><br>
+          <a value="locations" id="bttnLocations">Locations</a>
+        </div>      
+      </div>
+
       <div class="container">
         <div class="row">
           <div id="backHome" class="header-bar">
             <img src="/src/image/ricknmorty-header.png" alt="Encabezado" />
           </div>
-          
-          <div id=navbar>
-            <img src="image/menu.png" id="menu">        
-            <div id="containerCategoriesMenu" class="hide">
-              <h5>Home</h5>
-              <a href="characters/characters.html">Characters</a>
-              <a value="locations" id="bttnLocations">Locations</a>      
-              
-            </div>      
-          </div>
-
 
       </div>
     </header>
@@ -93,8 +91,11 @@
           </div>
         </div>
       </div>
-      <div id="doughnutChart" class="doughnut-calc" style="display: none;">
-        <input type="button" value="Statistics" />
+      <div id="doughnutChart" style="display: none;">
+        <div class="iconStatistics">
+          <img src="image/doughnut.png" id="statistics" value="Statistics">
+          <label for="statistics">Statistics</label>
+        </div>
         <canvas
           id="myChart"
           width="100"
@@ -208,32 +209,35 @@
         </div>
         <div id="showAll" class="col"></div>
         <div id="pagesControl" class="page-button">
-          <input id="returnPageLink" type="button" value="&lt;" />
+          <img src="image/previus.png" id="returnPageLink" value="prev">
           <span id="pagesNumber">0</span>
-          <input id="advancePageLink" type="button" value="&gt;" />
+          <img src="image/next.png" id="advancePageLink" value="next">
         </div>
       </div>
     </main>
-
+    
     <footer>
-      <div class="low-bar">
-        <div class="social-icons">
-          <img src="/src/image/facebook.png" alt="icono facebook" />
-          <img src="/src/image/instagram.png" alt="icono instagram" />
-          <img src="/src/image/twitter.png" alt="icono twitter" />
+      <div class="foot">
+        <div class="low-bar">
+          <div class="social-icons">
+            <img src="/src/image/facebook.png" alt="icono facebook" />
+            <img src="/src/image/instagram.png" alt="icono instagram" />
+            <img src="/src/image/twitter.png" alt="icono twitter" />
+          </div>
+          <div class="community">
+            <a href="#">Support</a>
+            <a href="#">Help</a>
+            <a href="#">About us</a>
+          </div>
         </div>
-        <div class="">
+        <div class="copy">
           <p>Copyright &copy; 2020 The Citadel</p>
-        </div>
-        <div class="community">
-          <a href="#">Support</a>
-          <a href="#">Help</a>
-          <a href="#">About us</a>
         </div>
       </div>
     </footer>
 
     <div id="root"></div>
-    <script src="main.js" type="module"></script>
+    <script src="main.js" type="module"></script>    
+    
   </body>
 </html>

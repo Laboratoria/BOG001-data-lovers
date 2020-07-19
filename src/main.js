@@ -1,10 +1,13 @@
+//import { example } from "./data.js";
+//console.log(example, data);
+import data from "./data/rickandmorty/rickandmorty.js";
+
 import {
   removeDuplicates,
   filterByLetter,
   countCharactersByLocation,
 } from "./data.js";
 
-import data from "./data/rickandmorty/rickandmorty.js";
 import "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js";
 
 const navBar = document.getElementById("navBar");
@@ -13,8 +16,10 @@ const doughnutChart = document.getElementById("doughnutChart");
 const myChart = document.getElementById("myChart");
 const locations = document.getElementById("locations");
 const firstPage = document.getElementById("firstPage");
-// const bttnCharacters = document.getElementById("bttnCharacters");
 const bttnLocations = document.getElementById("bttnLocations");
+const containerCategoriesMenu = document.getElementById(
+  "containerCategoriesMenu"
+);
 const backHome = document.getElementById("backHome");
 const sortingView = document.getElementById("sortingView");
 let pageNumber = 0;
@@ -26,11 +31,11 @@ const pagesNumber = document.getElementById("pagesNumber");
 const pagesControl = document.getElementById("pagesControl");
 const showAllLocations = document.getElementById("showAllLocations");
 
-// bttnCharacters.addEventListener("click", showCharacters);
 doughnutChart.addEventListener("click", showDoughnut);
 advancePageLink.addEventListener("click", advancePage);
 returnPageLink.addEventListener("click", returnPage);
 bttnLocations.addEventListener("click", showLocation);
+containerCategoriesMenu.addEventListener("click");
 showAllLocations.addEventListener("click", returnAllLocations);
 backHome.addEventListener("click", returnHome);
 
@@ -47,6 +52,13 @@ window.onload = function () {
     });
   }
 };
+
+//--------------- Ocultar o mostrar ventana de categorias de menu ----------------
+const btnMenu = document.getElementById("menu");
+const categoriesMenu = document.getElementById("containerCategoriesMenu");
+btnMenu.addEventListener("click", function () {
+  categoriesMenu.classList.toggle("hide");
+});
 
 const showMenu = () => {
   if (navBar.classList.contains("show-button")) {
@@ -90,13 +102,10 @@ function filterList(letter) {
     `</div>`;
 }
 
-// function showCharacters() {
-//   window.location.href = "characters.html";
-// }
-
 function showLocation() {
   firstPage.style.display = "none";
   showAllLocations.style.display = "none";
+  containerCategoriesMenu.style.display = "none";
   locations.style.display = "block";
   sortingView.style.display = "block";
   doughnutChart.style.display = "block";
@@ -208,25 +217,25 @@ function loadLocationsPage(startIndex) {
       }
     }
     listLocations += `<div class="card-location " id="${"card" + i}">
-              <h4>${uniqueLocations[i]}</h4>
-              <div class="flip-card">
-            <div id="cardInner${i}" class="flip-card-inner" onclick="
-            rotateCard('cardInner${i}')
-            " >
-              <div class="flip-card-front">
-              <img src="${
-                "/src/image/" + uniqueLocations[i] + ".jpg"
-              }" onerror="this.src='/src/image/error404.svg';" />
-              </div>
-              <div class="flip-card-back">
-                <h1>${uniqueLocations[i]}</h1>
-                <p>Dimension: ${dimension.replace("Dimension", "")}</p>
-                <p>Type: ${type}</p>
+                <h4>${uniqueLocations[i]}</h4>
+                <div class="flip-card">
+              <div id="cardInner${i}" class="flip-card-inner" onclick="
+              rotateCard('cardInner${i}')
+              " >
+                <div class="flip-card-front">
+                <img src="${
+                  "/src/image/" + uniqueLocations[i] + ".jpg"
+                }" onerror="this.src='/src/image/error404.svg';" />
+                </div>
+                <div class="flip-card-back">
+                  <h1>${uniqueLocations[i]}</h1>
+                  <p>Dimension: ${dimension.replace("Dimension", "")}</p>
+                  <p>Type: ${type}</p>
+                </div>
               </div>
             </div>
-          </div>
-              
-            </div>`;
+                
+              </div>`;
   }
   return listLocations;
 }
@@ -243,25 +252,25 @@ function loadFilterLocations(filterLocations) {
       }
     }
     listLocations += `<div class="card-location " id="${"card" + i}">
-              <h4>${filterLocations[i]}</h4>
-              <div class="flip-card">
-            <div id="cardInner${i}" class="flip-card-inner" onclick="
-            rotateCard('cardInner${i}')
-            " >
-              <div class="flip-card-front">
-              <img src="${
-                "/src/image/" + filterLocations[i] + ".jpg"
-              }" onerror="this.src='/src/image/error404.svg';" />
-              </div>
-              <div class="flip-card-back">
-                <h1>${filterLocations[i]}</h1>
-                <p>Dimension: ${dimension.replace("Dimension", "")}</p>
-                <p>Type: ${type}</p>
+                <h4>${filterLocations[i]}</h4>
+                <div class="flip-card">
+              <div id="cardInner${i}" class="flip-card-inner" onclick="
+              rotateCard('cardInner${i}')
+              " >
+                <div class="flip-card-front">
+                <img src="${
+                  "/src/image/" + filterLocations[i] + ".jpg"
+                }" onerror="this.src='/src/image/error404.svg';" />
+                </div>
+                <div class="flip-card-back">
+                  <h1>${filterLocations[i]}</h1>
+                  <p>Dimension: ${dimension.replace("Dimension", "")}</p>
+                  <p>Type: ${type}</p>
+                </div>
               </div>
             </div>
-          </div>
-              
-            </div>`;
+                
+              </div>`;
   }
   return listLocations;
 }
@@ -277,7 +286,6 @@ function movePage(symbol) {
   if (pageNumber === 0 && symbol === "-") {
     return;
   }
-
   let maxPages = uniqueLocations.length / 6 - 1;
   if (pageNumber === maxPages && symbol === "+") {
     return;

@@ -1,4 +1,4 @@
-import data from "./data/rickandmorty/rickandmorty.js";
+import data from "../data/rickandmorty/rickandmorty.js";
 import filterFunctions from "./dataCharacters.js";
 
 // ----------------Efecto parallax-------------------
@@ -21,6 +21,18 @@ const categoriesMenu = document.getElementById("containerCategoriesMenu");
 btnMenu.addEventListener("click", function () {
   categoriesMenu.classList.toggle("hide");
 });
+
+//Ir a lugares
+// const bttnLocations = document.getElementById("bttnLocations");
+// const firstPage = document.getElementById("firstPage");
+// bttnLocations.addEventListener("click", showLocation);
+// function showLocation() {
+//   firstPage.style.display = "none";
+//   showAllLocations.style.display = "none";
+//   locations.style.display = "block";
+//   sortingView.style.display = "block";
+//   //   showMenu();
+// }
 
 // ------------- Cambio de pagina ---------------
 let btnPrevius = document.getElementById("previus");
