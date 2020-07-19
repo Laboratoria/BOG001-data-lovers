@@ -23,16 +23,16 @@ btnMenu.addEventListener("click", function () {
 });
 
 //Ir a lugares
-const bttnLocations = document.getElementById("bttnLocations");
-const firstPage = document.getElementById("firstPage");
-bttnLocations.addEventListener("click", showLocation);
-function showLocation() {
-  firstPage.style.display = "none";
-  showAllLocations.style.display = "none";
-  locations.style.display = "block";
-  sortingView.style.display = "block";
-  //   showMenu();
-}
+// const bttnLocations = document.getElementById("bttnLocations");
+// const firstPage = document.getElementById("firstPage");
+// bttnLocations.addEventListener("click", showLocation);
+// function showLocation() {
+//   firstPage.style.display = "none";
+//   showAllLocations.style.display = "none";
+//   locations.style.display = "block";
+//   sortingView.style.display = "block";
+//   //   showMenu();
+// }
 
 // ------------- Cambio de pagina ---------------
 let btnPrevius = document.getElementById("previus");

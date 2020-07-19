@@ -49,6 +49,13 @@ window.onload = function () {
   }
 };
 
+//--------------- Ocultar o mostrar ventana de categorias de menu ----------------
+const btnMenu = document.getElementById("menu");
+const categoriesMenu = document.getElementById("containerCategoriesMenu");
+btnMenu.addEventListener("click", function () {
+  categoriesMenu.classList.toggle("hide");
+});
+
 const showMenu = () => {
   if (navBar.classList.contains("show-button")) {
     navBar.classList.remove("show-button");
