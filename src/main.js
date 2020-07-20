@@ -19,9 +19,9 @@ function popUp(e) {
   let information = [];
 
 
-  information += `  <img src="${personajes[indicator].image} "><p> Name: ${personajes[indicator].name}
+  information += {`<img src = "${personajes[indicator].image} "><p> Name: ${personajes[indicator].name}
       </p> <p> Gender: ${personajes[indicator].gender} </p> <p> Species: ${personajes[indicator].species} </p>
-      <p> Origin: ${personajes[indicator].origin.name} </p> `
+      <p> Origin: ${personajes[indicator].origin.name} </p>`}
 
 
   let characterCards = document.getElementById("pruebaTarjeta");
