@@ -17,9 +17,9 @@ const myChart = document.getElementById("myChart");
 const locations = document.getElementById("locations");
 const firstPage = document.getElementById("firstPage");
 const bttnLocations = document.getElementById("bttnLocations");
-const containerCategoriesMenu = document.getElementById(
-  "containerCategoriesMenu"
-);
+// const containerCategoriesMenu = document.getElementById(
+//   "containerCategoriesMenu"
+// );
 const backHome = document.getElementById("backHome");
 const sortingView = document.getElementById("sortingView");
 let pageNumber = 0;
@@ -35,7 +35,7 @@ doughnutChart.addEventListener("click", showDoughnut);
 advancePageLink.addEventListener("click", advancePage);
 returnPageLink.addEventListener("click", returnPage);
 bttnLocations.addEventListener("click", showLocation);
-containerCategoriesMenu.addEventListener("click");
+// containerCategoriesMenu.addEventListener("click");
 showAllLocations.addEventListener("click", returnAllLocations);
 backHome.addEventListener("click", returnHome);
 
@@ -105,7 +105,7 @@ function filterList(letter) {
 function showLocation() {
   firstPage.style.display = "none";
   showAllLocations.style.display = "none";
-  containerCategoriesMenu.style.display = "none";
+  // containerCategoriesMenu.style.display = "none";
   locations.style.display = "block";
   sortingView.style.display = "block";
   doughnutChart.style.display = "block";
