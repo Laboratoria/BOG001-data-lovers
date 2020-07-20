@@ -5,8 +5,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Gloria Hallelujah";
-  color: #eae9ec; */
+  font-family: "Gloria Hallelujah";
+  color: #eae9ec;
 }
 
 ::after,
@@ -30,11 +30,11 @@
 }
 
 #navbar {
-  /* background-color: #ffffff0d; */
   background-color: #1e1f1e;
-  /* position: absolute; */
+  position: absolute;
   z-index: 5;
   width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 
 .hide {
@@ -77,6 +77,7 @@
   -webkit-margin-before: auto;
   margin-block-start: auto;
 }
+
 .hamburguer img {
   width: 40px;
   height: 40px;
@@ -119,7 +120,6 @@ body {
   font-size: var(--font-size2);
 }
 
-.iconStatistics img,
 .column2 {
   flex-flow: row wrap;
   display: flex;
@@ -149,6 +149,11 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.row p {
+  font-family: var(--font-regular);
+  font-size: var(--font-size2);
 }
 
 .row-az {
