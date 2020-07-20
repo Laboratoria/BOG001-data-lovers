@@ -11,7 +11,6 @@ import {
 import "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js";
 
 const navBar = document.getElementById("navBar");
-const menuHamburguer = document.getElementById("menuHamburguer");
 const doughnutChart = document.getElementById("doughnutChart");
 const myChart = document.getElementById("myChart");
 const locations = document.getElementById("locations");
@@ -60,7 +59,7 @@ btnMenu.addEventListener("click", function () {
   categoriesMenu.classList.toggle("hide");
 });
 
-const showMenu = () => {
+function showMenu() {
   if (navBar.classList.contains("show-button")) {
     navBar.classList.remove("show-button");
     navBar.classList.add("hidde-button");
@@ -68,12 +67,11 @@ const showMenu = () => {
     navBar.classList.remove("hidde-button");
     navBar.classList.add("show-button");
   }
-};
-menuHamburguer.addEventListener("click", showMenu);
+}
 
 function returnAllLocations() {
   showAllLocations.style.display = "none";
-  pagesControl.style.display = "block";
+  pagesControl.style.display = "flex";
   let listLocations = loadLocationsPage(0);
 
   let showAll = document.getElementById("showAll");
