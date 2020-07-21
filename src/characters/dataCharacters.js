@@ -52,7 +52,6 @@ function sort(dataFiltered) {
     }
     return 0;
   });
-  // return dataFiltered.sort();
 }
 
 // function searchDataTwo(data, filters){

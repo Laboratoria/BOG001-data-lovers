@@ -108,7 +108,7 @@ const previusPag = (urlBase, page, filterParameters) => {
   // eslint-disable-next-line no-unused-vars
   const newNextUrl = a.replace(rex, "&");
   // console.log(newNextUrl);
-  window.location.href = nextUrl;
+  window.location.href = newNextUrl;
 };
 
 checkFilters(arrChkbSpecies);
