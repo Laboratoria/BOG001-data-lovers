@@ -11,12 +11,18 @@ body {
 }
 
 header {
-  /*display: flex;*/
+  display: flex;
   justify-content: center;
   height: auto;
   width: 100%;
 }
 
+header .imgLogo {
+  text-align: right;
+  height: 50px;
+  font-size: 50px;
+  float: left;
+}
 
 /* --------Menu--------*/
 #burger-menu{
@@ -27,13 +33,6 @@ header {
   position: relative;
   z-index: 2;
   text-align: left;
-}
-
-#burger-menu .imgLogo{
-  text-align: right;
-	min-height: 50px;
-	font-size: 50px;
-	float: left;
 }
 
 #burger-menu span,

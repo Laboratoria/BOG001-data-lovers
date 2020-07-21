@@ -1,16 +1,16 @@
 import data from "./data.js";
 
 let champions = data.list();
-console.log(data)
+/*console.log(data)*/
 
 champions.forEach(element => {
-  console.log(element.name)
+  /*console.log(element.name)*/
   let contenedor = document.getElementById("champions");
   let championContainer = document.createElement("div");
   championContainer.classList.add("champions");
   const image = document.createElement("img");
   //const imgContenedor = document.createElement("div");
-  image.classList.add("imgContenedor");
+  //image.classList.add("imgContenedor");
   image.src = element.img;
   championContainer.appendChild(image);
   championContainer.appendChild(document.createTextNode(element.name));
@@ -27,9 +27,4 @@ burgerMenu.addEventListener('click', function(){
     this.classList.toggle("close");
     show.classList.toggle("show");
 })
-menuRol.addEventListener('click', function(){
-  this.classList.toggle("close");
-  show.classList.toggle("show");
-})
-
 
