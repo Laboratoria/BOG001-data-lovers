@@ -1,49 +1,19 @@
 *{
     margin: 0;
-    padding: 0%;
-  }
- body {
-   border:solid red;
-   flex-wrap: wrap;
- }
-  header {
-    background-color:  rgba(0, 0, 0, 0.46);
-    position: absolute;
-    height: 98px;
-    width: 100%;
-    margin: 0 auto;
-    display:flex
+    padding: 0;
   }
 
-  .fondo: {
-    background-repeat: no-repeat;
-    display:flex;
-    height: 98px;
-    width: auto;
+  body {
+    color: black;
+    font-family: 'Oxygen', sans-serif;
   }
 
-  .fondo img {
-    height: 100%;
-    width: 100%;
+  .alv {
+    text-align: center !important;
+    font-size: 50px;
+    padding: 20px 0;
   }
 
-  .containerBlanco {
-    background-color: ivory;
-
+  .container{
+    background-color: rgb(30, 65, 110) !important;
   }
-  .logo {
-    text-align: center;
-
-  }
-  .logo img {
-    position:center;
-    margin:10px;
-    width: 297px;
-    height: 139px;
-    left: 31px;
-    top: 13px;
-  }
-  
-    
-  
-    
