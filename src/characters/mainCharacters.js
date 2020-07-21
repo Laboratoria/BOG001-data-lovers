@@ -69,7 +69,7 @@ if (parameterUrl !== undefined) {
 
 //Función para establecer los parametros de los filtros activos
 function setFilterParameters(event) {
-  console.log(event.currentTarget.id);
+  // console.log(event.currentTarget.id);
 
   let filterParmeters = [];
   let initParameter = "&filter=";
@@ -106,8 +106,8 @@ const previusPag = (urlBase, page, filterParameters) => {
   const rex = /&&/gi;
   const a = nextUrl.replace(regex, "&");
   const newNextUrl = a.replace(rex, "&");
-  console.log(newNextUrl);
-  window.location.href = nextUrl;
+  // console.log(newNextUrl);
+  window.location.href = newNextUrl;
 };
 
 checkFilters(arrChkbSpecies);
@@ -115,7 +115,7 @@ checkFilters(arrChkbSpecies);
 function checkFilters(checkbox) {
   const currentUrl = window.location.search.substring(1);
   const arrUrlParameters = currentUrl.split("&");
-  console.log(arrUrlParameters);
+  // console.log(arrUrlParameters);
   let arrParam = [];
   let arrFilterParam = [];
   arrUrlParameters.forEach((element) => {
@@ -125,14 +125,14 @@ function checkFilters(checkbox) {
     const element = arrParam[index];
     arrFilterParam.push(element[1]);
   }
-  console.log(arrParam);
-  console.log(arrFilterParam); // arr filtros en parametros
-  console.log(checkbox[1]);
+  // console.log(arrParam);
+  // console.log(arrFilterParam); // arr filtros en parametros
+  // console.log(checkbox[1]);
   checkbox.forEach((chb) => {
     arrFilterParam.forEach((filterParameter) => {
       if (chb.value == filterParameter) {
         chb.checked = true;
-        console.log("true");
+        // console.log("true");
       }
     });
   });
@@ -149,9 +149,9 @@ function checkFilters(checkbox) {
 
   function filter() {
     let filters = filterFunctions.detectCheck(arrChkbSpecies);
-    console.log(filters);
+    // console.log(filters);
     dataFiltered = filterFunctions.filterData(dataGroup, filters);
-    console.log(dataFiltered);
+    // console.log(dataFiltered);
     let pagination = filterFunctions.paginate(page, dataFiltered);
     renderData(pagination);
   }
@@ -160,7 +160,7 @@ function checkFilters(checkbox) {
   const btnOrder = document.getElementById("order");
   btnOrder.addEventListener("click", function () {
     filterFunctions.sort(dataFiltered);
-    console.log(dataFiltered);
+    // console.log(dataFiltered);
     let a = filterFunctions.paginate(page, dataFiltered);
     renderData(a);
   });
