@@ -42,7 +42,6 @@ function paginate(page, dataFiltered) {
   return pageData;
 }
 
-let az = 1;
 function sort(dataFiltered) {
   dataFiltered.sort(function (a, b) {
     if (a.name > b.name) {

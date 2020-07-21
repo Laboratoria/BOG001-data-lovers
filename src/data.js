@@ -1,4 +1,4 @@
-export const removeDuplicates = (uniqueLocations, data) => {
+export const removeDuplicates = (data) => {
   let locations = [];
   for (let i = 0; i < data.results.length; i++) {
     if (locations.includes(data.results[i].location.name) === false) {

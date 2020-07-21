@@ -122,7 +122,7 @@ function loadLocations() {
   uniqueLocations = [];
   pagesNumber.innerHTML = "1";
 
-  uniqueLocations = removeDuplicates(uniqueLocations, data);
+  uniqueLocations = removeDuplicates(data);
   for (let j = 0; j < uniqueLocations.length; j++) {
     for (let i = 0; i < data.results.length; i++) {
       if (uniqueLocations[j] === data.results[i].location.name) {
@@ -151,7 +151,11 @@ function loadLocations() {
   }
 
   let donut = document.getElementById("myChart").getContext("2d");
-  let myChart = new Chart(donut, {
+
+  // eslint-disable-next-line no-unused-vars
+  let myChart;
+  // eslint-disable-next-line no-undef
+  myChart = new Chart(donut, {
     type: "doughnut",
     data: {
       labels: labels,
