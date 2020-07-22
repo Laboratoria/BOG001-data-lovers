@@ -9,7 +9,7 @@ header {
     justify-content: flex-end;
     position: fixed;
     width: 100%;
-    height:300px;
+    height: 280px;
     top:0;
     background:linear-gradient(180deg, 
     rgba(44, 73, 153, 0.89) 0%,
@@ -104,7 +104,6 @@ main{
     flex-direction: row;
     margin-left: 40px;
     margin-right: 20px;
-    /*margin: auto;*/
 }
 
 .media{
@@ -136,6 +135,7 @@ main{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px 10px 10px 10px;
 }
+
 .pokemonContainer{  
     display: flex;
     flex-direction: row;
@@ -158,8 +158,7 @@ main{
     width: 200px;
     height: 200px;
     cursor: pointer;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
-          
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);      
 }
 
 .pokemonName{
@@ -219,8 +218,9 @@ footer{
     height:60px;
     background-size: 100%;
     background: linear-gradient(180deg,
-    rgba(7, 14, 33, 0.91) 16.67%,
-    #2C4999 100%);
+    rgba(7, 14, 33, 0.91) 16.67%, 
+    #2C4999 100%), url(./images/pokemonBackgroundWhite.jpg);
+    background-size: cover;
     position: fixed;
     width: 100%;
     margin-top: 100px;
@@ -242,8 +242,8 @@ footer{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
     margin-top: 320px;
     margin-bottom: 90px;
-    width: 600px;
-    height: 310px;
+    width: 635px;
+    height: 340px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -253,32 +253,36 @@ footer{
 }
 .close{
     position: relative;
-    left: 200px; 
-    width:20px;
-    height: 20px;
+    left: 485px; 
+    width: 25px;
+    height: 25px;
     font-family: Arial;
     font-weight: bold;
     display: inline-block;
-    color: black;
+    color: white;
     cursor:pointer;
     margin-top: 5px;
     margin-bottom: 5px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.closeTemplate{
+    display : none;
 }
 
 .template_image{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 200px;
-    height: 180px;
-
-
-    
+    height: 200px; 
+    margin-left: 5px;
 }
-.template_imagePokemon{
-    width: 180px;
-    height: 180px;
 
+.template_imagePokemon{
+    width: 185px;
+    height: 185px;
 }
 
 .template_nameId{
@@ -291,15 +295,17 @@ footer{
     background-color: #389ac8e1;
     font-size:20px ;
     height: 35px;
-    width: 180px;
+    width: 215px;
+    margin-left: 5px;
 }
+
 .tempNum{
     font-size: 15px;
     margin: auto;
 }
+
 .tempName{
     margin: auto;
-
 }
 
 .template-type{
@@ -313,8 +319,10 @@ footer{
     border-radius: 0px 0px 12px 12px;
     font-size:20px ;
     height: 35px;
-    width: 180px;
+    width: 215px;
+    margin-left: 5px;
 }
+
 .tempTitleType{
     font-size: 18px;
 }
@@ -325,6 +333,7 @@ footer{
     margin-bottom: 20px;
     margin-top: 30px;
     z-index: 1;
+    margin-right: 10px;
 }
 
 .traits{
@@ -336,10 +345,16 @@ footer{
     border: 2px solid blue;
     border-radius: 12px 0px 0px 12px;
     width: 175px;
-    height: 150px;
+    height: 166px;
     padding-left: 10px;
     border-right: 0;
     transform: translateX(2px)
+}
+
+.multiWeak{
+    word-wrap: break-word;
+    hyphens: auto;
+    width: 175px;
 }
 
 .multipliers{
@@ -351,33 +366,30 @@ footer{
     border: 2px solid blue;
     border-radius: 0px 12px 0px 0px;
     width: 175px;
-    height: 75px;
-    margin-right: 5px;
+    height: 80px;
     border-bottom: 0;
     transform: translateY(0.8px)
 }
 
 .weaknesses{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     border: 2px solid blue;
     border-radius: 0px 0px 12px 0px;
-    width: 175px;
-    height: 75px;
-    margin-right: 5px;
-    transform: translateY(-1.8px)
+    width: 169px;
+    height: 80px;
+    padding: 3px;
+    transform: translateY(-1.8px);
+}
+
+.titleWeaknesses{
+    text-align: center;
 }
 
 .evolutions{
     display: flex;
     flex-direction: column;
-    width: 368px;
-    margin-right: 5px;
-  
+    width: 368px; 
+    margin-right: 5px; 
 }
-
 
 .titleEvo{
     display: flex;
@@ -398,7 +410,7 @@ footer{
     border: 2px solid blue; 
     border-radius:  0px 0px 12px 12px;
     transform: translateY(-2px); 
-    height: 50px;  
+    height: 60px;  
 }
 
 .pre-evolution{

@@ -1,23 +1,12 @@
-import { filterByType } from './data.js';
+/*import { filterByType } from './data.js';*/
 import data from './data/pokemon/pokemon.js';
 // import data from './data/;
 
 const pokeDex = data.pokemon;
 const root = document.querySelector("#root");
-const containerInfoCard = document.querySelector(".containerInfocard");
 const menu = document.querySelector("#menu");
 const buttonPokeMenu = document.querySelector("#buttonPokeMenu");
-const close = document.querySelector("#closed");
 
-/*if(close)
-{close.addEventListener("click", closeTemplate)};
-
-function closeTemplate(){
-
-   if(containerInfoCard) {containerInfoCard.style.display = 'none';
-    root.style.display = 'block';}
-    console.log(containerInfoCard);
-};*/
 
 buttonPokeMenu.addEventListener("click", showMenu);
 
@@ -70,14 +59,14 @@ function printPokemons (pokemonGroup) {
     });
 
 };
+
     
 function pokemonInfo (pokemon) {
-
     root.style.display = 'none';
     let infoCard = document.querySelector("#infoCard"); 
     let evolution;
     let preEvolution;
-    
+        
     
     if (pokemon.next_evolution) {
         evolution = pokemon.next_evolution.map(pokemonEvo => 
@@ -92,13 +81,9 @@ function pokemonInfo (pokemon) {
     else{ preEvolution = "None"}
 
 
-    console.log(evolution);
-    console.log(preEvolution);
-
-
     infoCard.innerHTML=
-    `<div class= "containerInfoCard">
-        <div class= "close" id= "closed">X</div>
+    `<div class= "containerInfoCard" id=containInfocard>
+        <button class= "close" id= "closed">X</button>
         <div class="template_nameId">
             <div class="tempName"><h2>${pokemon.name}</h2></div>
             <div class="tempNum"><h3>Num. ${pokemon.num}</h3></div>
@@ -124,8 +109,8 @@ function pokemonInfo (pokemon) {
                     <p><span>${pokemon.multipliers}</span></p>
                 </div>
                 <div class="weaknesses">
-                    <h2>Weaknesses:</h2>
-                    <p><span>${pokemon.weaknesses}</span></p>
+                    <h2 class="titleWeaknesses">Weaknesses:</h2>
+                    <p>${pokemon.weaknesses}</p>
                 </div>
             </div>    
         </div>
@@ -139,6 +124,16 @@ function pokemonInfo (pokemon) {
             </div>
         </div>
     </div>`
+
+    const close = document.querySelector("#closed");
+    const containInfocard = document.querySelector("#containInfocard");
+
+    close.addEventListener("click", closeTemp);
+
+    function closeTemp(){
+        containInfocard.classList.toggle("closeTemplate");
+        root.style.display = 'flex';
+    };
 };
 
 
