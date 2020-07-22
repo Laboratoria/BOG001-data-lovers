@@ -12,6 +12,7 @@ import "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.j
 
 const navBar = document.getElementById("navBar");
 const doughnutChart = document.getElementById("doughnutChart");
+const doughnutCalc = document.getElementById("doughnutCalc");
 const myChart = document.getElementById("myChart");
 const locations = document.getElementById("locations");
 const firstPage = document.getElementById("firstPage");
@@ -30,7 +31,7 @@ const pagesNumber = document.getElementById("pagesNumber");
 const pagesControl = document.getElementById("pagesControl");
 const showAllLocations = document.getElementById("showAllLocations");
 
-doughnutChart.addEventListener("click", showDoughnut);
+doughnutCalc.addEventListener("click", showDoughnut);
 advancePageLink.addEventListener("click", advancePage);
 returnPageLink.addEventListener("click", returnPage);
 bttnLocations.addEventListener("click", showLocation);
@@ -183,17 +184,7 @@ function loadLocations() {
         },
       ],
     },
-    options: {
-      scales: {
-        yAxes: [
-          {
-            ticks: {
-              beginAtZero: true,
-            },
-          },
-        ],
-      },
-    },
+    responsive: true,
   });
 
   setTimeout(function () {
@@ -226,8 +217,8 @@ function loadLocationsPage(startIndex) {
               " >
                 <div class="flip-card-front">
                 <img src="${
-                  "/src/image/" + uniqueLocations[i] + ".jpg"
-                }" onerror="this.src='/src/image/error404.svg';" />
+                  "image/" + uniqueLocations[i] + ".jpg"
+                }" onerror="this.src='image/error404.svg';" />
                 </div>
                 <div class="flip-card-back">
                   <h1>${uniqueLocations[i]}</h1>
@@ -261,8 +252,8 @@ function loadFilterLocations(filterLocations) {
               " >
                 <div class="flip-card-front">
                 <img src="${
-                  "/src/image/" + filterLocations[i] + ".jpg"
-                }" onerror="this.src='/src/image/error404.svg';" />
+                  "image/" + filterLocations[i] + ".jpg"
+                }" onerror="this.src='image/error404.svg';" />
                 </div>
                 <div class="flip-card-back">
                   <h1>${filterLocations[i]}</h1>
