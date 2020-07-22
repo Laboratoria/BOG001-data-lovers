@@ -24,22 +24,30 @@
     align-items: center;
     font-size: 4em;
 }
-
+.tituloPng {
+    margin: 0;
+    padding: 0;
+    max-width: 60%;
+}
 
   .imagenUno {
       margin: 0;
       padding: 0;
       max-width: 100%;
   }
+  .Sinopsis {
+    padding: 3em;
+    font-size: 2em;
 
+} 
   .menuButtons{
-      display: flex;
-      justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 
   }
   .pngButtons{
-      width: 20%;
-      height: 20%;
+    width: 20%;
+    height: 20%;
   }
 
   .grid {
@@ -112,10 +120,8 @@
         width: 100%;
 };
 
-.Sinopsis {
 
-    font-size: 2em;
-}
+
 
 /* Tablet */
 @media  screen and (min-width: 480px) and (max-width: 780px) {
@@ -126,6 +132,15 @@
         width: 100%;
     }
 };
+.menuButtons{
+    display: flex;
+    justify-content: space-around;
+
+  }
+  .pngButtons{
+    width: 10%;
+    height: 10%;
+  }
 
 /* Celular */
 @media  screen and (max-width: 480px){
@@ -139,6 +154,16 @@
         margin: 0;
         padding: 0;
         width: 80%;
+    }
+
+    .menuButtons{
+      display: flex;
+      justify-content: space-around;
+
+    }
+    .pngButtons{
+      width: 20%;
+      height: 20%;
     }
 
     .personajes1 {
