@@ -1,21 +1,34 @@
+
 *{
     margin: 0;
     padding: 0%;
   }
- body {
-   border:solid red;
-   display:flex
- }
+
   header {
     background-color:  rgba(0, 0, 0, 0.46);
     position: absolute;
     height: 98px;
     width: 100%;
     margin: 0 auto;
-    display:flex
+    display:flex;
+    border:solid green;
   }
 
-  .fondo {
+ body {
+   border:solid red;
+   display:block;
+   background-image: url(brillante1.png);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size:cover;
+   background-blend-mode: luminosity;
+   height:800px;
+
+  
+ }
+
+
+  /*.fondo {
     background-repeat: no-repeat;
     display:flex;
     top:0;
@@ -26,13 +39,12 @@
     height: 100%;
     width: 100%;
     opacity:30%;
-  }
+  }*/
 
   main.containerBlanco {
     background-color: ivory;
     position:center;
-    height: 100%;
-    width: 100%;
+  
 
 
   }
@@ -68,4 +80,4 @@
     height: 98px;
     width: 100%;
     
-  }+/
+  }*/
