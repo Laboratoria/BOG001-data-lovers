@@ -19,12 +19,7 @@
     -webkit-border-bottom-right-radius: 30px;
   }
 
-  .contenedorUno {
-    margin: 0;
-    padding: 0;
-    background-color: #BBDA94;
-    width: 100%;
-}
+
 .titulo {
     align-items: center;
     font-size: 4em;
@@ -35,6 +30,16 @@
       margin: 0;
       padding: 0;
       max-width: 100%;
+  }
+
+  .menuButtons{
+      display: flex;
+      justify-content: space-around;
+
+  }
+  .pngButtons{
+      width: 20%;
+      height: 20%;
   }
 
   .grid {
@@ -96,23 +101,57 @@
 
 }
 
+
+
+/* Computador   */
+@media  screen and (min-width: 780px) and (max-width: 1024px){
+    .contenedorUno {
+        margin: 0;
+        padding: 0;
+        background-color: #F48134;
+        width: 100%;
+};
+
 .Sinopsis {
 
     font-size: 2em;
 }
 
-/* Computador  */
-@media   (min-width: 780px) and (max-width: 1024px){};
-
 /* Tablet */
-@media   (min-width: 480px) and (max-width: 780px) {};
+@media  screen and (min-width: 480px) and (max-width: 780px) {
+    .contenedorUno {
+        margin: 0;
+        padding: 0;
+        background-color: #BBDA94;
+        width: 100%;
+    }
+};
 
 /* Celular */
-@media   (max-width: 480px){
+@media  screen and (max-width: 480px){
+    .contenedorUno {
+        margin: 0;
+        padding: 0;
+        background-color:purple;
+        width: 100%;
+    }
+    .imagenUno {
+        margin: 0;
+        padding: 0;
+        width: 80%;
+    }
 
     .personajes1 {
 
         background-color: darkorange;
         border-radius: 2em;
     }
-};
+    .pngButtons {
+        width: 10%;
+    }
+    .Sinopsis {
+
+        font-size: 2em;
+        color: azure;
+    }
+}
