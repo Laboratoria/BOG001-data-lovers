@@ -35,8 +35,6 @@ header .imgLogo {
   text-align: left;
 }
 
-
-
 #burger-menu span,
 #burger-menu span:before,
 #burger-menu span:after {
@@ -107,7 +105,24 @@ header .imgLogo {
   visibility: hidden;
   transition: all 300ms ease;
 }
+#menu nav ul li{
+  display:inline-block;
+  position: relative;
+}
+#menu nav ul li a{
+  display:block;
+  text-decoration: none;
+  }
 
+#menu nav ul li:hover .rolesLol{
+  display:block;
+}
+
+#menu nav ul li .rolesLol{
+  display:none;
+  position:absolute;
+  z-index:1000;
+}
 #menu.show {
   opacity: 1;
   visibility: visible;
@@ -145,7 +160,7 @@ header .imgLogo {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url(../src/img/trazo-menu1.png);
+  background-image: url(./img/trazo-menu1.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -160,6 +175,7 @@ header .imgLogo {
   transform: scale(1);
 
 }
+
 
 /* --------Styles Cards Champions--------*/
 
@@ -192,8 +208,8 @@ main p {
 .champions img {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
-  width: 74px;
-  height: 74px;
+  width: 100px;
+  height: 100px;
   text-align: center;
   object-fit: cover;
 }

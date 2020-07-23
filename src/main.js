@@ -1,22 +1,29 @@
-import data from "./data.js";
+import { filterByRol } from "./data.js";
 
-let champions = data.list();
-console.log(data)
+import data from "./data/lol/lol.js";
 
-champions.forEach(element => {
-  console.log(element.name)
+const champions = Object.values(data.data);
+console.log(champions);
+
+const print = (champions) =>{
   let contenedor = document.getElementById("champions");
-  let championContainer = document.createElement("div");
-  championContainer.classList.add("champions");
-  const image = document.createElement("img");
-  //const imgContenedor = document.createElement("div");
-  image.classList.add("imgContenedor");
-  image.src = element.img;
-  championContainer.appendChild(image);
-  championContainer.appendChild(document.createTextNode(element.name));
-  championContainer.appendChild(document.createTextNode("Rol:" + "" + element.tags));
-  contenedor.appendChild(championContainer);
-});
+  contenedor.innerHTML = "";
+  champions.forEach(element => {
+    let championContainer = document.createElement("div");
+    championContainer.classList.add("champions");
+    const image = document.createElement("img");
+    image.src = element.img;
+    championContainer.appendChild(image);
+    const parrafoName = document.createElement("p");
+    parrafoName.appendChild(document.createTextNode("Name:" + " " + element.name));
+    const parrafoRol = document.createElement("p");
+    parrafoRol.appendChild(document.createTextNode("Rol:" + " " + element.tags));
+    championContainer.appendChild(parrafoName);
+    championContainer.appendChild(parrafoRol);
+    contenedor.appendChild(championContainer);
+  });
+}
+
 
 /* --------Menu--------*/
 var burgerMenu = document.getElementById('burger-menu');
@@ -27,9 +34,13 @@ burgerMenu.addEventListener('click', function(){
     this.classList.toggle("close");
     show.classList.toggle("show");
 })
-menuRol.addEventListener('click', function(){
-  this.classList.toggle("close");
-  show.classList.toggle("show");
-})
 
+let roles = document.querySelector(".rolesLol");
+roles.addEventListener('click', function(e){
+const btnRol = e.target.textContent;
+const filterData = filterByRol(champions,btnRol);
+console.log(filterData);
+print (filterData);
+});
 
+print(champions);

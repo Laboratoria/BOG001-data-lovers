@@ -1,13 +1,7 @@
-// estas funciones son de ejemplo
 
-import data from './data/lol/lol.js';
+export const filterByRol = (data,option) =>{
+  const filter = data.filter((rol) => rol.tags.join("").includes (option));
+  return filter;
+  }
+  
 
-let champions = Object.values(data.data);
-console.log(champions);
-
-export let list = () => {
-  return champions;
-}
-export default {
-  list
-};
