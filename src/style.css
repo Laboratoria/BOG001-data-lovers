@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Arima Madurai', cursive;
+    box-sizing: border-box;
+  
+  }
+  
+  @font-face {
+    font-family: Friz Quadrata;
+    src: url(fonts/Friz\ Quadrata\ Std\ Medium.otf);
+  }
+  
+  header{
+    position: fixed;
+    background-color: #444445;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  header #logo{
+    height: 94px;
+    margin-left: 50px;
+    margin-top: 48px;
+  }
+  
+  nav{
+    position: fixed;
+    bottom: 0;
+    top: 727px;
+    width: 100%;
+    height: 53px;
+    justify-content: center;
+    z-index: 3;
+  }
+  
+  nav #nav{
+   width: 100%;
+  }
+  
+  nav #list{
+    position: absolute;
+    width: 40px;
+    left: 140px;
+    top: 26px;
+  }
+  
+  main{
+    position: relative;
+    top: 160px;
+  }
+  
+  main h1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  main .first-line{
+    margin-top: 70px;
+    text-transform: uppercase;
+  }
+  main .second-line{
+    font-family: "Friz Quadrata Regular";
+    font-size: 48px;
+    text-transform: uppercase;
+  }
+
+  :root .imgchampion{
+    width: 100%;
+  }
+  
+  section{
+    text-align: center;
+  }
+  
+  section h2{
+    text-transform: uppercase;
+  }
+  
+  section #league{
+    font-family: "Friz Quadrata Regular";
+    display: block;
+    font-size: 48px;
+    text-transform: uppercase;
+  }
+  
+  
+  section .download{
+    height: 509px;
+  }
+  
+  section .store-links img{
+    height: 41px;
+  }
