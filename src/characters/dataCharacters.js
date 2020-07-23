@@ -17,7 +17,6 @@ function detectCheck(filtersBySpecies) {
 }
 
 //Función para bucar en la data los personajes que cumplan con los filtros activos
-//Parametros necesarios: data de personajes, arr de filtros activos
 function filterData(data, filters) {
   let dataFiltered = [];
   if (filters.length == 0) {
@@ -26,7 +25,6 @@ function filterData(data, filters) {
   data.forEach((character) => {
     filters.forEach((elementFilter) => {
       if (character.species == elementFilter) {
-        //especie de personaje 1 = primer filtro / segundo filtro ...
         dataFiltered.push(character);
       }
     });
@@ -42,8 +40,8 @@ function paginate(page, dataFiltered) {
   return pageData;
 }
 
-function sort(dataFiltered) {
-  dataFiltered.sort(function (a, b) {
+function sort(dataOrder, toggle) {
+  dataOrder.sort(function (a, b) {
     if (a.name > b.name) {
       return 1;
     }
@@ -52,14 +50,7 @@ function sort(dataFiltered) {
     }
     return 0;
   });
+  if (toggle === true) {
+    dataOrder = dataOrder.reverse();
+  }
 }
-
-// function searchDataTwo(data, filters){
-//     let dataFiltered=[];
-//     data.forEach(character => {
-//         if (filters.include(character.specie)){
-//             dataFiltered.push(character)
-//         }
-//     })
-//     return dataFiltered
-// }
