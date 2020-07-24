@@ -1,0 +1,381 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} 
+
+body {
+    background: url(/src/Images/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "VT323", monospace;
+    background: #F32E13;
+    border: 8px solid #D22121;
+      
+}
+
+#list, #bar {
+    display: none;
+}
+
+main {
+    font-family: "Share Tech Mono";
+}
+
+main button {
+    font-family: "VT323", monospace;
+}
+
+.window-2 {
+    display: none;
+}
+
+footer { 
+    width: 100%;
+    font-family: "VT323", monospace;
+    background: #F32E13;
+    border: 5px solid #D22121;
+    color: white;
+  }
+
+@media screen and (max-width: 450px) {
+
+    header {
+      height: 11vh;
+    }
+
+    .container {
+        width: 150px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    #list {
+      display: flex;
+      width: 25px;
+      margin-left: 85%;
+    }
+
+    .home, .pokedex, .versus{
+        width: 30px;
+    } 
+
+    .nav-links {
+        display: none;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    li {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #Pokemon {
+        width: 20vh;
+    }
+
+    .searchContainer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .search {
+        width: 45%;
+        display: flex;
+        border: none;
+        background: #F32E13
+    }
+
+    .loupe {
+        width: 55%;
+    }
+
+    main .window-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        margin-left: 25%;
+        height: calc(100vh - 11vh - 7vh);
+    }
+
+    h1 {
+        font-family: Share Tech Mono;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .AMB {
+        width: 100%;
+        margin-top: 15%;
+    }
+
+    main button {
+        width: 59%;
+        align-self: center;
+        margin-top: 4%;
+        padding: 4%;
+        background: #FFFFFF;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);;
+        border-radius: 50px;
+    }
+
+    footer {
+        display: flex;
+        height: 7vh;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 770px) {
+   
+    header {
+        height: 15vh;
+    }
+
+    .container {
+        width: 200px;
+        justify-content: center;
+        align-self: center;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    #list {
+        display: flex;
+        width: 25%;
+    }
+
+    .home, .pokedex, .versus{
+        width: 60px;
+    } 
+
+    .nav-links {
+        display: none;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    li {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #Pokemon {
+        width: 170px;
+    }
+
+    .searchContainer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .search {
+        width: 35%;
+        display: flex;
+        border: none;
+        background: #F32E13
+    }
+
+    .loupe {
+        width: 50%;
+    }
+
+    main .window-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 27%;
+        margin-left: 36%;
+        height: calc(100vh - 15vh - 10vh);
+    }
+
+    h1 {
+        font-family: Share Tech Mono;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .AMB {
+        width: 100%;
+        margin-top: 15%;
+    }
+
+    main button {
+        width: 59%;
+        align-self: center;
+        margin-top: 4%;
+        padding: 4%;
+        background: #FFFFFF;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);;
+        border-radius: 50px;
+    }
+
+    footer {
+        display: flex;
+        height: 10vh;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 771px) {
+
+    header {
+        height: 16vh;
+    }
+
+    .container {
+        width: 300px;
+        align-self: center;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .home, .pokedex, .versus{
+        width: 40px;
+    } 
+
+    .nav-links {
+        display: flex;
+    }
+    
+    li {
+        padding: 0 10px;
+        list-style: none;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+    }
+
+    #Pokemon {
+        width: 300px;
+        
+    }
+
+    .searchContainer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #bar {
+        display: inline-block;
+    }
+
+    input {
+        border-radius: 15px;
+        padding: 4%;
+    }
+
+    .search {
+        width: 45px;
+        border: none;
+        background: #F32E13
+    }
+
+    .loupe {
+        width: 61%;
+    }
+
+    main .window-1 {
+        width: 95%;
+        display: grid;
+        position: relative;
+        margin-left: 15%;
+        height: calc(100vh - 16vh - 7vh);
+        max-width: 1000px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    h1 {
+        grid-column: span 2;
+        padding: 135px 0px;
+        padding-right: 86px;
+        font-family: Share Tech Mono;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        text-align: justify;
+        align-self: center;
+    }
+
+    .AMB {
+        display: flex;
+        grid-column: span 2;
+        grid-row: span 2;
+        align-self: center;
+        width: 70%;
+    }
+
+    main button {
+        width: 60%;
+        position: absolute;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        top: 58%;
+        margin-left: 46%;
+        padding: 5%;
+        background: #FFFFFF;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);;
+        border-radius: 50px;
+    }
+
+     footer {
+        display: flex;
+        height: 7vh;
+        font-size: 14px;
+        line-height: 16px;
+        justify-content: center;
+        text-align: center;
+    }
+}
