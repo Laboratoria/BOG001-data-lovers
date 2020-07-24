@@ -64,33 +64,33 @@ usuario necesita.
 
 ### HTML y CSS
 
-- [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-- [ ] Uso de selectores de CSS.
-- [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
-- [ ] [Uso de flexbox en CSS.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [x] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+- [x] [Uso de selectores de CSS.]
+- [ ] [Construir tu aplicación respetando el diseño realizado (maquetación).]
+- [x] [Uso de flexbox en CSS.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ### DOM y Web APIs
 
-- [ ] Uso de selectores del DOM.
-- [ ] Manejo de eventos del DOM.
+- [x] Uso de selectores del DOM.
+- [x] Manejo de eventos del DOM.
 - [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
       (appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 
 ### JavaScript
 
-- [ ] Uso de condicionales (if-else | switch | operador ternario)
-- [ ] Uso de bucles (for | for..in | for..of | while)
-- [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
-- [ ] Manipular arrays (filter | map | sort | reduce)
-- [ ] Manipular objects (key | value)
-- [ ] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+- [x] Uso de condicionales (if-else | switch | operador ternario)
+- [x] Uso de bucles (for | for..in | for..of | while)
+- [x] Uso de funciones (parámetros | argumentos | valor de retorno)
+- [x] Manipular arrays (filter | map | sort | reduce)
+- [x] Manipular objects (key | value)
+- [x] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
       | [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
 - [ ] Diferenciar entre expression y statements.
 - [ ] Diferenciar entre tipos de datos atómicos y estructurados.
 
 ### Testing
 
-- [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
+- [x] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
 
 ### Estructura del código y guía de estilo
 
@@ -100,35 +100,35 @@ usuario necesita.
 
 ### Git y GitHub
 
-- [ ] Uso de comandos de git (add | commit | pull | status | push)
+- [x] Uso de comandos de git (add | commit | pull | status | push)
 - [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
 - [ ] Colaboración en Github (branches | pull requests | |tags)
 
 ### UX
 
-- [ ] Diseñar la aplicación pensando y entendiendo al usuario.
+- [x] Diseñar la aplicación pensando y entendiendo al usuario.
 - [ ] Crear prototipos para obtener feedback e iterar.
-- [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
+- [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
 - [ ] Planear y ejecutar tests de usabilidad.
 
 ## 4. Checklist
 
-- [ ] Usa VanillaJS.
-- [ ] No hace uso de `this`.
+- [x] Usa VanillaJS.
+- [x] No hace uso de `this`.
 - [ ] Pasa linter (`npm run pretest`)
-- [ ] Pasa tests (`npm test`)
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+- [x] Pasa tests (`npm test`)
+- [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
-- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
+- [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
 - [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+- [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
-- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+- [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
       en `README.md`.
 - [ ] Incluye link a Zeplin o Figma en `README.md`.
 - [ ] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
 - [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-- [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-- [ ] UI: Permite filtrar data en base a una condición.
-- [ ] UI: Es _responsive_.
+- [x] UI: Permite ordenar data por uno o más campos (asc y desc).
+- [x] UI: Permite filtrar data en base a una condición.
+- [x] UI: Es _responsive_.
