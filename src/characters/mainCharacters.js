@@ -22,18 +22,6 @@ btnMenu.addEventListener("click", function () {
   categoriesMenu.classList.toggle("hide");
 });
 
-//Ir a lugares
-// const bttnLocations = document.getElementById("bttnLocations");
-// const firstPage = document.getElementById("firstPage");
-// bttnLocations.addEventListener("click", showLocation);
-// function showLocation() {
-//   firstPage.style.display = "none";
-//   showAllLocations.style.display = "none";
-//   locations.style.display = "block";
-//   sortingView.style.display = "block";
-//   //   showMenu();
-// }
-
 // ------------- Cambio de pagina ---------------
 let btnPrevius = document.getElementById("previus");
 let btnNext = document.getElementById("next");
@@ -69,8 +57,6 @@ if (parameterUrl !== undefined) {
 
 //Función para establecer los parametros de los filtros activos
 function setFilterParameters(event) {
-  // console.log(event.currentTarget.id);
-
   let filterParmeters = [];
   let initParameter = "&filter=";
   let arrActiveFilters = filterFunctions.detectCheck(arrChkbSpecies);
@@ -107,7 +93,6 @@ const previusPag = (urlBase, page, filterParameters) => {
   const a = nextUrl.replace(regex, "&");
   // eslint-disable-next-line no-unused-vars
   const newNextUrl = a.replace(rex, "&");
-  // console.log(newNextUrl);
   window.location.href = newNextUrl;
 };
 
@@ -126,14 +111,10 @@ function checkFilters(checkbox) {
     const element = arrParam[index];
     arrFilterParam.push(element[1]);
   }
-  // console.log(arrParam);
-  // console.log(arrFilterParam); // arr filtros en parametros
-  // console.log(checkbox[1]);
   checkbox.forEach((chb) => {
     arrFilterParam.forEach((filterParameter) => {
       if (chb.value == filterParameter) {
         chb.checked = true;
-        // console.log("true");
       }
     });
   });
@@ -145,14 +126,11 @@ function checkFilters(checkbox) {
 
   //Evento para detectar cuando se selecciona o se quita un filtro
   optionsFilter.addEventListener("change", filter);
-  // let pageData;
   let dataFiltered;
 
   function filter() {
     let filters = filterFunctions.detectCheck(arrChkbSpecies);
-    // console.log(filters);
     dataFiltered = filterFunctions.filterData(dataGroup, filters);
-    // console.log(dataFiltered);
     let pagination = filterFunctions.paginate(page, dataFiltered);
     renderData(pagination);
   }
@@ -160,17 +138,16 @@ function checkFilters(checkbox) {
   //Funcion sort
   const btnOrder = document.getElementById("order");
   btnOrder.addEventListener("click", function () {
-    filterFunctions.sort(dataFiltered);
-    // console.log(dataFiltered);
+    const toggle = btnOrder.classList.toggle("az");
+    filterFunctions.sort(dataFiltered, toggle);
     let a = filterFunctions.paginate(page, dataFiltered);
     renderData(a);
   });
 
-  let prueba = document.getElementById("characters");
+  let displayData = document.getElementById("characters");
   filter();
-  // prueba.innerHTML = "";
   function renderData(pageData) {
-    prueba.innerHTML = "";
+    displayData.innerHTML = "";
     let fragment = document.createDocumentFragment();
     pageData.forEach(function (current) {
       let image = current.image;
@@ -188,7 +165,8 @@ function checkFilters(checkbox) {
       let textOrigin = document.createElement("h5");
 
       containerInfoCharacter.setAttribute("id", "infoCharacter");
-      containerInfoCharacter.setAttribute("class", "infoCharac");
+      // containerInfoCharacter.setAttribute("class", "infoCharac");
+      containerInfoCharacter.setAttribute("class", "infoCharac hide");
       containerCharacter.setAttribute("class", "containerCharacter");
       imgCharacter.setAttribute("src", image);
       imgCharacter.setAttribute("class", "imgCharacter");
@@ -209,19 +187,22 @@ function checkFilters(checkbox) {
 
     characters.appendChild(fragment);
   }
-
-  //------------------------------------------------------------------------
-  //Funcion para mostrar la info de personajes cuando se de click en la img
-  // renderData();
-  // let infoCharac = getElementsByClassName("infoCharac");
-  // let imgCharacter = getElementsByClassName("imgCharacter");
-  // infoCharac.classList.add.hide;
-  // imgCharacter.addEventListener('click', function(){
-  //     showInfo(imgCharacter, infoCharac);
-  // });
-  // function showInfo(img, info) {
-  //     img.classList.add('info')
-  //     info.classList.remove('hide')
-  // }
-  //--------------------------------------------------------------------------
 }
+
+//Mostrar la info de personajes cuando se de click en la img
+const imgCharac = document.getElementsByClassName("imgCharacter");
+console.log(imgCharac);
+const char = document.getElementById("characters");
+char.addEventListener("click", function (e) {
+  let characterFocus = e.target;
+  console.log(imgCharac[0].className);
+  console.log(characterFocus);
+  console.log(characterFocus.className);
+
+  let infoFocus = characterFocus.nextSibling;
+  if (characterFocus.className !== imgCharac[0].className) {
+    infoFocus = characterFocus.parentNode;
+  }
+  infoFocus.classList.toggle("hide");
+  console.log(infoFocus);
+});
