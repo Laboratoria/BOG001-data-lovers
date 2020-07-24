@@ -11,12 +11,15 @@ import {
 import "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js";
 
 const navBar = document.getElementById("navBar");
-const menuHamburguer = document.getElementById("menuHamburguer");
 const doughnutChart = document.getElementById("doughnutChart");
+const doughnutCalc = document.getElementById("doughnutCalc");
 const myChart = document.getElementById("myChart");
 const locations = document.getElementById("locations");
 const firstPage = document.getElementById("firstPage");
 const bttnLocations = document.getElementById("bttnLocations");
+// const containerCategoriesMenu = document.getElementById(
+//   "containerCategoriesMenu"
+// );
 const backHome = document.getElementById("backHome");
 const sortingView = document.getElementById("sortingView");
 let pageNumber = 0;
@@ -28,10 +31,11 @@ const pagesNumber = document.getElementById("pagesNumber");
 const pagesControl = document.getElementById("pagesControl");
 const showAllLocations = document.getElementById("showAllLocations");
 
-doughnutChart.addEventListener("click", showDoughnut);
+doughnutCalc.addEventListener("click", showDoughnut);
 advancePageLink.addEventListener("click", advancePage);
 returnPageLink.addEventListener("click", returnPage);
 bttnLocations.addEventListener("click", showLocation);
+// containerCategoriesMenu.addEventListener("click");
 showAllLocations.addEventListener("click", returnAllLocations);
 backHome.addEventListener("click", returnHome);
 
@@ -56,7 +60,7 @@ btnMenu.addEventListener("click", function () {
   categoriesMenu.classList.toggle("hide");
 });
 
-const showMenu = () => {
+function showMenu() {
   if (navBar.classList.contains("show-button")) {
     navBar.classList.remove("show-button");
     navBar.classList.add("hidde-button");
@@ -64,12 +68,11 @@ const showMenu = () => {
     navBar.classList.remove("hidde-button");
     navBar.classList.add("show-button");
   }
-};
-menuHamburguer.addEventListener("click", showMenu);
+}
 
 function returnAllLocations() {
   showAllLocations.style.display = "none";
-  pagesControl.style.display = "block";
+  pagesControl.style.display = "flex";
   let listLocations = loadLocationsPage(0);
 
   let showAll = document.getElementById("showAll");
@@ -101,6 +104,7 @@ function filterList(letter) {
 function showLocation() {
   firstPage.style.display = "none";
   showAllLocations.style.display = "none";
+  // containerCategoriesMenu.style.display = "none";
   locations.style.display = "block";
   sortingView.style.display = "block";
   doughnutChart.style.display = "block";
@@ -119,7 +123,7 @@ function loadLocations() {
   uniqueLocations = [];
   pagesNumber.innerHTML = "1";
 
-  uniqueLocations = removeDuplicates(uniqueLocations, data);
+  uniqueLocations = removeDuplicates(data);
   for (let j = 0; j < uniqueLocations.length; j++) {
     for (let i = 0; i < data.results.length; i++) {
       if (uniqueLocations[j] === data.results[i].location.name) {
@@ -147,47 +151,41 @@ function loadLocations() {
     dataset.push(charactersByLocation[i].count);
   }
 
-  // let donut = document.getElementById("myChart").getContext("2d");
-  // let myChart = new Chart(donut, {
-  //   type: "doughnut",
-  //   data: {
-  //     labels: labels,
-  //     datasets: [
-  //       {
-  //         label: "Characters per location",
-  //         data: dataset,
-  //         backgroundColor: [
-  //           "rgba(255, 99, 132, 0.2)",
-  //           "rgba(54, 162, 235, 0.2)",
-  //           "rgba(255, 206, 86, 0.2)",
-  //           "rgba(75, 192, 192, 0.2)",
-  //           "rgba(153, 102, 255, 0.2)",
-  //           "rgba(255, 159, 64, 0.2)",
-  //         ],
-  //         borderColor: [
-  //           "rgba(255, 99, 132, 1)",
-  //           "rgba(54, 162, 235, 1)",
-  //           "rgba(255, 206, 86, 1)",
-  //           "rgba(75, 192, 192, 1)",
-  //           "rgba(153, 102, 255, 1)",
-  //           "rgba(255, 159, 64, 1)",
-  //         ],
-  //         borderWidth: 1,
-  //       },
-  //     ],
-  //   },
-  //   options: {
-  //     scales: {
-  //       yAxes: [
-  //         {
-  //           ticks: {
-  //             beginAtZero: true,
-  //           },
-  //         },
-  //       ],
-  //     },
-  //   },
-  // });
+  let donut = document.getElementById("myChart").getContext("2d");
+
+  // eslint-disable-next-line no-unused-vars
+  let myChart;
+  // eslint-disable-next-line no-undef
+  myChart = new Chart(donut, {
+    type: "doughnut",
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          label: "Characters per location",
+          data: dataset,
+          backgroundColor: [
+            "rgba(255, 99, 132, 0.2)",
+            "rgba(54, 162, 235, 0.2)",
+            "rgba(255, 206, 86, 0.2)",
+            "rgba(75, 192, 192, 0.2)",
+            "rgba(153, 102, 255, 0.2)",
+            "rgba(255, 159, 64, 0.2)",
+          ],
+          borderColor: [
+            "rgba(255, 99, 132, 1)",
+            "rgba(54, 162, 235, 1)",
+            "rgba(255, 206, 86, 1)",
+            "rgba(75, 192, 192, 1)",
+            "rgba(153, 102, 255, 1)",
+            "rgba(255, 159, 64, 1)",
+          ],
+          borderWidth: 1,
+        },
+      ],
+    },
+    responsive: true,
+  });
 
   setTimeout(function () {
     listLocations = loadLocationsPage(0);
@@ -219,8 +217,8 @@ function loadLocationsPage(startIndex) {
               " >
                 <div class="flip-card-front">
                 <img src="${
-                  "/src/image/" + uniqueLocations[i] + ".jpg"
-                }" onerror="this.src='/src/image/error404.svg';" />
+                  "image/" + uniqueLocations[i] + ".jpg"
+                }" onerror="this.src='image/error404.svg';" />
                 </div>
                 <div class="flip-card-back">
                   <h1>${uniqueLocations[i]}</h1>
@@ -254,8 +252,8 @@ function loadFilterLocations(filterLocations) {
               " >
                 <div class="flip-card-front">
                 <img src="${
-                  "/src/image/" + filterLocations[i] + ".jpg"
-                }" onerror="this.src='/src/image/error404.svg';" />
+                  "image/" + filterLocations[i] + ".jpg"
+                }" onerror="this.src='image/error404.svg';" />
                 </div>
                 <div class="flip-card-back">
                   <h1>${filterLocations[i]}</h1>

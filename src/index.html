@@ -18,22 +18,20 @@
     </script>
   </head>
   <body>
-    <header>
-
-      <div id=navbar>
-        <img src="image/menu.png" id="menu">        
-        <div id="containerCategoriesMenu" class="hide">    
-          <a href="characters/characters.html">Characters</a><br>
-          <a value="locations" id="bttnLocations">Locations</a>
-        </div>      
-      </div>
-
-      <div class="container">
+    <header class="container">
+      <div class="container header-main">
         <div class="row">
           <div id="backHome" class="header-bar">
-            <img src="/src/image/ricknmorty-header.png" alt="Encabezado" />
+            <img src="image/ricknmorty-header.png" alt="Encabezado" />
           </div>
-
+        </div>
+        <div id="navBar" class="nav-bar">
+          <img src="image/menu.png" id="menu" />
+        </div>
+      </div>
+      <div id="containerCategoriesMenu" class="hide">
+        <a href="characters/characters.html">Characters</a><br />
+        <a value="locations" id="bttnLocations">Locations</a>
       </div>
     </header>
 
@@ -41,6 +39,18 @@
       <div id="firstPage" class="container">
         <div class="row">
           <div class="col-1200-66 col-992-66 col-768-66 col-576-66">
+            <div class="row">
+              <h3>Teaser season 1</h3>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/WNhH00OIPP0"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
             <div class="row">
               <h2>General information</h2>
               <p>
@@ -58,49 +68,24 @@
                 ocasiones y depende mucho de su esposa, Beth, hija de Rick.
               </p>
             </div>
-            <div class="row">
-              <h3>Teaser season 1</h3>
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/WNhH00OIPP0"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
           </div>
-          <div class="col-1200-33 col-992-33 col-768-33 col-576-33">
+          <div
+            class="col-1200-33 col-992-33 col-768-33 col-576-33 information-table"
+          >
             <h3>Detailed Information Table</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
-              adipisci labore eveniet eos cumque corporis, aliquam quas sint.
-              Nulla eum inventore dignissimos mollitia ex ea blanditiis pariatur
-              enim explicabo labore. Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Iste adipisci labore eveniet eos cumque
-              corporis, aliquam quas sint. Nulla eum inventore dignissimos
-              mollitia ex ea blanditiis pariatur enim explicabo labore. Lorem
-              ipsum dolor, sit amet consectetur adipisicing elit. Iste adipisci
-              labore eveniet eos cumque corporis, aliquam quas sint. Nulla eum
-              inventore dignissimos mollitia ex ea blanditiis pariatur enim
-              explicabo labore. Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Iste adipisci labore eveniet eos cumque
-              corporis, aliquam quas sint. Nulla eum inventore dignissimos
-              mollitia ex ea blanditiis pariatur enim explicabo labore.
-            </p>
+            <img src="image/information-table.png" alt="" />
           </div>
         </div>
       </div>
-      <div id="doughnutChart" class="doughnut-calc" style="display: none;">
-        <!-- <input type="button" value="Statistics" /> -->
-        <div class="iconStatistics">
-          <img src="image/doughnut.png" id="statistics" value="Statistics">
+      <div id="doughnutChart" style="display: none;">
+        <div id="doughnutCalc" class="iconStatistics">
+          <img src="image/doughnut.png" id="statistics" value="Statistics" />
           <label for="statistics">Statistics</label>
         </div>
         <canvas
           id="myChart"
-          width="100"
-          height="100"
+          width="100vw"
+          height="100vh"
           style="display: none;"
         ></canvas>
       </div>
@@ -114,6 +99,7 @@
       </div>
       <input
         id="showAllLocations"
+        class="button-all"
         type="button"
         value="All"
         style="display: none;"
@@ -210,22 +196,20 @@
         </div>
         <div id="showAll" class="col"></div>
         <div id="pagesControl" class="page-button">
-          <!-- <input id="returnPageLink" type="button" value="prev" /> -->
-          <img src="image/previus.png" id="returnPageLink" value="prev">
+          <img src="image/previus.png" id="returnPageLink" value="prev" />
           <span id="pagesNumber">0</span>
-          <!-- <input id="advancePageLink" type="button" value="next" /> -->
-          <img src="image/next.png" id="advancePageLink" value="next">
+          <img src="image/next.png" id="advancePageLink" value="next" />
         </div>
       </div>
     </main>
-    
+
     <footer>
       <div class="foot">
         <div class="low-bar">
           <div class="social-icons">
-            <img src="/src/image/facebook.png" alt="icono facebook" />
-            <img src="/src/image/instagram.png" alt="icono instagram" />
-            <img src="/src/image/twitter.png" alt="icono twitter" />
+            <img src="image/facebook.png" alt="icono facebook" />
+            <img src="image/instagram.png" alt="icono instagram" />
+            <img src="image/twitter.png" alt="icono twitter" />
           </div>
           <div class="community">
             <a href="#">Support</a>
@@ -240,7 +224,6 @@
     </footer>
 
     <div id="root"></div>
-    <script src="main.js" type="module"></script>    
-    
+    <script src="main.js" type="module"></script>
   </body>
 </html>

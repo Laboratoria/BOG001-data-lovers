@@ -11,7 +11,8 @@ const { filterData } = functions;
 const { results } = data;
 const { paginate } = functions;
 const { detectCheck } = functions;
-const { sort } = functions;
+// const { sort } = functions;
+
 const nodeList = [
   {
     checked: false,
@@ -62,7 +63,7 @@ describe("detectCheck", () => {
 //   });
 // });
 
-Test funciones Locations
+
 
 describe("se prueban funciones removeDuplicates, filterByLetter, countCharactersByLocation de Paola", () => {
   it("is a function", () => {
