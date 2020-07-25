@@ -45,7 +45,7 @@ Nuestra API le ofrece al usuario una manera fácil y rapida de conocimiento sobr
 <figcaption>Primer prototipo primera vista mobile</figcaption>
 </figure>
 <figure>
-<img width="500px" src="./prototipo-baja-firstView-web.jpeg">
+<img width="500px" src="./src/image/prototipo-baja-firstView-web.jpeg">
 <figcaption>Primer prototipo primera vista web</figcaption>
 </figure>
 
