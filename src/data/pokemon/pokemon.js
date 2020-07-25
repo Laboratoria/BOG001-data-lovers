@@ -860,7 +860,7 @@ export default {
     ],
     "prev_evolution": [{
       "num": "029",
-      "name": "Nidoran(Female)"
+      "name": "Nidoran"
     }],
     "next_evolution": [{
       "num": "031",
@@ -899,7 +899,7 @@ export default {
   }, {
     "id": 32,
     "num": "032",
-    "name": "Nidoran ♂ (Male)",
+    "name": "Nidoran ♂",
     "img": "http://www.serebii.net/pokemongo/pokemon/032.png",
     "type": [
       "Poison"

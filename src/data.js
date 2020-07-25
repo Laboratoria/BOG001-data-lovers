@@ -1,9 +1,27 @@
-// estas funciones son de ejemplo
+export default function searchPokemon(searchPoke) {  
 
-/*export const example = () => {
-  return 'example';
-};*/
+    let searchPokeName;
+    let searchPokeId;
+ 
+    if (isNaN(inputSearch.value)) { 
+        searchPokeName = searchPoke.find(pokemon => 
+       /* pokemon.name.includes(inputSearch.value)*/
+        pokemon.name.toLowerCase() === inputSearch.value.toLowerCase());
+      
 
-export const filterByType = (type) => {
-  console.log(type);
-};
+        return searchPokeName;
+       
+    } else{
+        searchPokeId = searchPoke.find(pokemon => pokemon.id === parseInt(inputSearch.value));
+        return searchPokeId;
+    } 
+}
+   
+
+
+        
+ 
+
+
+
+

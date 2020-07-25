@@ -7,6 +7,7 @@
     <title>Data Lovers</title>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleheader.css">
     <link rel="stylesheet" href="respstyle.css" /> 
   </head>
   <body>
@@ -16,22 +17,67 @@
           <img src="./images/pokemonLogo.png" alt="" id="logo">
         </div>
         <div class="inputSearch">
-          <input type="button" class="search">
-          <input type="text" class="input" placeholder="Name or Number">
+          <input type="button" class="search" id="search">
+          <input type="text" class="input" id="inputSearch" placeholder="Name or Number">
+          <p class="mensaje" id="mensaje"></p>
         </div>
       </div>
       <nav>
         <div class="containerPokeMenu">
             <span class="iconMenu" id="buttonPokeMenu"></span>
             <ul class="menu" id="menu">
-              <li>
-                <a href="" class="buttonMenu">Menu</a>
+              <li><a href="" class="buttonMenu">Menu</a>
+                <ul class="subButtonMenu">
+                  <li><a href="">Type</a>
+                    <ul id="subBtnTypes" class="subBtnMenu">
+                      <li><a href="">Normal</a></li>
+                      <li><a href="">Water</a></li>
+                      <li><a href="">Electric</a></li>
+                      <li><a href="">Fighting</a></li>
+                      <li><a href="">Ground</a></li>
+                      <li><a href="">Psychic</a></li>
+                      <li><a href="">Rock</a></li>
+                      <li><a href="">Dark</a></li>
+                      <li><a href="">Steel</a></li>
+                      <li><a href="">Fire</a></li>
+                      <li><a href="">Grass</a></li>
+                      <li><a href="">Ice</a></li>
+                      <li><a href="">Poison</a></li>
+                      <li><a href="">Flying</a></li>
+                      <li><a href="">Bug</a></li>
+                      <li><a href="">Ghost</a></li>
+                      <li><a href="">Dragon</a></li>
+                      <li><a href="">Fairy</a></li>
+                  </ul></li>
+                </ul>
+                <ul class="subButtonMenu">
+                  <li><a href="">Weaknesses</a>
+                    <ul id= subBtnWeak class="subBtnMenu">
+                      <li>Normal</li>
+                      <li>Water</li>
+                      <li>Electric</li>
+                      <li>Fighting</li>
+                      <li>Ground</li>
+                      <li>Psychic</li>
+                      <li>Rock</li>
+                      <li>Dark</li>
+                      <li>Steel</li>
+                      <li>Fire</li>
+                      <li>Grass</li>
+                      <li>Ice</li>
+                      <li>Poison</li>
+                      <li>Flying</li>
+                      <li>Bug</li>
+                      <li>Ghost</li>
+                      <li>Dragon</li>
+                      <li>Fairy</li>
+                  </ul>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a href="" class="buttonMenu">About us</a>
+              <li><a href="" class="buttonMenu">About us</a>
               </li>
-              <li>
-                <a href="" class="buttonMenu">Contact us</a>
+              <li><a href="" class="buttonMenu">Contact us</a>
               </li>
             </ul>
         </div>
