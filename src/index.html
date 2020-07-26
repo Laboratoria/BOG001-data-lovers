@@ -1,60 +1,52 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content= "width=device-width, initial-scale=1 "> 
-  <title>Rick and Morty</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1 "> 
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  </head>
 
-<body>
-  <div class="contenedorUno"> 
-
- 
-  <img class="imagenUno" src="index.jpg"> <br>
-  
-
-    <center> <img class="tituloPng" src="pngegg-12.png" > </center>
-  
-
-    <div class="Sinopsis">
-      <p>Rick is a mentally gifted, but sociopathic and alcoholic scientist and a grandfather to Morty; an awkward,
+  <body>
+    
+    <main class="contenedorUno"> 
+      <section class="hero">
+        <img class="imagenTop" src="index.jpg"> <br>
+      </section>
+      <section class="Sinopsis">
+        <img class="tituloPng" src="pngegg-12.png" >
+        <p>Rick is a mentally gifted, but sociopathic and alcoholic scientist and a grandfather to Morty; an awkward,
         impressionable, and somewhat spineless teenage boy. Rick moves into the family home of Morty, where he
         immediately
-        becomes a bad influence.</p>
-    </div>
-<section class= "menuButtons">
-   <img type = "button" class="pngButtons" id=toCharacters src="botonPersonajes.png">
+        becomes a bad influence.
+        </p>
+      </section>
+      <section class= "menuButtons">
+        <img type = "button" class="pngButtons" id=toCharacters src="botonPersonajes.png">
+        <img type= "button" class="pngButtons" id=toWorlds src="botonMundos.png">
+        <img type="button" class="pngButtons" id=toSeasons src="botonTemporadas.png">
+      </section>
+      <footer class="footer">
+        Derechos Reservados |  Natalia Rodriguez &copy; 
+      </footer>
+    </main>
+    
+    <script> 
+      function turnPageC() { 
+        window.location.href = 'Personajes.html'; 
+      }
+      function turnPageW() { 
+        window.location.href = 'Mundo.html'; 
+      }
+      function turnPageS() { 
+        window.location.href = 'Temporada.html'; 
+      }
 
-    <script> function turnPageC() { window.location.href = 'Personajes.html'; }
       document.querySelector('#toCharacters').addEventListener('click', turnPageC) 
-    </script>
-
-     <img type= "button" class="pngButtons" id=toWorlds src="botonMundos.png">
-
-    <script> function turnPageW() { window.location.href = 'Mundo.html'; }
-      document.querySelector('#toWorlds').addEventListener('click', turnPageW) 
-    </script>
-
-    <img type= "button" class="pngButtons" id=toSeasons src="botonTemporadas.png">
-
-    <script> function turnPageS() { window.location.href = 'Temporada.html'; }
+      document.querySelector('#toWorlds').addEventListener('click', turnPageW)
       document.querySelector('#toSeasons').addEventListener('click', turnPageS) 
     </script>
-</section>
-
-
-
-    <br>
-    <br>
-
-
-  </div>
-
-  <div id="root"> <center> Derechos Reservados | Carolina & Natalia &copy; </center> </div>
-
-</body>
-
+  </body>
 </html>

@@ -10,25 +10,33 @@
 </head>
 
 <body>
-  <main class="container">
-
+  <main class="contenedorP">
+    <section class ="heroP">
     <img src="personajes.jpg" class="imagenTop"> <br>
+  </section>
+  <section class="espacioTitulo">
+    <div class="alive"> Alive </div> <div class="az" id= "sortButton">A -Z</div>  <input class="search" type="text" placeholder="Search?">
+  </section> 
+  
+  <section class="grid" id="charactersZone"></section>
 
-    <div class="titulo">
-      <center> Rick and Morty - Personajes! </center>
-    </div>
-    <br>
-    <br>
+  <section  class="container" id="pruebaTarjeta"></section>
 
-    <div class="grid" id="charactersZone"></div>
+</section>
+<section class= "menuButtons1">
+<img type = "button" class="pngButtons" id=toCharacters src="botonPersonajes.png">
+<img type= "button" class="pngButtons" id=toWorlds src="botonMundos.png">
+<img type="button" class="pngButtons" id=toSeasons src="botonTemporadas.png">
+</section>
 
-    <div id="pruebaTarjeta"></div>
+  <footer class="footer">
+    Derechos Reservados | Natalia Rodriguez &copy; 
+  </footer>
 
-
-
-    <div id="root"></div>
+  
     <script src="main.js" type="module"></script>
 
+    
   </main>
 </body>
 
