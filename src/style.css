@@ -331,7 +331,7 @@ footer {
         width: 95%;
         display: grid;
         position: relative;
-        margin-left: 15%;
+        padding-left: 15%;
         height: calc(100vh - 16vh - 7vh);
         max-width: 1000px;
         grid-template-columns: repeat(4, 1fr);
