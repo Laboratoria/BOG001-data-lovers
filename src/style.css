@@ -175,20 +175,23 @@ header .imgLogo {
   transform: scale(1);
 
 }
-
-
-/* --------Styles Cards Champions--------*/
-
-.championsContainer {
+/* --------Styles Cards--------*/
+.card{
   display: flex;
   flex-wrap: wrap;
   align-items: space-between;
   justify-content: center;
+  cursor: pointer;
+  z-index: 2;
   margin: 0 auto;
   max-width: 1200px;
 }
 
-.champions {
+/*.card.active{
+  transform: rotatey(180deg);
+}*/
+
+.card > div{
   width: 165px;
   height: 212px;
   background: linear-gradient(204.67deg, #353A40 -49.23%, #121416 93.08%);
@@ -198,11 +201,32 @@ header .imgLogo {
   padding: 20px;
   text-align: center;
   display: block;
+  flex-direction:column;
+  justify-content: space-between;
+  display: flex;
 }
 
 main p {
   width: 80%;
   margin: auto;
+}
+
+
+/* --------Styles Cards Champions--------*/
+
+.championsContainer{
+  position: relative;
+  transition: 3s ease all;
+  transform: rotateY(0deg);
+  transform-style:preserve-3d;
+  cursor: pointer;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.championsContainer.active{
+  transform: rotatey(180deg);
 }
 
 .champions img {
@@ -212,13 +236,35 @@ main p {
   height: 100px;
   text-align: center;
   object-fit: cover;
+  align-items: flex-start;
 }
 
 .champions .imgContenedor {
   background: linear-gradient(324.43deg, #32383E -114.89%, #17191C 124.22%);
   box-shadow: 12px 12px 58px rgba(0, 0, 0, 0.74), -12px -10px 32px rgba(195, 200, 205, 0.12);
-  /*filter: blur(8px);*/
+  filter: blur(8px);
   border-radius: 93px;
+  justify-content: center;
+}
+
+.champions .flexbox{
+  display:flex;
+  justify-content:space-between;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+/* --------Styles Cards information--------*/
+
+.card .infoContainer {
+  position: absolute;
+  top: 0;
+  transform: rotate(180deg);
+  backface-visibility: hidden;
+}
+
+.infoContainer p{
+  text-align: center;
 }
 
 /* ---------- Footer-pie de pagina ----------*/
