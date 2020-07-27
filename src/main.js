@@ -15,7 +15,7 @@ search.addEventListener("click", () => {
 
     if(searchPokeInfo === undefined){
     mensaje.innerHTML= "Check and try again";
-    }else{
+    } else{
     pokemonInfo(searchPokeInfo);
     mensaje.innerHTML = "";
     }
@@ -26,7 +26,6 @@ buttonPokeMenu.addEventListener("click", showMenu);
 function showMenu(){
     menu.classList.toggle("appear");
 }
-
 
 function pokemonCard(pokemon) {
     let container = document.createElement("div");

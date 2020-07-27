@@ -144,7 +144,57 @@
         width: 280px;   
     }
 }
+@media (max-width: 650px){
+    .subButtonMenu{
+        margin-top: 5px;
+        width: 440px;
+        height: 142px;
+        padding-left: 10px;
+        font-size: 15px;
+    }
+    .subButtonMenu li a{
+        padding: 8px;
+    }
+    .subBtnMenu{
+        width: 440px;
+        height: 120px;   
+    }
+    #subBtnTypes > li {
+        margin-top: 10px;
+        margin-left: 5px;
+        width:  60px;
+        height: 24px;
+        font-size: 15px;
+    }
+    #subBtnTypes  li a{
+        width:  60px;
+        height: 24px;
 
+    }
+    #subBtnWeak > li {
+        margin-top: 10px;
+        margin-left: 5px;
+        width:  60px;
+        height: 24px;
+        font-size: 15px;
+    }
+    .subButtonOrder{
+        width: 440px;
+        padding-left: 10px;
+        font-size: 15px;
+        height: 65px;
+    }
+    #subBtnOrder >li {
+        margin-top: 8px;
+        margin-left: 5px;
+        width:60px ;
+        height:24px ;
+    }
+    
+    #subBtnOrder{
+        height: 40px;
+    }
+}
 @media (max-width:547px){
     header{
         height: 250px;
@@ -162,7 +212,7 @@
 
     .containerPokeMenu{
         display: flex;
-        width: 170px;
+        width: 600px;
         height: 40px;   
     }
 
@@ -189,14 +239,16 @@
     }
 
     .appear {
-        height: 130px;
+        height: 400px;
+        width: 600px;
     }
 
     .buttonMenu {        
         padding: 4px;
-        width: 70px;
-        margin-bottom: 1px;
-        font-size: 18px;
+        width: 65px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-size: 16px;
         color:rgba(11, 26, 65, 0.91);
         box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
         border-radius: 6px 6px 6px 6px;
@@ -204,6 +256,58 @@
 
     .buttonMenu:hover {
         background: #a89009;
+    }
+
+    .subButtonMenu{
+        margin-top: 5px;
+        width: 350px;
+        height: 110px;
+        padding-left: 5px;
+        font-size: 13px;
+    }
+    .subButtonMenu li a{
+        padding: 6px;
+    }
+
+    .subBtnMenu{
+        width: 350px;
+        height: 90px;   
+    }
+    #subBtnTypes > li {
+        margin-top: 5px;
+        margin-left: 2px;
+        width:  50px;
+        height: 20px;
+        font-size: 13px;
+    }
+    #subBtnTypes  li a{
+        width:  50px;
+        height: 20px;
+    }
+    #subBtnWeak > li {
+        margin-top: 5px;
+        margin-left: 2px;
+        width:  50px;
+        height: 20px;
+        font-size: 13px;
+    }
+    .subButtonOrder{
+        width: 350px;
+        padding-left: 5px;
+        font-size: 13px;
+        height: 53px;
+    }
+    #subBtnOrder >li {
+        margin-top: 6px;
+        margin-left: 2px;
+        width: 50px ;
+        height: 20px ;
+    }
+    .subButtonOrder li a{
+        padding: 6px;
+    }
+    #subBtnOrder{
+        height: 35px;
     }
 
     .pokemonsCard{
@@ -362,6 +466,61 @@
         transform: translateY(-2px);
     }
     
+}
+
+@media (max-width:445px){
+    .subButtonMenu{
+        width: 285px;
+        height: 95px;
+        font-size: 12px;
+    }
+    .subButtonMenu li a{
+        padding: 4px;
+    }
+
+    .subBtnMenu{
+        width: 285px;
+        height: 80px;   
+    }
+    #subBtnTypes > li {
+        margin-top: 5px;
+        margin-left: 1px;
+        width: 42px;
+        height: 18px;
+        font-size: 12px;
+    }
+    #subBtnTypes  li a{
+        width: 42px;
+        height: 18px;
+    }
+    #subBtnWeak > li {
+        margin-top: 5px;
+        margin-left: 1px;
+        width: 42px;
+        height: 18px;
+        font-size: 12px;
+    }
+    .subButtonOrder{
+        width: 285px;
+        font-size: 12px;
+        height: 48px;
+    }
+    #subBtnOrder >li {
+        margin-top: 5px;
+        margin-left: 1px;
+        width: 42px;
+        height: 18px;
+        font-size: 12px;
+    }
+    .subButtonOrder li a{
+        padding: 4px;
+    }
+    #subBtnOrder{
+        height: 30px;
+    }
+
+
+ 
 }
 
 @media (max-width:405px){

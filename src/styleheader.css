@@ -129,7 +129,7 @@ nav{
 }
 
 .subButtonMenu{
-    display: none;
+    display:none;
     list-style: none;
     background:#3d3c30e8;
     color: blanchedalmond;
@@ -142,12 +142,15 @@ nav{
     padding-left: 20px;
 }
 .subButtonMenu li a{
-
     color: blanchedalmond;
     padding: 10px;
     text-decoration: none;
 }
 .menu :hover .subButtonMenu{
+    display: block;
+    opacity: 1;
+}
+.menu :hover .subButtonOrder{
     display: block;
     opacity: 1;
 }
@@ -160,6 +163,40 @@ nav{
     #2C4999 0%,
     rgba(7, 14, 33, 0.91) 83.33%);
     border-radius: 10px 10px 10px 10px;    
+}
+.subButtonOrder{
+    display:none;
+    list-style: none;
+    background:#3d3c30e8;
+    color: blanchedalmond;
+    opacity: 0;
+    transition: opacity 1s;
+    margin-top: 5px;
+    border-radius: 10px 10px 10px 10px;
+    width: 550px;
+    height: 80px;
+    padding-left: 20px;
+}
+#subBtnOrder >li {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    border:1px #F1CE00 solid;
+    background: #171716;
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 5px;
+    width:80px ;
+    height:30px ;
+}
+.subButtonOrder li a{
+    color: blanchedalmond;
+    padding: 10px;
+    text-decoration: none;
+}
+#subBtnOrder{
+    height: 50px;
 }
 #subBtnTypes > li {
     text-align: center;
@@ -197,4 +234,39 @@ nav{
 }
 #subBtnWeak  li a{
     color:whitesmoke; 
+}
+.about {
+    /*display:none;*/
+    list-style: none;
+    background:#3d3c30e8;
+    color: blanchedalmond;
+    /*opacity: 0;*/
+    transition: opacity 1s;
+    margin-top: 5px;
+    border-radius: 10px 10px 10px 10px;
+    width: 455px;
+    height: 190px;
+    padding-left: 20px;
+}
+.subAbout {
+    display: block;
+    list-style: none;
+    width: 455px;
+    height: 160px;
+    background: linear-gradient(180deg,
+    #2C4999 0%,
+    rgba(7, 14, 33, 0.91) 83.33%);
+    border-radius: 10px 10px 10px 10px; 
+}
+.subAbout li a{
+    text-decoration: none;
+    color: blanchedalmond;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 160px;
+}
+.contact{
+    display: none;
+    opacity: 0;
 }
