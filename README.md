@@ -14,15 +14,15 @@
 Una API creada para los seguidores de la tan famosa serie animada para adultos Rick and Morty. Esta API fue creada para facilitar la busqueda tanto de personajes como de lugares importantes de la serie, en la que se pueden encontrar datos curiosos como las estadisticas de cantidad de personajes que habitan un lugar y poder filtar por especie los personajes.
 
 <figure>
-<img width="500px" src="./prototipo-alta-web-FirstView.png">
+<img width="500px" src="./src/prototipo-alta-web-FirstView.png">
 <figcaption>Vista principal</figcaption>
 </figure>
 <figure>
-<img width="500px" src="./prototipo-alta-locations-web.png">
+<img width="500px" src="./src/prototipo-alta-locations-web.png">
 <figcaption>Vista Locations</figcaption>
 </figure>
 <figure>
-<img width="500px" src="./prototipo-alta-characters-web.png">
+<img width="500px" src="./src/prototipo-alta-characters-web.png">
 <figcaption>Vista Characters</figcaption>
 </figure>
 
@@ -41,7 +41,7 @@ El objetivo de nuestros usuarios es usar nuestra API para obtener información g
 Nuestra API le ofrece al usuario una manera fácil y rapida de conocimiento sobre la serie y datos curiosos que pueden ser interesantes en el momento de ver capítulos y tener el contexto de diferentes temas.
 
 <figure>
-<img width="500px" src="./prototipo-baja-firstView.jpg">
+<img width="500px" src="./src/prototipo-baja-firstView.jpg">
 <figcaption>Primer prototipo primera vista mobile</figcaption>
 </figure>
 <figure>
@@ -52,7 +52,7 @@ Nuestra API le ofrece al usuario una manera fácil y rapida de conocimiento sobr
 Con feedback de diferentes compañeras adaptamos colores y distribución de las diferentes vistas
 
 <figure>
-<img width="500px" src="./prototipo-alta-characters-web.jpeg">
+<img width="500px" src="./src/prototipo-alta-characters-web.jpeg">
 <figcaption>Primer prototipo characters web</figcaption>
 </figure>
 
@@ -86,7 +86,7 @@ usuario necesita.
 - [x] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
       | [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
 - [ ] Diferenciar entre expression y statements.
-- [ ] Diferenciar entre tipos de datos atómicos y estructurados.
+- [x] Diferenciar entre tipos de datos atómicos y estructurados.
 
 ### Testing
 
@@ -94,15 +94,15 @@ usuario necesita.
 
 ### Estructura del código y guía de estilo
 
-- [ ] Organizar y dividir el código en módulos (Modularización)
-- [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-- [ ] Uso de linter (ESLINT)
+- [x] Organizar y dividir el código en módulos (Modularización)
+- [x] Uso de identificadores descriptivos (Nomenclatura | Semántica)
+- [x] Uso de linter (ESLINT)
 
 ### Git y GitHub
 
 - [x] Uso de comandos de git (add | commit | pull | status | push)
-- [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
-- [ ] Colaboración en Github (branches | pull requests | |tags)
+- [x] Manejo de repositorios de GitHub (clone | fork | gh-pages)
+- [x] Colaboración en Github (branches | pull requests | |tags)
 
 ### UX
 
