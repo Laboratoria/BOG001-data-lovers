@@ -8,8 +8,9 @@ body {
   font-family: 'Assistant', sans-serif;
 }
 
-.contenedor {
+.contenedorPersonajes {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 60px 0;
   width: 90%;
@@ -60,6 +61,7 @@ nav {
   bottom: 0;
   width: 100%;
 }
+  
 
 .redes {
   display: flex;
