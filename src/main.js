@@ -6,7 +6,7 @@ const champions = Object.values(data.data);
 console.log(champions);
 
 const print = (champions) =>{
-  let contenedor = document.getElementById("champions");
+  let contenedor = document.getElementById("card");
   contenedor.innerHTML = "";
   champions.forEach(element => {
     let championContainer = document.createElement("div");
@@ -21,9 +21,30 @@ const print = (champions) =>{
     championContainer.appendChild(parrafoName);
     championContainer.appendChild(parrafoRol);
     contenedor.appendChild(championContainer);
-  });
-}
 
+    let infoContainer = document.createElement("div");
+    infoContainer.classList.add("information");
+    const parrafoAttack = document.createElement("p");
+    parrafoAttack.appendChild(document.createTextNode("Attack:" + " " + element.info.attack));
+    const parrafoDefense = document.createElement("p");
+    parrafoDefense.appendChild(document.createTextNode("Defense:" + " " + element.info.defense));
+    const parrafoMagic = document.createElement("p");
+    parrafoMagic.appendChild(document.createTextNode("Magic:" + " " + element.info.magic));
+    const parrafoDifficulty = document.createElement("p");
+    parrafoDifficulty.appendChild(document.createTextNode("Difficulty:" + " " + element.info.difficulty));
+    infoContainer.appendChild(parrafoAttack);
+    infoContainer.appendChild(parrafoDefense);
+    infoContainer.appendChild(parrafoMagic);
+    infoContainer.appendChild(parrafoDifficulty);
+    contenedor.appendChild(infoContainer);
+   });
+}
+     
+       // * Rotacion de la tarjeta
+       //championsContainer.addEventListener('click', () => {
+        //championsContainer.classList.toggle('active');
+        //});    
+      
 
 /* --------Menu--------*/
 var burgerMenu = document.getElementById('burger-menu');
