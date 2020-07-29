@@ -4,8 +4,6 @@ import searchPokemon from './data.js';
 
 const pokeDex = data.pokemon;
 const root = document.querySelector("#root");
-const menu = document.querySelector("#menu");
-const buttonPokeMenu = document.querySelector("#buttonPokeMenu");
 const search = document.querySelector("#search");
 const mensaje = document.querySelector("#mensaje");
 const inputSearch = document.querySelector("#inputSearch")
@@ -20,12 +18,6 @@ search.addEventListener("click", () => {
     mensaje.innerHTML = "";
     }
 });
-
-buttonPokeMenu.addEventListener("click", showMenu);
-
-function showMenu(){
-    menu.classList.toggle("appear");
-}
 
 function pokemonCard(pokemon) {
     let container = document.createElement("div");

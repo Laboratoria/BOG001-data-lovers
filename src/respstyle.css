@@ -2,7 +2,6 @@
     .headerContainer{
         justify-content: center;
         flex-direction: column;
-        
     }
     .logocontainer{
         margin-left: 0;
@@ -77,7 +76,40 @@
         margin: auto;
         text-align: center;
         margin-bottom: 10px;
-    }    
+    } 
+    .about {
+        width: 364px;
+        height: 170px;
+        font-size: 17px;
+    }
+    .subAbout {
+        width: 364px;
+        height: 146px;
+    }
+    .subAbout li p{
+        margin-top: 5px;
+        margin-left: 5px;
+    }   
+    .contact{
+        width: 224px;
+        height: 68px;
+        font-size: 17px; 
+    }
+    .contact > li {
+        height: 60px;
+        width: 224px;
+    }
+    .subContact{
+        width: 224px;
+        height: 68px;
+        padding-top: 1px;
+    }
+    .subContact > li{  
+
+        width: 200px;
+        height: 15px;
+        margin-left: 11px;
+    }
 
     .pokemonContainer{  
         max-width: 80%;
@@ -152,7 +184,7 @@
         padding-left: 10px;
         font-size: 15px;
     }
-    .subButtonMenu li a{
+    .subButtonMenu li p{
         padding: 8px;
     }
     .subBtnMenu{
@@ -166,7 +198,7 @@
         height: 24px;
         font-size: 15px;
     }
-    #subBtnTypes  li a{
+    #subBtnTypes  li p{
         width:  60px;
         height: 24px;
 
@@ -265,7 +297,7 @@
         padding-left: 5px;
         font-size: 13px;
     }
-    .subButtonMenu li a{
+    .subButtonMenu li p{
         padding: 6px;
     }
 
@@ -280,7 +312,7 @@
         height: 20px;
         font-size: 13px;
     }
-    #subBtnTypes  li a{
+    #subBtnTypes  li p{
         width:  50px;
         height: 20px;
     }
@@ -303,11 +335,35 @@
         width: 50px ;
         height: 20px ;
     }
-    .subButtonOrder li a{
+    .subButtonOrder li p{
         padding: 6px;
     }
     #subBtnOrder{
         height: 35px;
+    }
+    .about {
+        width: 300px;
+        height: 130px;
+        font-size: 13px;
+    }
+    .subAbout {
+        width: 300px;
+        height: 110px;
+    }
+    .contact{
+        width: 200px;
+        height: 68px;
+        font-size: 13px; 
+    }
+    .subContact{
+        width: 200px;
+        height: 68px;
+        padding-top: 1px;
+    }
+    .subContact > li{  
+        width: 180px;
+        height: 15px;
+        margin-left: 8px;
     }
 
     .pokemonsCard{
@@ -474,7 +530,7 @@
         height: 95px;
         font-size: 12px;
     }
-    .subButtonMenu li a{
+    .subButtonMenu li p{
         padding: 4px;
     }
 
@@ -489,7 +545,7 @@
         height: 18px;
         font-size: 12px;
     }
-    #subBtnTypes  li a{
+    #subBtnTypes  li p{
         width: 42px;
         height: 18px;
     }
@@ -512,7 +568,7 @@
         height: 18px;
         font-size: 12px;
     }
-    .subButtonOrder li a{
+    .subButtonOrder li p{
         padding: 4px;
     }
     #subBtnOrder{
