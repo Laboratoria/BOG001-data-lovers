@@ -11,4 +11,4 @@ function nextPage() {
     document.getElementById('window-2').style.display = 'block';
 } 
 
-console.log(data);
+console.log(data); 
