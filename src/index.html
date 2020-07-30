@@ -26,12 +26,13 @@
         <div class="containerPokeMenu">
             <span class="iconMenu" id="buttonPokeMenu"></span>
             <ul class="menu" id="menu">
-              <li><p class="buttonMenu">Menu</p> 
+              <li><p class="buttonMenu" id ="buttonMenu2" >Menu</p> 
+                <div class= "showSubMenu">
                 <ul class="subButtonOrder"  id="subButtonOrder">
                   <li><p>Order</p></li>
                   <ul id=subBtnOrder class="subBtnMenu">
-                    <li><p>1-151</p></li>
-                    <li> <p>151-1</p></li>
+                    <li id = ascend data-value = "ascend" ><p>1-151</p></li>
+                    <li id="descend" data-value = "descend"> <p>151-1</p></li>
                   </ul>
                 </ul>
                 <ul class="subButtonMenu" id="subButtonType">
@@ -81,8 +82,10 @@
                   </ul>
                   </li>
                 </ul>
+              </div>
               </li>
-              <li><p class="buttonMenu">About us</p>
+              <li><p class="buttonMenu" id="buttonAbout">About us</p>
+                <div class="showAbout">
                 <ul class="about">
                   <li >PokémonDeta
                   </li>
@@ -102,10 +105,12 @@
                         transforming into even more powerful creatures.
                         The main occupation for coaches is to capture, train and fight with all of them.</p> 
                       </li>
-                    </ul>
+                    </ul>  
                 </ul>
+              </div>
               </li>
-              <li><p class="buttonMenu">Contact us</p>
+              <li><p class="buttonMenu" id = "buttonContact">Contact us</p>
+                <div class="showContact">
                 <ul class="contact">
                   <li><p></p>
                     <ul class="subContact">
@@ -114,6 +119,7 @@
                   </ul>
                   </li>
                 </ul>
+              </div>
               </li>
             </ul>
         </div>

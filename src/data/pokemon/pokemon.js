@@ -899,7 +899,7 @@ export default {
   }, {
     "id": 32,
     "num": "032",
-    "name": "Nidoran ♂",
+    "name": "Nidoran ♂ (Male)",
     "img": "http://www.serebii.net/pokemongo/pokemon/032.png",
     "type": [
       "Poison"
