@@ -3,7 +3,7 @@ import { filterByRol } from "./data.js";
 import data from "./data/lol/lol.js";
 
 const champions = Object.values(data.data);
-console.log(champions);
+//console.log(champions);
 
 const print = (champions) =>{
   let contenedor = document.getElementById("card");
@@ -40,27 +40,23 @@ const print = (champions) =>{
    });
 }
      
-       // * Rotacion de la tarjeta
-       //championsContainer.addEventListener('click', () => {
-        //championsContainer.classList.toggle('active');
-        //});    
-      
-
 /* --------Menu--------*/
 var burgerMenu = document.getElementById('burger-menu');
 var show = document.getElementById('menu');
-var menuRol = document.getElementById('menuRol');
+//var menuRol = document.getElementById('menuRol');
 
 burgerMenu.addEventListener('click', function(){
     this.classList.toggle("close");
     show.classList.toggle("show");
 })
 
+/* --------Filtro--------*/
+
 let roles = document.querySelector(".rolesLol");
 roles.addEventListener('click', function(e){
 const btnRol = e.target.textContent;
 const filterData = filterByRol(champions,btnRol);
-console.log(filterData);
+//console.log(filterData);
 print (filterData);
 });
 
