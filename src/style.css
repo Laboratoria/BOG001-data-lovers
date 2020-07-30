@@ -176,6 +176,81 @@ header .imgLogo {
 
 }
 /* --------Styles Cards--------*/
+
+/*.wrap{
+	width: 1100px;
+	margin: 50px auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.tarjeta-wrap{
+	margin: 10px;
+	-webkit-perspective: 800;
+	perspective: 800;
+}
+
+.card{
+	width: 300px;
+	height: 350px;
+	background: #F29720;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+}
+
+.championContainer, .infoContainer{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.championContainer{
+	width: 100%;
+}
+
+.infoContainer{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	padding: 15px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	color: #fff;
+	font-family: "open sans";
+}
+
+.tarjeta-wrap:hover .card{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}*/
+
 .card{
   display: flex;
   flex-wrap: wrap;
@@ -187,9 +262,7 @@ header .imgLogo {
   max-width: 1200px;
 }
 
-/*.card.active{
-  transform: rotatey(180deg);
-}*/
+
 
 .card > div{
   width: 165px;
@@ -225,9 +298,7 @@ main p {
   max-width: 1200px;
 }
 
-.championsContainer.active{
-  transform: rotatey(180deg);
-}
+
 
 .champions img {
   background-color: rgba(255, 255, 255, 0.6);
