@@ -17,6 +17,7 @@ body {
   font-family: 'Patrick Hand', cursive;  
   word-break: break-all;
 }
+
 .contenedorUno {
     background-color: var(--main-color);
   }
@@ -31,9 +32,10 @@ body {
 .imagenTop {
   margin: 0;
   padding: 0;
-  width: 150vw;
+  width: 100%;
   object-fit: cover;
   object-position: center;
+  align-items: center;
 }
 
 
@@ -65,6 +67,7 @@ body {
 } 
 
 .menuButtons{
+  margin-top: 20px;
   padding: 2% var(--container-padding);
   display: flex;
   justify-content: space-between;
@@ -76,6 +79,7 @@ body {
 }
 
 .footer {
+  margin-top: 40px;
   padding: 0.5em;
   text-align: center;
   background-color: silver;
@@ -116,8 +120,9 @@ body {
   display: inline-block ;
   padding: 1em 0  0 4em ;
   margin: auto;
-  height: 50px;
-  width: 150px; 
+  font-size: 10px;
+  height: 25px;
+  width: 75px; 
   justify-content: space-around;
   border-radius: 1em 0 0 1em ;
   box-sizing: border-box; 
@@ -129,8 +134,9 @@ body {
   display: inline-block ;
   padding: 1em 0  0 4em ;
   margin: auto;
-  height: 50px;
-  width: 150px; 
+  font-size: 10px;
+  height: 25px;
+  width: 75px; 
   justify-content: space-around;
   box-sizing: border-box; 
 }
@@ -141,8 +147,9 @@ body {
   display: inline-block ;
   padding: 0.5em 0  0 4em ;
   margin: auto;
-  height: 50px;
-  width: 150px; 
+  font-size: 10px;
+  height: 25px;
+  width: 75px; 
   justify-content: space-around;
   border-radius: 0 1em 1em 0 ;
   box-sizing: border-box; 
@@ -190,23 +197,21 @@ body {
 
 
 /* VENTANA MODAL*/ 
-/*
+
 .container{
+  top: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   position: fixed;
-  padding: 40px;
   visibility: hidden;
-  opacity: 0;
-  transition: all 600ms;
+  opacity: 30;
+  transition: all 600ms; 
 }
 
-
-.container:target{
-  background: rgba(0,0,0,0.8);
-  visibility: visible;
-  opacity: 1;
-}
 
 .container:target .tarjeta{
   top: 50%;
@@ -214,10 +219,10 @@ body {
   transform: rotate(0deg) translate(-50%, -50%);
   visibility: visible;
 }
-*/
+
 
 .tarjeta{
-  background-color: rgb(40, 197, 184);
+  background-color: var(--secondary-color);
   align-items: center;
   color : white; 
   width: 100%;
@@ -231,12 +236,12 @@ body {
   flex-direction: column;
   position: relative;
   display: flex;
+  z-index: 299;
   /*visibility: hidden;
   top: -80%;
   left: -80%;
   transform: rotate(90deg) translate(-150%, 230%);
-  transition: all 600ms;*/
-   
+  transition: all 600ms; */
 }
 
 .tarjetaImg {
@@ -245,8 +250,12 @@ body {
   margin-top: 6px; 
   width: 220px ; 
   border-radius: 1em;
+  border: 10px #61b3a8 solid;
 }
-
+.modal_cerrar {
+  font-size: 35px;
+  color: #61b3a8
+}
 
 
 /* PAGINA MUNDOS*/
@@ -327,20 +336,19 @@ body {
   }
   
 .personajesS {
-      align-items: center;
       background-color: rgb(141, 230, 218);
       box-shadow: 0 4px 10px -2px var(--season-buttons);
       color: rgb(12, 95, 134);
       display: flex;
-      height: 150px;
-      width:300px;  
       justify-content: center;
+      align-items: center;
+      height: 100px;
+      width:300px;  
       border-radius: 1em;
-      padding: 1em 0  0 1em ;
+      padding: 10px ;
       box-sizing: border-box; 
       margin: 1em;
       border: 0;
-      flex-direction: column;
       transition: box-shadow .3s ease;
      
 }
@@ -348,22 +356,24 @@ body {
 .personajesS:hover {
     box-shadow: 0 2px 2px -2px rgb(9, 65, 150);
   }
+.unoS .ChapterNameS{
+  justify-content: space-between;
+  
+ /* flex-direction: wrap;*/
 
+}
 .imageS {
-      margin-top: 8px; 
-      width: 120px ; 
-      border-radius:  50% 50% /  50% 50%;
-      text-size-adjust: auto;  
-      justify-content: center;
-      margin: auto;
+     /* margin-top: 8px; */
+      width: 110px ;
+      border-radius:  1em;
+      flex-direction: wrap;
+      padding-right: 10px;
+     /* margin: auto;*/
   }
 
 
 /* Celular */
 @media  screen and (min-width: 480px){
-  /* :root {
-    --main-color: red;
-  } */
   .imagenTop {
     width: 100vw;
   }
@@ -374,5 +384,21 @@ body {
 
   .pngButtons {
     width: 20%;
+  }
+  .alive {
+    font-size: 15px;
+    height: 50px;
+    width: 150px; 
+  }
+
+  .az {
+    font-size: 15px;
+    height: 50px;
+    width: 150px; 
+  }
+  .search { 
+  font-size: 15px;
+  height: 50px;
+  width: 150px; 
   }
 }
