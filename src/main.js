@@ -41,14 +41,16 @@ const print = (champions) =>{
 }
      
 /* --------Menu--------*/
-var burgerMenu = document.getElementById('burger-menu');
-var show = document.getElementById('menu');
+
+
+//var burgerMenu = document.getElementById('burger-menu');
+//var show = document.getElementById('menu');
 //var menuRol = document.getElementById('menuRol');
 
-burgerMenu.addEventListener('click', function(){
-    this.classList.toggle("close");
-    show.classList.toggle("show");
-})
+//burgerMenu.addEventListener('click', function(){
+    //this.classList.toggle("close");
+    //show.classList.toggle("show");
+//})
 
 /* --------Filtro--------*/
 
@@ -59,5 +61,6 @@ const filterData = filterByRol(champions,btnRol);
 //console.log(filterData);
 print (filterData);
 });
+
 
 print(champions);
