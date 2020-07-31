@@ -34,7 +34,6 @@ if (window.location.pathname === "/src/Personajes.html") {
   };
 
   function show(arrayPersonajes) {
-
     let names = [];
     for (let i = 0; i < arrayPersonajes.length; i++) {
       names += `<div class= "personajes1" data-personajes="${i}" id="${arrayPersonajes[i].id}-${i}">
@@ -45,7 +44,6 @@ if (window.location.pathname === "/src/Personajes.html") {
     let characterButtons = document.getElementById("charactersZone");
 
     characterButtons.innerHTML = names;
-
 
     for (let i = 0; i < arrayPersonajes.length; i++) {
       const boton = document.getElementById(`${arrayPersonajes[i].id}-${i}`);
@@ -62,10 +60,9 @@ if (window.location.pathname === "/src/Personajes.html") {
 
     let alivePersonajesFiltros = arrayPersonajes.filter(personaje => personaje.status == "Alive");
     show(alivePersonajesFiltros);
-
   }
   const aliveButton = document.getElementById("alive")
-  aliveButton.addEventListener("click", () => alive(personajes));
+  aliveButton.addEventListener("click", (e) => alive(personajes));
 
   // Metodo SORT();
 
@@ -80,23 +77,26 @@ if (window.location.pathname === "/src/Personajes.html") {
   }
 
   function az(arrayPersonajes) {
-    let personajesOrdenados = arrayPersonajes.sort(comparar);
-    show(personajesOrdenados);
-    popUp(e, personajesOrdenados)
+    let alphabeticalOrder = arrayPersonajes.sort(comparar);
+    show(alphabeticalOrder);
   }
   const sortButton = document.getElementById("sortButton")
   sortButton.addEventListener("click", (e) => az(personajes));
 
   // Busqueda de muñecos 
+  const lupa = document.getElementById("searchButton");
 
-  function searching(string, arrayPersonajes) {
-    let busqueda = arrayPersonajes.find(personaje => personaje.name.toLowerCase() === string.value.toLowerCase());
-    show(busqueda);
+  function searching( arrayPersonajes) {
+console.log(arrayPersonajes)
+    let word = document.getElementById("toSearch").value;
+    let busqueda = arrayPersonajes.find(personaje => personaje.name.toLowerCase() === word.toLowerCase());
+    let arrayBusqueda = Array.from(busqueda);
+    console.log(arrayBusqueda)
+    show(arrayBusqueda);
+   
   };
 
-  let palabra = document.getElementById("searchButton");
-
-  palabra.addEventListener("click", () => searching(palabra, personajes));
+  lupa.addEventListener("click", () => searching(personajes));
 
   // esta } es cierre de if de la ventana
 };
@@ -130,10 +130,7 @@ if (window.location.pathname === "/src/Mundo.html") {
 if (window.location.pathname === "/src/Temporada.html") {
 
   // Para conseguir los Capitulos 
-
-
-
-
+/*
   let chapters = [];
 
   for (let i = 0; i < personajes.length; i++) {
@@ -144,7 +141,7 @@ if (window.location.pathname === "/src/Temporada.html") {
 
   };
   let seasonButtons = document.getElementById("seasonZone");
-  seasonButtons.innerHTML = chapters;
+  seasonButtons.innerHTML = chapters; */
 
   // Otra forma de conseguir episodios 
   
@@ -152,20 +149,20 @@ if (window.location.pathname === "/src/Temporada.html") {
   const fetchEpisodes = () => {
     let url = `https://rickandmortyapi.com/api/episode/`;
     fetch(url)
-      .then((response) => {
-        return response.json();
+      .then((reply) => {
+        return reply.json();
       })
       .then((data) => {
-        console.log(data);
         results['results'] = data.results
-        console.log(results);
       })
       fetchEpisodes();
+     console.log("hola mundo")
     let episodioInfo = [];
     for (let i = 0; i < results.length; i++) {
       episodioInfo += ` <p class= "nombres" >${results[i].name} </p>`
-      console.log(episodioInfo)
     }
+    let seasonButtons = document.getElementById("seasonZone");
+    seasonButtons.innerHTML = results;
     
   };
 
