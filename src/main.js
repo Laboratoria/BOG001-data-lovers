@@ -51,7 +51,4 @@ document.getElementById("window-container").innerHTML += `<div class="card"><h2>
 }
 
 
-<<<<<<< HEAD
-console.log(data); 
-=======
->>>>>>> cb1fc4ba636c9aa8c999ea2f7849b4b38950d9db
+ 

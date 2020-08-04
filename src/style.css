@@ -122,47 +122,11 @@ footer {
 
   main .window-1 {
       display: flex;
-<<<<<<< HEAD
-      flex-direction: column;
-      justify-content: center;
-      width: 50%;
       margin-left: 25%;
+      flex-direction: column;     
+      justify-content: center;    
+      width: 50%;              
       height: calc(100vh - 11vh - 7vh);
-  }
-
-  h1 {
-      font-family: Share Tech Mono;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      text-align: justify;
-  }
-
-  .AMB {
-      width: 100%;
-      margin-top: 15%;
-  }
-
-  main button {
-      width: 59%;
-      align-self: center;
-      margin-top: 4%;
-      padding: 4%;
-      background: #FFFFFF;
-      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);;
-      border-radius: 50px;
-  }
-
-  footer {
-      display: flex;
-      height: 7vh;
-      font-size: 14px;
-      line-height: 16px;
-      text-align: center;
-      justify-content: center;
-=======
-      width: 25px;
-      margin-left: 85%;
     }
 
     .home, .pokedex, .versus{
@@ -292,118 +256,10 @@ footer {
     width: 15%;
     text-align: center;
     border-radius: 10px;
->>>>>>> cb1fc4ba636c9aa8c999ea2f7849b4b38950d9db
   }
 }
 
 @media screen and (min-width: 451px) and (max-width: 770px) {
-<<<<<<< HEAD
- 
-  header {
-      height: 15vh;
-  }
-
-  .container {
-      width: 200px;
-      justify-content: center;
-      align-self: center;
-  }
-
-  nav {
-      display: flex;
-      align-items: center;
-  }
-
-  #list {
-      display: flex;
-      width: 25%;
-  }
-
-  .home, .pokedex, .versus{
-      width: 60px;
-  } 
-
-  .nav-links {
-      display: none;
-      text-align: left;
-      flex-direction: column;
-  }
-
-  li {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-end;
-      flex-direction: column;
-      list-style: none;
-  }
-
-  a {
-      text-decoration: none;
-      color: black;
-  }
-
-  #Pokemon {
-      width: 170px;
-  }
-
-  .searchContainer {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-  }
-
-  .search {
-      width: 35%;
-      display: flex;
-      border: none;
-      background: #F32E13
-  }
-
-  .loupe {
-      width: 50%;
-  }
-
-  main .window-1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 27%;
-      margin-left: 36%;
-      height: calc(100vh - 15vh - 10vh);
-  }
-
-  h1 {
-      font-family: Share Tech Mono;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      text-align: justify;
-  }
-
-  .AMB {
-      width: 100%;
-      margin-top: 15%;
-  }
-
-  main button {
-      width: 59%;
-      align-self: center;
-      margin-top: 4%;
-      padding: 4%;
-      background: #FFFFFF;
-      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);;
-      border-radius: 50px;
-  }
-
-  footer {
-      display: flex;
-      height: 10vh;
-      font-size: 14px;
-      line-height: 16px;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-=======
    
     header {
         height: 15vh;
@@ -552,7 +408,6 @@ footer {
     width: 15%;
     text-align: center;
     border-radius: 10px;
->>>>>>> cb1fc4ba636c9aa8c999ea2f7849b4b38950d9db
   }
 }
 
@@ -576,108 +431,6 @@ footer {
       width: 40px;
   } 
 
-<<<<<<< HEAD
-  .nav-links {
-      display: flex;
-  }
-  
-  li {
-      padding: 0 10px;
-      list-style: none;
-  }
-
-  a {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      text-decoration: none;
-      color: black;
-      font-size: 30px;
-  }
-
-  #Pokemon {
-      width: 300px;
-      
-  }
-
-  .searchContainer {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-  }
-
-  #bar {
-      display: inline-block;
-  }
-
-  input {
-      border-radius: 15px;
-      padding: 4%;
-  }
-
-  .search {
-      width: 45px;
-      border: none;
-      background: #F32E13
-  }
-
-  .loupe {
-      width: 61%;
-  }
-
-  main .window-1 {
-      width: 95%;
-      display: grid;
-      position: relative;
-      padding-left: 15%;
-      height: calc(100vh - 16vh - 7vh);
-      max-width: 1000px;
-      grid-template-columns: repeat(4, 1fr);
-  }
-
-  h1 {
-      grid-column: span 2;
-      padding: 135px 0px;
-      padding-right: 86px;
-      font-family: Share Tech Mono;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 26px;
-      text-align: justify;
-      align-self: center;
-  }
-
-  .AMB {
-      display: flex;
-      grid-column: span 2;
-      grid-row: span 2;
-      align-self: center;
-      width: 70%;
-  }
-
-  main button {
-      width: 60%;
-      position: absolute;
-      grid-column-start: 1;
-      grid-column-end: 2;
-      top: 58%;
-      margin-left: 46%;
-      padding: 5%;
-      background: #FFFFFF;
-      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);;
-      border-radius: 50px;
-  }
-
-   footer {
-      display: flex;
-      height: 7vh;
-      font-size: 14px;
-      line-height: 16px;
-      justify-content: center;
-      text-align: center;
-  }
-}
-=======
     .nav-links {
         display: flex;
     }
@@ -831,4 +584,3 @@ footer {
     border-radius: 10px;
   }
 }
->>>>>>> cb1fc4ba636c9aa8c999ea2f7849b4b38950d9db
