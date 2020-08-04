@@ -26,7 +26,7 @@ var home = document.getElementById("home");
 
 home.addEventListener("click", () => {
     document.getElementById("Pokedex").style.display = "none"; 
-    document.getElementById("Home").style.display = "block"; 
+    document.getElementById("Home").style.display = "grid"; 
 });
 
 var pokedex = document.getElementById("pokedex");
@@ -35,6 +35,7 @@ pokedex.addEventListener("click", () => {
     document.getElementById("Home").style.display = "none";
     document.getElementById("Pokedex").style.display = "block";
 }); 
+
 // -----Desglosando el objeto de la data----
 // var info = dataSet[0];
 // var id = info.id;
