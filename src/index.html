@@ -17,22 +17,22 @@
                 <img src="Icons/list.svg" id="list">
             </div>
             <ul class="nav-links">
-               <li><a href="#"><img class="home" src="Icons/home.svg" alt="Home">Home</a></li> 
-               <li><a href="#"><img class="pokedex" src="Icons/pokedex.svg" alt="Pokedex">Pokedex</a></li>
-               <li><a href="#"><img class="versus" src="Icons/versus.svg" alt="Versus">Versus</a></li>
+               <li id="home"><a href="#"><img class="home" src="Icons/home.svg" alt="Home">Home</a></li> 
+               <li id="pokedex"><a href="#"><img class="pokedex" src="Icons/pokedex.svg" alt="Pokedex">Pokedex</a></li>
+               <li id="versus"><a href="#"><img class="versus" src="Icons/versus.svg" alt="Versus">Versus</a></li>
             </ul>
         </nav>
         <div class="container"><img src="Images/Pokemon-logo.png" alt="Pokemon-logo" id="Pokemon"></div>
         <div class="searchContainer container">
             <form class="barSearch" id="bar">
-                <input type="text" name="search" placeholder="Search">
+                <input type="search" name="search" placeholder="Search">
             </form>
             <button class="search" id="search"><img src="Icons/search.svg" class="loupe" id="loupe"></button>
         </div>
     </header>
 
     <main>
-        <div class="window-1" id="window-1">
+        <div class="window-1" id="Home">
             <h1>
                 Explore and browse the Pokémon universe to become a Master, so go on and...
             </h1>
@@ -40,10 +40,38 @@
         <button type="button" class="continue" id="continue">Catch 'em all!</button>
         </div>
 
-        <div class="window-2" id="window-2">
+        <div class="window-2" id="Pokedex">
             <div class="btn-filter">
-                <button class="Filter Order" id="order">Order</button>
-                <button class="Filter Type" id="type">Type</button>
+                <!-- <button class="Filter Order" id="order"> -->
+
+                  <select class="Filter" name="az" id="aZ">
+                    <option value="order">Order</option>
+                    <option value="A-Z">A-Z</option>
+                    <option value="Z-A">Z-A</option>
+                  </select>
+                </button>
+
+                <!-- <button class="Filter Type" id="type"> -->
+
+                  <select class="Filter" name="element" id="element">
+                    <option value="0">Type</option>
+                    <option value="normal">Normal</option>
+                    <option value="grass">Grass</option>
+                    <option value="poison">Poison</option>
+                    <option value="fire">Fire</option>
+                    <option value="flying">Fliying</option>
+                    <option value="water">Water</option>
+                    <option value="bug">Bug</option>
+                    <option value="plant">Plant</option>
+                    <option value="electric">Electric</option>
+                    <option value="ice">Ice</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="ground">Ground</option>
+                    <option value="rock">Rock</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="ghost">Ghost</option>
+                  </select>
+                </button>
             </div>
             <div class="window-container" id="window-container"></div>
 
