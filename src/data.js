@@ -1,10 +1,14 @@
+    // FUNCIONES
 // estas funciones son de ejemplo
 
-export const filter = () => {
-  
-  return 'example';
-};
+// export const filter = () => {
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+//   return 'example';
+// };
+
+// export const anotherExample = () => {
+//   return 'OMG';
+// };
+
+
+

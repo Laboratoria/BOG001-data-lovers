@@ -1,3 +1,5 @@
+// EVENTOS
+
 // import { example } from './data.js';
 import data from './data/pokemon/pokemon.js';
 
@@ -51,4 +53,3 @@ document.getElementById("window-container").innerHTML += `<div class="card"><h2>
 }
 
 
- 
