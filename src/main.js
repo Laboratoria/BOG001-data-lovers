@@ -1,6 +1,10 @@
+
+import { orderSort } from './data.js';
+
 // EVENTOS
 
 // import { example } from './data.js';
+
 import data from './data/pokemon/pokemon.js';
 
 
@@ -46,10 +50,53 @@ pokedex.addEventListener("click", () => {
 // var sum = (`${id} ${num} ${name}`); 
 
 // -----Mostrar los pokemones en el HTML 
-var dataSet = data.pokemon;
+let dataSet = data.pokemon;
 let result;
 for (result of dataSet) {
 document.getElementById("window-container").innerHTML += `<div class="card"><h2> ${result.num} </h2><p> ${result.name} </p><br><img src=${result.img}><div>`; 
-}
+};
 
+// -----Botón de Ordenar----
+// let orderBtn = document.getElementById("aZ");
+// orderBtn.addEventListener("change", () => {
+//     var orderOption = orderBtn.options[orderBtn.selectedIndex].text;
+//     console.log(orderOption)
+// })
+
+let orderBtn = document.getElementById("aZ");
+orderBtn.addEventListener("change", (event) => {
+    var arrData = orderSort(dataSet, event.target.value); 
+    console.log(arrData);
+    var orderOption = document.querySelector(".window-container");
+    orderOption.textContent = "";
+    for (let pokemon of arrData) {
+        console.log(pokemon);
+    orderOption.innerHTML += `<div class="card"><h2> ${pokemon.num} </h2><p> ${pokemon.name} </p><br><img src=${pokemon.img}><div>`
+} 
+}); 
+
+// -----Botón de Filtro por Tipos----
+
+let typeBtn = document.getElementById("element")
+typeBtn.addEventListener("change", (event) => {
+    var typeOption = document.querySelector(".window-container");
+    console.log(typeOption);
+    typeOption.textContent = event.target.value;
+})
+
+// let typeBtn = document.getElementById("element")
+// typeBtn.addEventListener("change", () => {
+//     var typeOption = typeBtn.options[typeBtn.selectedIndex].text;
+//     
+// })
+
+
+// aZ.addEventListener("change", orderBtn);
+
+// function orderBtn () {
+//     var az= event.target.value;
+//     var za = prueba(dataSet, az);
+//       pintarpokemones(za);
+//       console.log(pintarpokemones);
+// }
 
