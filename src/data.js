@@ -1,10 +1,14 @@
+    // FUNCIONES
 // estas funciones son de ejemplo
 
 // export const filter = () => {
+
 //   Array.prototype.filter()
+
 
 //   return 'example';
 // };
+
 
 
 export const orderSort = (setData, order) => {
@@ -18,3 +22,9 @@ export const orderSort = (setData, order) => {
     sorting.reverse()
   } return sorting;
   };
+
+// export const anotherExample = () => {
+//   return 'OMG';
+// };
+
+

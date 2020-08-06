@@ -1,38 +1,38 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 } 
 
 body {
-    background: url(Images/background.jpg) no-repeat center center fixed;
-    background-size: cover;
+  background: url(Images/background.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 header { 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-family: "VT323", monospace;
-    background: #F32E13;
-    border: 8px solid #D22121;
-      
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: "VT323", monospace;
+  background: #F32E13;
+  border: 8px solid #D22121;
+    
 }
 
 #list, #bar {
-    display: none;
+  display: none;
 }
 
 main {
-    font-family: "Share Tech Mono";
+  font-family: "Share Tech Mono";
 }
 
 main button {
-    font-family: "VT323", monospace;
+  font-family: "VT323", monospace;
 }
 
 .window-2 {
-    display: none;
+  display: none;
 }
 
 .window-container {
@@ -48,32 +48,85 @@ main button {
   }
 
 footer { 
-    width: 100%;
-    font-family: "VT323", monospace;
-    background: #F32E13;
-    border: 5px solid #D22121;
-    color: white;
-  }
+  width: 100%;
+  font-family: "VT323", monospace;
+  background: #F32E13;
+  border: 5px solid #D22121;
+  color: white;
+}
 
 @media screen and (max-width: 450px) {
 
-    header {
-      height: 11vh;
-    }
+  header {
+    height: 11vh;
+  }
 
-    .container {
-        width: 150px;
-    }
+  .container {
+      width: 150px;
+  }
 
-    nav {
-        display: flex;
-        align-items: center;
-    }
-
-    #list {
+  nav {
       display: flex;
-      width: 25px;
-      margin-left: 85%;
+      align-items: center;
+  }
+
+  #list {
+    display: flex;
+    width: 25px;
+    margin-left: 85%;
+  }
+
+  .home, .pokedex, .versus{
+      width: 30px;
+  } 
+
+  .nav-links {
+      display: none;
+      text-align: left;
+      flex-direction: column;
+  }
+
+  li {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+      flex-direction: column;
+      list-style: none;
+  }
+
+  a {
+      text-decoration: none;
+      color: black;
+  }
+
+  #Pokemon {
+      width: 20vh;
+  }
+
+  .searchContainer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  }
+
+  .search {
+      width: 45%;
+      display: flex;
+      border: none;
+      background: #F32E13
+  }
+
+  .loupe {
+      width: 55%;
+  }
+
+  main .window-1 {
+      display: flex;
+      margin-left: 25%;
+      flex-direction: column;     
+      justify-content: center;    
+      width: 50%;              
+      height: calc(100vh - 11vh - 7vh);
     }
 
     .home, .pokedex, .versus{
@@ -198,6 +251,12 @@ footer {
         text-align: center;
         justify-content: center;
     }
+      .card {
+    background: #C6E2F2;
+    width: 15%;
+    text-align: center;
+    border-radius: 10px;
+  }
 }
 
 @media screen and (min-width: 451px) and (max-width: 770px) {
@@ -344,27 +403,33 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    .card {
+    background: #C6E2F2;
+    width: 15%;
+    text-align: center;
+    border-radius: 10px;
+  }
 }
 
 @media screen and (min-width: 771px) {
 
-    header {
-        height: 16vh;
-    }
+  header {
+      height: 16vh;
+  }
 
-    .container {
-        width: 300px;
-        align-self: center;
-    }
+  .container {
+      width: 300px;
+      align-self: center;
+  }
 
-    nav {
-        display: flex;
-        align-items: center;
-    }
+  nav {
+      display: flex;
+      align-items: center;
+  }
 
-    .home, .pokedex, .versus{
-        width: 40px;
-    } 
+  .home, .pokedex, .versus{
+      width: 40px;
+  } 
 
     .nav-links {
         display: flex;
@@ -511,4 +576,11 @@ footer {
         justify-content: center;
         text-align: center;
     }
+  
+    .card {
+    background: #C6E2F2;
+    width: 15%;
+    text-align: center;
+    border-radius: 10px;
+  }
 }

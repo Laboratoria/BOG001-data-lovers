@@ -22,5 +22,19 @@
     "jest": "^24.9.0",
     "opener": "^1.5.1",
     "serve": "^11.0.0"
-  }
+  },
+  "description": "Esto es una prueba ## Índice",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathu-bot/BOG001-data-lovers.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/nathu-bot/BOG001-data-lovers/issues"
+  },
+  "homepage": "https://github.com/nathu-bot/BOG001-data-lovers#readme"
 }
