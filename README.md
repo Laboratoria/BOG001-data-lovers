@@ -437,8 +437,8 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 
 ## 9. Checklist
 
-* [ ] Usa VanillaJS.
-* [ ] No hace uso de `this`.
+* [X] Usa VanillaJS.
+* [X] No hace uso de `this`.
 * [ ] Pasa linter (`npm run pretest`)
 * [ ] Pasa tests (`npm test`)
 * [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
@@ -453,6 +453,6 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 * [ ] Incluye el listado de problemas que detectaste a través de tests de
   usabilidad en el `README.md`.
 * [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-* [ ] UI: Permite filtrar data en base a una condición.
-* [ ] UI: Es _responsive_.
+* [X] UI: Permite ordenar data por uno o más campos (asc y desc).
+* [X] UI: Permite filtrar data en base a una condición.
+* [X] UI: Es _responsive_.
