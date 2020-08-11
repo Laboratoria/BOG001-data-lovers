@@ -24,6 +24,7 @@
 //     return sorting; 
 // }}; 
 
+
 export const orderSort = (setData, order) => {
   let sorting = setData.sort((a,z) => {
     let result;
