@@ -66,17 +66,6 @@ orderBtn.addEventListener("change", () => {
     orderOption.innerHTML += `<div class="card"><h2> ${pokemon.num} </h2><p> ${pokemon.name} </p><br><img src=${pokemon.img}><div>`;
 }}); 
 
-// function numbers () {
-//     var dataArr = sortOrder(dataSet, event.target.value);
-//     var option = document.querySelector(".window-container");
-//     option.textContent = "";
-//     for (let pokemons of dataArr) {
-//         console.log(pokemons);
-//     option.innerHTML += `<div class="card"><h2> ${pokemons.num} </h2><p> ${pokemons.name} </p><br><img src=${pokemons.img}><div>`;
-// }};
-
-// console.log(numbers);
-
 // -----BOTÓN DE TIPOS----
 
 let typeBtn = document.getElementById("element")
