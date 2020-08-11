@@ -91,21 +91,21 @@ Durante el desarrollo del proyecto se recogieron varios feedback en los cuales e
 
 ### HTML y CSS
 
--   [x][uso de html semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+-   [x] uso de html semántico.(https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
 -   [x] Uso de selectores de CSS.
 -   [x] Construir tu aplicación respetando el diseño realizado (maquetación).
--   [x][uso de flexbox en css.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+-   [x] uso de flexbox en css.(https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ### DOM y Web APIs
 
 -   [x] Uso de selectores del DOM.
 -   [x] Manejo de eventos del DOM.
--   [x][manipulación dinámica del dom.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
+-   [x] manipulación dinámica del dom. (https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
     (appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 
 ### JavaScript
 
--   [] Uso de condicionales (if-else | switch | operador ternario)
+-   [x] Uso de condicionales (if-else | switch | operador ternario)
 -   [x] Uso de bucles (for | for..in | for..of | while)
 -   [x] Uso de funciones (parámetros | argumentos | valor de retorno)
 -   [x] Manipular arrays (filter | map | sort | reduce)
@@ -121,7 +121,7 @@ Durante el desarrollo del proyecto se recogieron varios feedback en los cuales e
 
 ### Estructura del código y guía de estilo
 
--   [] Organizar y dividir el código en módulos (Modularización)
+-   [x] Organizar y dividir el código en módulos (Modularización)
 -   [x] Uso de identificadores descriptivos (Nomenclatura | Semántica)
 -   [x] Uso de linter (ESLINT)
 
@@ -153,7 +153,7 @@ Durante el desarrollo del proyecto se recogieron varios feedback en los cuales e
 -   [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
         en `README.md`.
 -   [x] Incluye link a Zeplin o Figma en `README.md`.
--   [ ] Incluye el listado de problemas que detectaste a través de tests de
+-   [x] Incluye el listado de problemas que detectaste a través de tests de
         usabilidad en el `README.md`.
 -   [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
 -   [x] UI: Permite ordenar data por uno o más campos (asc y desc).
