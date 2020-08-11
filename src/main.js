@@ -1,5 +1,5 @@
 
-import { orderSort } from './data.js';
+import { orderSort, pokemonTypes} from './data.js';
 
 // EVENTOS
 
@@ -54,7 +54,7 @@ let dataSet = data.pokemon;
 let result;
 for (result of dataSet) {
 document.getElementById("window-container").innerHTML += `<div class="card"><h2> ${result.num} </h2><p> ${result.name} </p><br><img src=${result.img}><div>`; 
-};
+}
 
 // -----BOTÓN DE ORDENAR----
 // let orderBtn = document.getElementById("aZ");
@@ -73,19 +73,22 @@ orderBtn.addEventListener("change", () => {
 }}); 
 
 // -----BOTÓN DE TIPOS----
-
-let typeBtn = document.getElementById("element")
-typeBtn.addEventListener("change", (event) => {
-    var typeOption = document.querySelector(".window-container");
-    console.log(typeOption);
-    typeOption.textContent = event.target.value;
-})
-
 // let typeBtn = document.getElementById("element")
 // typeBtn.addEventListener("change", () => {
 //     var typeOption = typeBtn.options[typeBtn.selectedIndex].text;
 //     
 // })
+
+let typeBtn = document.getElementById("element");
+typeBtn.addEventListener("change", (event) => {
+	var typeOption = document.querySelector(".window-container");
+	typeOption.textContent = "";
+	const textSelect = event.target.value;
+	const dataFilter = pokemonTypes(dataSet, textSelect);
+	dataFilter.forEach((element) => {
+		typeOption.innerHTML += `<div class="card"><h2> ${element.num} </h2><p> ${element.name} </p><br><img src=${element.img}><div>`;
+	});
+});
 
 
 

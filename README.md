@@ -1,246 +1,137 @@
 # Data Lovers
-Esto es una prueba
+
+## -Pokemon Dex-
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89741008-561b6c80-da53-11ea-97b3-417eb44be50b.png" width="1000"> </p>
+
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+-   [1. Descripción del proyecto](#1-descripcion-del-proyecto)
+-   [2. Investigación UX](#2-investigacion-ux)
+-   [3. Historias de usuario](#3-historias-de-ususario)
+-   [4. Prototipos BF - AF](#4-prototipo-B.F-A.F)
+-   [5. Diseño final](#5-diseño-final)
+-   [6. Test usabilidad](#6-test-usabilidad)
+-   [7. Objetivos de aprendizaje](#7-objetivos-de-aprendizaje)
+-   [8. Checklist](#9-checklist)
 
-***
+---
 
-## 1. Preámbulo
+## 1. Descripción del proyecto
 
-Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
-precedentes.
+Pokémon Dex es una página donde el usuario puede consultar y conocer acerca de los pokemones de la primera generación o dicho por los expertos y conocedores de este mundo, pokemones que habitan la región de Kanto.
+Además de acercarce a su Pokémon favorito, los usuarios de esta página tienen la opción de ordenar ya sea en orden ascendente o descendente por letra y asi mismo por número, dentro de estas opciones también cuentan con la posibilidad de filtrarlos según su tipo (15).
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
+## 2. Investigación UX
 
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario
-al lado derecho.
+Para entender mejor qué necesidades complementarias a la app Pokémon GO tienen los usuarios, se encontró una rápida investigación (research) y estos son algunos de los hallazgos.
 
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+-   Los Pokémon tienen características únicas que determinan las decisiones que toma el usuario (tipo, debilidad, peso, multiplicador, etc.)
+-   Un maestro Pokémon antes de salir a casar los Pokémon tienen que: saber el top 10 de frecuencia de aparición de los Pokémon.
+-   Los Pokémon tienen distintos tipos y debilidades de combate. Estas características son importantes cuando un maestro Pokémon elige al Pokémon más adecuado para su batalla. Hay veces que tiene que elegir a los que tienen menos cantidad de debilidades y saber de que tipo son. Por ello, es importante para un maestro Pokémon poder ordenarlos por estas 2 características.
+-   Los Pokémon evolucionan y es importante para un maestro Pokémon saber cuántas y cuáles son las evoluciones que tienen antes y después.
+-   Los Pokémon se alimentan de caramelos y un maestro Pokémon necesita saber cuántos caramelos necesita un Pokémon para evolucionar.
 
-## 2. Resumen del proyecto
+## 3. Historias de usuario
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
+-   **H1**: Yo como jugador quiero ver una página de inicio.
+-   **H2**: Yo como jugador quiero ver un listado de pokemones para saber más de ellos.
+-   **H3**: Yo como jugador quiero ver la informacion del Pokémon.
+-   **H4**: Yo como jugador quiero una interfaz para visualizarla en diferentes disposotivos.
+-   **H5**: Yo como jugador de quiero tener la opción filtrar la búsqueda de pokemones.
 
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y hacer algún cálculo agregado**. Con cálculo agregado
-nos referimos a distintos cálculos que puedes hacer con la data para mostrar
-información aún más relevante para los usuarios (promedio, el valor máximo
-o mínimo, etc).
+## 4. Prototipos
 
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
+### Baja fidelidad
 
-Una vez que definas tu área de interés, buscar entender quién es tu usuario
-y qué necesita saber o ver exactamente; luego podrás construir la interfaz que
-le ayude a interactuar y entender mejor esos datos.
+-   vista Pc - desktop:
 
-Estos son datos que te proponemos:
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744076-1e222280-da6f-11ea-8097-5de9d638f8bd.jpg" width="200"> </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744089-46aa1c80-da6f-11ea-81a9-5c70849390d5.jpg" width="200"> </p>
 
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 251 Pokémon de la región de Kanto
-  y Johto, junto con sus respectivas estadísticas usadas en el juego
-  [Pokémon GO](http://pokemongolive.com).
-  - [Investigación con jugadores de Pokémon Go](src/data/pokemon/README.md)
+-   vista dispositivos móviles:
 
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de campeones en una liga del
-  juego League of Legends (LoL).
-  - [Investigación con jugadores de LoL](src/data/lol/README.md)
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744108-7f49f600-da6f-11ea-94dd-b52548cb5659.jpg" width="200"> </p>
 
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
-  Este set nos proporciona la lista de los personajes de la serie Rick and
-  Morty. [API Rick and Morty](https://rickandmortyapi.com).
-  - [Investigación con seguidores de Rick and Morty](src/data/rickandmorty/README.md)
+### Alta fidelidad
 
-## 3. Objetivos de aprendizaje
+-   Vista Pc:
 
-El objetivo principal de este proyecto es que aprendas a diseñar y construir una
-interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
-usuario necesita.
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744469-cdacc400-da72-11ea-9274-a1f168efe72b.png" width="400"> </p>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744473-d69d9580-da72-11ea-93cf-55d0433f5d5f.png" width="400"> </p>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744478-e1f0c100-da72-11ea-8715-7e913d39c077.png" width="400"> </p>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744479-e87f3880-da72-11ea-81b4-aec984a81a1f.png" width="400"> </p>
+
+-   Vista para móvil:
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744525-79561400-da73-11ea-8276-dcdf7325ce6d.png" width="200"> </p>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744530-7f4bf500-da73-11ea-8f26-1208f529da4d.png" width="200"> </p>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744534-84a93f80-da73-11ea-950c-a58eaa2a8450.png" width="200"> </p>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744537-8a9f2080-da73-11ea-9dc5-94a496bb28d8.png" width="200"> </p>
+
+## 5. Diseño final
+
+-   Finalizado el proceso y diseño de los prototipos se dessarrolla el diseño final en figma, link: https://www.figma.com/file/ldOWTWYSa7QH1KCEjSnWWo/DataLovers?node-id=0%3A1
+
+## 6. Test de usabilidad
+
+Durante el desarrollo del proyecto se recogieron varios feedback en los cuales encontramos las siguientes sugerencias, todas estas fueron tenidas en cuenta y se aplicaron a la mejora de la página:
+
+-   Responsive de la página: se observo que al ajustar a las diferentes medidas, el diseño perdia su forma y se desajustaba a estas medidas.
+-   Tipografía y colores: la letra era muy plana y no resaltaba en la interfaz; los colores fueron ajustados de manera acorde a la página.
+-   Tarjetas para los Pokemon: se ajusta el tamaño y el color de fondo, alineación, así como su contenido.
+
+## 7. Objetivos de aprendizaje
 
 ### HTML y CSS
 
-* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] Uso de selectores de CSS.
-* [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
-* [ ] [Uso de flexbox en CSS.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+-   [][uso de html semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+-   [] Uso de selectores de CSS.
+-   [] Construir tu aplicación respetando el diseño realizado (maquetación).
+-   [][uso de flexbox en css.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ### DOM y Web APIs
 
-* [ ] Uso de selectores del DOM.
-* [ ] Manejo de eventos del DOM.
-* [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
-(appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
+-   [] Uso de selectores del DOM.
+-   [] Manejo de eventos del DOM.
+-   [][manipulación dinámica del dom.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
+    (appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 
 ### JavaScript
 
-* [ ] Uso de condicionales (if-else | switch | operador ternario)
-* [ ] Uso de bucles (for | for..in | for..of | while)
-* [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
-* [ ] Manipular arrays (filter | map | sort | reduce)
-* [ ] Manipular objects (key | value)
-* [ ] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
-| [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
-* [ ] Diferenciar entre expression y statements.
-* [ ] Diferenciar entre tipos de datos atómicos y estructurados.
+-   [] Uso de condicionales (if-else | switch | operador ternario)
+-   [] Uso de bucles (for | for..in | for..of | while)
+-   [] Uso de funciones (parámetros | argumentos | valor de retorno)
+-   [] Manipular arrays (filter | map | sort | reduce)
+-   [] Manipular objects (key | value)
+-   [] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+    | [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
+-   [ ] Diferenciar entre expression y statements.
+-   [] Diferenciar entre tipos de datos atómicos y estructurados.
 
 ### Testing
 
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
+-   [][testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
 
 ### Estructura del código y guía de estilo
 
-* [ ] Organizar y dividir el código en módulos (Modularización)
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-* [ ] Uso de linter (ESLINT)
+-   [] Organizar y dividir el código en módulos (Modularización)
+-   [] Uso de identificadores descriptivos (Nomenclatura | Semántica)
+-   [] Uso de linter (ESLINT)
 
 ### Git y GitHub
 
-* [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
-* [ ] Colaboración en Github (branches | pull requests | |tags)
+-   [] Uso de comandos de git (add | commit | pull | status | push)
+-   [] Manejo de repositorios de GitHub (clone | fork | gh-pages)
+-   [ ] Colaboración en Github (branches | pull requests | |tags)
 
 ### UX
-
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
-* [ ] Planear y ejecutar tests de usabilidad.
-
-## 4. Consideraciones generales
-
-* Este proyecto se debe resolver en duplas.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
-* Tiempo para completarlo: Toma como referencia 4 semanas.
-
-## 5. Criterios de aceptación mínimos del proyecto
-
-Los criterios para considerar que has completado este proyecto son:
-
-### Definición del producto
-
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
-
-### Historias de usuario
-
-Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
-ser el resultado de tu proceso de investigación o _research_ de tus usuarios.
-
-Asegúrate de incluir la definición de terminado (_definition of done_) y los
-Criterios de Aceptación para cada una.
-
-En la medida de lo posible, termina una historia de usuario antes de pasar
-a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
-
-### Diseño de la Interfaz de Usuario
-
-#### Prototipo de baja fidelidad
-
-Durante tu trabajo deberás haber hecho e iterado bocetos (_sketches_) de tu
-solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
-iteraciones que hagas, que las subas a tu repositorio y las menciones en tu
-`README.md`.
-
-#### Prototipo de alta fidelidad
-
-Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
-_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
-diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, PowerPoint, Keynote, etc.
-
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
-diseño debe seguir los fundamentos de _visual design_.
-
-#### Testeos de usabilidad
-
-Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
-en base a los resultados, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
-mejoraste en tu propuesta final.
-
-### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
-
-Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
-**No** es necesario que construyas la interfaz exactamente como la diseñaste.
-Tu tiempo de hacking es escaso, así que deberás priorizar
-
-Como mínimo, tu implementación debe:
-
-1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista,
-   etc.
-2. Permitir al usuario interactuar para obtener la infomación que necesita.
-3. Ser _responsive_, es decir, debe visualizarse sin problemas desde distintos
-   tamaños de pantallas: móviles, tablets y desktops.
-4. Que la interfaz siga los fundamentos de _visual design_.
-
-### Pruebas unitarias
-
-El _boilerplate_ de este proyecto no incluye Pruebas Unitarias (_tests_), así es
-que  tendrás que escribirlas tú para las funciones encargadas de  _procesar_,
-_filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
-
-Tus _pruebas unitarias_ deben dar una cobertura del 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
-(_ramas_) del archivo `src/data.js` que contenga tus funciones y está detallado
-en la sección de [Consideraciones técnicas](#srcdatajs).
-
-## 6. Hacker edition
-
-Las secciones llamadas _Hacker Edition_ son **opcionales**. Si **terminaste**
-con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás
-profundizar y/o ejercitar más sobre los objetivos de aprendizaje del proyecto.
-
-Features/características extra sugeridas:
-
-* En lugar de consumir la data estática brindada en este repositorio, puedes
-  consumir la data de forma dinámica, cargando un archivo JSON por medio de
-  `fetch`. La carpeta `src/data` contiene una versión `.js` y una `.json` de
-  de cada set datos.
-* Agregarle a tu interfaz de usuario implementada visualizaciones gráficas. Para
-  ello te recomendamos explorar librerías de gráficas como
-  [Chart.js](https://www.chartjs.org/)
-  o [Google Charts](https://developers.google.com/chart/).
-* 100% Coverage
-
-## 7. Consideraciones técnicas
-
-La lógica del proyecto debe estar implementada completamente en JavaScript
-(ES6), HTML y CSS. En este proyecto NO está permitido usar librerías o
-frameworks, solo [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e),
-con la excepción de librerías para hacer gráficas (charts); ver
-[_Parte opcional_](#6-hacker-edition) más arriba.
-
-No se debe utilizar la _pseudo-variable_ `this`.
-
-El _boilerplate_ contiene una estructura de archivos como punto de partida así
-como toda la configuración de dependencias:
 
 ```text
 .

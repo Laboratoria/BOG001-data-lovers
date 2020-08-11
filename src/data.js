@@ -24,7 +24,6 @@
 //     return sorting; 
 // }}; 
 
-
 export const orderSort = (setData, order) => {
   let sorting = setData.sort((a,z) => {
     let result;
@@ -40,13 +39,21 @@ export const orderSort = (setData, order) => {
     }
     if (x > y){ result = 1;}
     if(x < y) { result = -1;}
-    console.log(result);
     return result; 
   }) 
   if (order === "Z-A" || order === "151-1") {
     sorting.reverse()
-  } 
-  return sorting;
-}; 
+  } return sorting;
+  };
+
+  export const pokemonTypes = (setData, orderType) => {
+	let filtering = setData.filter((pokemon) => {
+		const tiposArr = pokemon.type;
+		return tiposArr.includes(orderType);
+	});
+	return filtering;
+};
+
+
 
 
