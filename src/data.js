@@ -27,7 +27,13 @@ export const orderSort = (setData, order) => {
   } return sorting;
   };
 
-  
+  export const pokemonTypes = (setData, orderType) => {
+	let filtering = setData.filter((pokemon) => {
+		const tiposArr = pokemon.type;
+		return tiposArr.includes(orderType);
+	});
+	return filtering;
+};
 
 
 

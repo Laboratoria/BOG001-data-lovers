@@ -75,14 +75,32 @@ orderBtn.addEventListener("change", (event) => {
 } 
 }); 
 
-// -----Botón de Filtro por Tipos----
+// // -----Botón de Filtro por Tipos----
 
-let typeBtn = document.getElementById("element")
+// let typeBtn = document.getElementById("element")
+// typeBtn.addEventListener("change", (event) => {
+//     var typeOption = document.querySelector(".window-container");
+//     // console.log(typeOption);
+//     typeOption.textContent = event.target.value;
+// })
+
+// -----Botón de element por Tipos----
+
+let typeBtn = document.getElementById("element");
+
 typeBtn.addEventListener("change", (event) => {
-    var typeOption = document.querySelector(".window-container");
-    // console.log(typeOption);
-    typeOption.textContent = event.target.value;
-})
+	var typeOption = document.querySelector(".window-container");
+	// console.log(typeOption);
+	typeOption.textContent = "";
+
+	const textSelect = event.target.value;
+	// console.log(textSelect)
+	const dataFilter = pokemonTypes(dataSet, textSelect);
+
+	dataFilter.forEach((element) => {
+		typeOption.innerHTML += `<div class="card"><h2> ${element.num} </h2><p> ${element.name} </p><br><img src=${element.img}><div>`;
+	});
+});
 
 // let typeBtn = document.getElementById("element")
 // typeBtn.addEventListener("change", () => {
