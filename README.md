@@ -110,14 +110,14 @@ Durante el desarrollo del proyecto se recogieron varios feedback en los cuales e
 -   [x] Uso de funciones (parámetros | argumentos | valor de retorno)
 -   [x] Manipular arrays (filter | map | sort | reduce)
 -   [x] Manipular objects (key | value)
--   [] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+-   [ ] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
     | [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
 -   [ ] Diferenciar entre expression y statements.
 -   [x] Diferenciar entre tipos de datos atómicos y estructurados.
 
 ### Testing
 
--   [][testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
+-   [ ][testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
 
 ### Estructura del código y guía de estilo
 
@@ -142,9 +142,9 @@ Durante el desarrollo del proyecto se recogieron varios feedback en los cuales e
 
 -   [x] Usa VanillaJS.
 -   [x] No hace uso de `this`.
--   [] Pasa linter (`npm run pretest`)
--   [] Pasa tests (`npm test`)
--   [] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+-   [ ] Pasa linter (`npm run pretest`)
+-   [ ] Pasa tests (`npm test`)
+-   [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
         lines y branches.
 -   [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
 -   [x] Incluye historias de usuario en `README.md`.
