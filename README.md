@@ -1,6 +1,6 @@
 # Data Lovers
 
-<p align="center"><img src="https://user-images.githubusercontent.com/56327014/98454669-40424400-2135-11eb-9a60-c546b0f1dfb3.png" width=200></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/56327014/98486587-2dd71180-21ec-11eb-8ea5-9971595308e3.png" width=300></p>
 
 ## -Pokemon Dex-
 
