@@ -1,7 +1,7 @@
-import { example, anotherExample } from '../src/data.js';
+import { orderSort, pokemonType } from '../src/data.js';
 
 
-describe('example', () => {
+describe('check the order of the property', () => {
   it('is a function', () => {
     expect(typeof example).toBe('function');
   });

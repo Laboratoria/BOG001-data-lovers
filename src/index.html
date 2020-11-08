@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <title>Data Lovers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+
+    <nav class="container">
+      <div class="burger">
+        <img src="Icons/list.svg" id="list">
+      </div>
+      <ul class="nav-links">
+        <li id="home"><a href="#"><img class="home" src="Icons/home.svg" alt="Home">Home</a></li>
+        <li id="pokedex"><a href="#"><img class="pokedex" src="Icons/pokedex.svg" alt="Pokedex">Pokedex</a></li>
+        <li id="versus"><a href="#"><img class="versus" src="Icons/versus.svg" alt="Versus">Versus</a></li>
+      </ul>
+    </nav>
+    <div class="container"><img src="Images/Pokemon-logo.png" alt="Pokemon-logo" id="Pokemon"></div>
+    <div class="searchContainer container">
+      <form class="barSearch" id="bar">
+        <input type="search" name="search" placeholder="Search">
+      </form>
+      <button class="search" id="search"><img src="Icons/search.svg" class="loupe" id="loupe"></button>
+    </div>
+  </header>
+
+  <main>
+    <div class="window-1" id="Home">
+      <h1>
+        Explore and browse the Pokémon universe to become a Master, so go on and...
+      </h1>
+      <img src="Images/AMB.png" class="AMB">
+      <button type="button" class="continue" id="continue">Catch 'em all!</button>
+    </div>
+
+    <div class="window-2" id="Pokedex">
+      <div class="btn-filter">
+        <!-- <button class="Filter Order" id="order"> -->
+
+                <select class="Filter" name="az" id="aZ">
+                <option value="order">Order</option>
+                <option value="A-Z">A-Z</option>
+                <option value="Z-A">Z-A</option>
+                <option value="1-151">1 to 151</option>
+                <option value="151-1">151 to 1</option>
+                </select>
+                </button>
+
+                <!-- <button class="Filter Type" id="type"> -->
+
+                <select class="Filter" name="element" id="element">
+                <option value="0">Type</option>
+                <option value="Normal">Grass</option>
+                <option value="Poison">Poison</option>
+                <option value="Fire">Fire</option>
+                <option value="Flying">Fliying</option>
+                <option value="Water">Water</option>
+                <option value="Bug">Bug</option>
+                <option value="Plant">Plant</option>
+                <option value="Electric">Electric</option>
+                <option value="Ice">Ice</option>
+                <option value="Psychic">Psychic</option>
+                <option value="Ground">Ground</option>
+                <option value="Rock">Rock</option>
+                <option value="Dragon">Dragon</option>
+                <option value="Ghost">Ghost</option>
+                </select>
+                </button>
+      </div>
+      <div class="window-container" id="window-container"></div>
+
+    </div>
+  </main>
+
+  <footer>
+    © All rights reserved
+    <br>
+    Made by 💛 Nati y Ale
+  </footer>
+
+  <div id="root"></div>
+  <script src="./main.js" type="module"></script>
+</body>
+
 </html>
