@@ -1,5 +1,7 @@
 # Data Lovers
 
+<p align="center"><img src="https://user-images.githubusercontent.com/56327014/98454669-40424400-2135-11eb-9a60-c546b0f1dfb3.png" width=200></p>
+
 ## -Pokemon Dex-
 
 <p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89741008-561b6c80-da53-11ea-97b3-417eb44be50b.png" width="1000"> </p>
